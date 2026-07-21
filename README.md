@@ -27,14 +27,14 @@ This repository is the single source of truth for:
 
 ## Repository map
 
-- `docs/` — operating model, workflow, roles, and stage gates
-- `prompts/` — active prompts for ChatGPT and Codex
-- `templates/` — reusable decision and delivery artifacts
-- `research/` — market discovery evidence
-- `products/` — approved product workspaces
-- `decisions/` — authoritative decision records
-- `knowledge/` — reusable organizational learning
-- `governance/` — independent reviews and release gates
+- [`docs/`](docs/VENTURE_STUDIO_OVERVIEW.md) — operating model, workflow, roles, and stage gates
+- [`prompts/`](prompts/README.md) — active prompts for ChatGPT and Codex
+- [`templates/`](templates/OPPORTUNITY_SCORECARD.md) — reusable decision and delivery artifacts
+- [`research/`](research/README.md) — market discovery evidence
+- [`products/`](products/README.md) — approved product workspaces
+- [`decisions/`](decisions/README.md) — authoritative decision records
+- [`knowledge/`](knowledge/README.md) — reusable organizational learning
+- [`governance/`](governance/README.md) — independent reviews and release gates
 
 ## First execution sequence
 
@@ -48,3 +48,18 @@ This repository is the single source of truth for:
 8. Authorize Codex implementation through reviewed GitHub issues.
 
 See [`docs/WORKFLOW.md`](docs/WORKFLOW.md) for the detailed process.
+
+## Foundation validation
+
+The foundation uses dependency-free checks for required files, Markdown front matter, internal links, stable opportunity IDs, and empty placeholder artifacts.
+
+```bash
+python3 scripts/validate_repository.py
+python3 -m unittest discover -s tests -p 'test_*.py'
+```
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the issue, branch, artifact, and pull-request rules.
+
+## Next authorized step
+
+**Exact next step after Foundation v0.1 approval:** create and approve a GitHub issue authorizing Gate 1 global market discovery with [`prompts/chatgpt/03_MARKET_DISCOVERY.md`](prompts/chatgpt/03_MARKET_DISCOVERY.md). Do not begin product selection or implementation as part of foundation approval.
