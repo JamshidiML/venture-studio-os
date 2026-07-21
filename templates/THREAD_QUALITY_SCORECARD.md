@@ -1,5 +1,5 @@
 ---
-status: in-review
+status: active
 version: 0.1.0
 owner_role: Governance Agent
 last_reviewed: 2026-07-22
