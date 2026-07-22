@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.2
+version: 0.1.3
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T01
@@ -12,7 +12,7 @@ gate: 1
 
 ## Executive Summary
 
-- **Twenty bounded candidates were documented, not ranked.** The universe covers recurring home upkeep, food-use routines, personal organization, errands, packing, plant and non-clinical pet care, and recovery after routine disruption.
+- **The auditable universe contains 20 bounded concepts: 12 Qualified Gate 1 Candidates and 8 Hypothesis Watchlist Candidates.** Neither tier is ranked. The qualified set covers recurring home upkeep, food-use routines, personal organization, and errands; the preserved watchlist contains concepts whose specific workflow pain is not yet observed.
 - **The strongest direct evidence concerns the frequency of household work and preventable food-management friction.** U.S. time-use data show household activities are widespread and recurring, while U.S. and UK food-waste research identifies planning, quantity judgment, storage, and disrupted meals as observable friction ([T01-S01](SOURCE_REGISTER.md), [T01-S02](SOURCE_REGISTER.md), [T01-S03](SOURCE_REGISTER.md)).
 - **Most candidate-level propositions remain inferences, not demand evidence.** No willingness-to-pay, retention, acquisition-cost, download, revenue, or conversion claim is made. Candidate confidence is therefore mostly `medium` or `low`.
 - **The stop boundary is intact.** No winner, comparative ranking, Gate 2 screening score, deep due diligence, validation plan, PRD, or product implementation is included.
@@ -25,7 +25,7 @@ gate: 1
 | Geography | Initial evidence scan: United States, with UK evidence used only where explicitly identified |
 | Segment | Adults managing their own repeated everyday tasks and non-clinical household routines |
 | Source cutoff | 2026-07-22 |
-| Candidate count | Exactly 20 |
+| Candidate count | 12 qualified + 8 watchlist = 20 auditable IDs |
 | Reserved IDs | `OPP-2026-001` through `OPP-2026-099`; this artifact uses `001` through `020` only |
 | Explicit exclusions | Health diagnosis/treatment, personal finance, education, aging/accessibility, creator tools, SMB workflows, platform companion tools, games, social networks, dating, gambling, adult products, surveillance, deceptive products, and network-dependent products |
 
@@ -33,9 +33,9 @@ gate: 1
 
 The first draft combined current-source searches with boundary screening. The correction pass added publication and access dates, geographic scope, source limitations, candidate-level source IDs, claim types, confidence rationales, constraints, exclusions, and a reproducible query log. Sources were prioritized in this order: official statistics and agencies; commissioned primary surveys with disclosed samples; current public standards or guidance. Competitor popularity, app-store counts, and unverified reviews were not treated as problem or demand evidence.
 
-External Governance Correction Cycle 2 audited whether each source demonstrates the candidate's specific problem rather than merely a population, safety cadence, or adjacent category. No new source was added merely to increase source count. Eight weak candidates (`011`, `012`, `014`–`016`, `018`–`020`) remain visible only as `very low` confidence unsupported hypotheses; they may not be promoted without direct problem evidence.
+External Governance Correction Cycle 2 audited whether each source demonstrates the candidate's specific problem rather than merely a population, safety cadence, or adjacent category. Cycle 3 applies the resulting two-tier contract. No new source was added merely to increase source count. Eight weak candidates (`011`, `012`, `014`–`016`, `018`–`020`) moved to the full [Hypothesis Watchlist](EXCLUSIONS.md#hypothesis-watchlist) at `very low` confidence and may not be promoted without direct problem evidence.
 
-Qualification required: a recurring workflow inside Issue #4; at least one traceable problem-category source; a bounded affected segment; a non-deceptive and non-surveillance path; no critical API or proprietary-network dependency; and explicit uncertainty. Qualification does not mean commercial attractiveness or Gate 2 advancement.
+Qualification requires direct observed problem evidence or clearly adjacent observed workflow evidence, plus a bounded affected segment, a non-deceptive and non-surveillance path, no critical API or proprietary-network dependency, and explicit uncertainty. Population context, guidance, feasibility, and a purely logical hypothesis cannot independently qualify a concept. Qualification does not mean commercial attractiveness or Gate 2 advancement.
 
 ## Evidence-Backed Problem Landscape
 
@@ -49,9 +49,9 @@ Qualification required: a recurring workflow inside Issue #4; at least one trace
 | Users will prefer manual-first tools that do not require inbox, retailer, smart-home, or bank access. | assumption | No direct source; owner: Strategy Agent | low | Privacy-preserving scope assumption. Test only after Founder authorization; compare manual entry completion with optional import in a bounded study. |
 | A candidate should be killed if fewer than 5 of 10 recruited target users can describe the problem as recurring at least monthly without prompting. | hypothesis | Not tested | low | Falsifiable discovery threshold for a future authorization; it is not a validation result. |
 
-## Opportunity Universe
+## Qualified Gate 1 Candidate Universe
 
-The full traceable index is in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md).
+The 12 qualified candidates are listed below and in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md). The other eight IDs remain auditable in the [Hypothesis Watchlist](EXCLUSIONS.md#hypothesis-watchlist); they are not qualified candidates.
 
 | Opportunity ID | Bounded workflow | Affected segment | Current alternative | Evidence status | Confidence | Automatic blocker |
 |---|---|---|---|---|---|---|
@@ -65,16 +65,8 @@ The full traceable index is in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md).
 | OPP-2026-008 | Clothing-care memory | People managing garment-specific care | Labels, notes | inference from T01-S01 | low | no fabric-safety guarantee |
 | OPP-2026-009 | Cleaning-zone rotation | Adults doing repeated housework | Paper rotation, generic tasks | inference from T01-S01 | medium | none identified |
 | OPP-2026-010 | Declutter micro-session queue | Adults breaking home organization into short sessions | Notes, timer | inference from T01-S01 | low | no clinical framing |
-| OPP-2026-011 | Personal possession-location register | People repeatedly misplacing infrequently used items | Memory, photos | unsupported hypothesis; T01-S01 is context only | very low | sensitive-location privacy |
-| OPP-2026-012 | Borrowed-item return log | Individuals lending or borrowing household items | Chat message, memory | unsupported hypothesis; T01-S01 is context only | very low | no social graph dependency |
 | OPP-2026-013 | Errand batch queue | Adults grouping repeated local errands | Notes, calendar | inference from T01-S01 | medium | no location surveillance |
-| OPP-2026-014 | Reusable packing checklist | People repeating trips or activities | Static checklist | unsupported hypothesis; no direct source | very low | none identified |
-| OPP-2026-015 | Plant-care rotation | People caring for household plants | Tags, calendar | unsupported hypothesis; no direct source | very low | no horticultural guarantee |
-| OPP-2026-016 | Non-clinical pet-care handoff | Pet owners coordinating routine feeding/walk completion | Note, message | unsupported hypothesis; T01-S08 does not measure pet handoffs | very low | no veterinary advice |
 | OPP-2026-017 | Seasonal home reset calendar | Renters/homeowners rotating seasonal tasks | Calendar, paper list | inference from T01-S05 | medium | jurisdiction/climate variation |
-| OPP-2026-018 | Waiting-time micro-task queue | Adults wanting useful tasks for short idle periods | General task list | unsupported hypothesis; no direct source | very low | no productivity/health claim |
-| OPP-2026-019 | “Done today” completion capture | Adults who need a low-friction record of repeated tasks | Notes, habit tracker | unsupported hypothesis; no direct source | very low | no mental-health claim |
-| OPP-2026-020 | Routine restart after interruption | Adults resuming household routines after travel or disruption | Rebuild list from memory | unsupported hypothesis; cited sources are context only | very low | no clinical or diagnostic framing |
 
 ## Cross-Cutting Constraints
 
@@ -86,7 +78,7 @@ The full traceable index is in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md).
 
 ## Exclusions, Risks, and Unknowns
 
-Detailed exclusions are recorded in [EXCLUSIONS.md](EXCLUSIONS.md) and unresolved evidence in [EVIDENCE_GAPS.md](EVIDENCE_GAPS.md). The central unknown is direct problem intensity and willingness to pay at the candidate level. The current evidence supports a broad problem universe, not commercial selection.
+Detailed exclusions and the eight-entry Hypothesis Watchlist are recorded in [EXCLUSIONS.md](EXCLUSIONS.md); unresolved evidence is in [EVIDENCE_GAPS.md](EVIDENCE_GAPS.md). The central unknown is direct problem intensity and willingness to pay at the candidate level. The current evidence supports a 12-candidate qualified universe, not commercial selection.
 
 ## Confidence Assessment
 
@@ -94,4 +86,6 @@ Overall confidence is `medium` for the existence and recurrence of household-wor
 
 ## Recommended Next Action
 
-External Governance re-review requested. Review the coverage matrix, explicit downgrades, source classification, constraints, exactly 20 IDs, and evidence ceiling. Keep Gate 1 open and do not score or rank the opportunities until Founder authorization for the next gate.
+Review the coverage matrix, 12 qualified candidates, eight-entry watchlist, source classifications, constraints, complete 20-ID audit trail, and evidence ceiling. Keep Gate 1 open and do not score or rank the opportunities until Founder authorization for the next gate.
+
+External Governance Cycle 3 re-review requested

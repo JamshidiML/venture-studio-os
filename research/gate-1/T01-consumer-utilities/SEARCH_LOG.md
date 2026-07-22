@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.2
+version: 0.1.3
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T01
@@ -34,6 +34,8 @@ gate: 1
 ## External Governance Evidence Audit
 
 The Cycle-2 correction did not pad the register with adjacent sources. A candidate-by-candidate audit found no direct problem evidence in the existing register for possession location, borrowed-item return, reusable packing, plant care, pet handoff, idle-time queues, completion capture, or routine restart. Those candidates were downgraded to unsupported `very low` confidence hypotheses; T01-S08 remains contextual animal-keeping evidence and is not represented as pet-handoff pain.
+
+Cycle 3 added no search and no source. It accepted the Cycle-2 external finding that those eight concepts lack qualifying evidence, moved them to the Hypothesis Watchlist, and retained the existing evidence classifications and full 20-ID coverage matrix.
 
 ## Search Coverage Check
 

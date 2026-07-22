@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.2
+version: 0.1.3
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T01
@@ -48,9 +48,20 @@ Authoritative external score: `92/100`. Common blocker: `EXT-GOV-01` — prior C
 
 | Review ID | External finding / required correction | Applied correction | Verification | Status |
 |---|---|---|---|---|
-| EXT-GOV-01 | Codex-authored “Independent Governance Review” is not independent. | Relabeled every surviving reference as Internal Pre-review and retained its historical simulated score without treating it as external. | QUALITY_SCORE_HISTORY.md, CORRECTION_LOG.md, THREAD_SUMMARY.md | correction applied; external verification pending |
+| EXT-GOV-01 | Codex-authored “Independent Governance Review” is not independent. | Relabeled every surviving reference as Internal Pre-review and retained its historical simulated score without treating it as external. | External Cycle-2 review explicitly marked this blocker resolved. | externally resolved |
 | T01-EXT-C01 | Add a candidate-to-source matrix separating direct problem, context, current alternative, feasibility, constraints, and unsupported assumptions. | Added 20/20 coverage rows with a strict direct-evidence definition and explicit dashes. | OPPORTUNITY_INDEX.md | resolved internally |
 | T01-EXT-C02 | Strengthen, downgrade, or remove possession location, borrowed items, packing, plant care, pet handoff, idle-time, completion capture, and routine restart. | Downgraded all eight to `very low`; clarified that T01-S01/S08 are context only and added a named evidence gap. | MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md, EVIDENCE_GAPS.md | resolved internally |
 | T01-EXT-C03 | Log the exact eight-point loss. | Added the dimension-level external point-loss register above. | CORRECTION_LOG.md, QUALITY_SCORE_HISTORY.md | resolved internally |
 
-External Governance re-review requested.
+## Authoritative External Governance Re-review — Cycle 2
+
+Authoritative external score: `95/100` (`10 + 18 + 15 + 12 + 15 + 10 + 10 + 5`). `EXT-GOV-01` was externally resolved. The remaining five-point loss comprised two source-quality points and three opportunity-coverage points because eight unsupported concepts remained described as qualified.
+
+| Review ID | External finding / required correction | Cycle-3 resolution | Verification | Status |
+|---|---|---|---|---|
+| EXT2-T01-01 | IDs 011, 012, 014–016, and 018–020 have no direct problem evidence but remained in the qualified universe; create a two-tier result without adding an artifact. | Retained 12 evidence-backed or clearly adjacent candidates in the qualified report/index and moved all eight named IDs to the full Hypothesis Watchlist without renumbering or deletion. | MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md, EXCLUSIONS.md, and THREAD_SUMMARY.md show `12 qualified + 8 watchlist = 20`; the matrix records final status for all 20 IDs. | resolved internally; external verification pending |
+| C3-T01-01 | Cycle 3 must preserve every watchlist concept, evidence gap, constraint, reconsideration condition, and ownership while keeping all artifacts in review. | Added all required watchlist fields, retained the six-class coverage audit, versioned all nine artifacts to 0.1.3, and preserved `status: in-review`. | Nine-artifact lifecycle, count, ID, matrix, repository, unit-test, and diff checks. | correction complete; external re-review requested |
+
+No source was added or removed in Cycle 3. No Opportunity Score was calculated or inflated.
+
+External Governance Cycle 3 re-review requested
