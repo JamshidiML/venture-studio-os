@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.1
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -10,7 +10,7 @@ last_reviewed: 2026-07-22
 ## Executive Summary
 
 - **A screening-ready universe was created without selecting a product.** Twenty unranked candidates cover adult foundational skills, time-bounded learning, workplace communication, language practice, career exploration and job-search reflection.
-- **The strongest evidence concerns recurring context, not demand for a particular tool.** OECD and Eurostat document adult-learning participation and time/cost/suitability barriers; NCES documents U.S. adult skill gaps; BLS and O*NET provide current occupational context. Candidate-specific WTP and retention remain unknown.
+- **Direct reports now sit beside broad context.** A 2024 UK learner survey directly records time, cost, confidence, transport, digital-confidence and caring challenges; DWP qualitative work directly records job-search applications, evidence journals, barriers and interview preparation. Older migrant-language evidence remains low confidence. Candidate-specific WTP and retention remain unknown.
 - **Free alternatives and safety constraints are material.** O*NET already provides capable public career tools, while UNESCO, the U.S. Department of Education and EEOC require human oversight, privacy, integrity, accessibility and a hard boundary against high-stakes automated decisions.
 - **Gate 1 should remain open for independent review only.** The report does not rank candidates, score opportunity attractiveness, begin due diligence or authorize Gate 2.
 
@@ -26,7 +26,7 @@ last_reviewed: 2026-07-22
 
 ## Methodology
 
-Current primary statistics, official occupational resources and regulator/intergovernmental guidance were searched first. A candidate was retained only when it described a repeated individual workflow, stayed within the hard boundaries, had at least one traceable contextual evidence source and could state its uncertainty without inventing market size, price, demand or efficacy. Alternatives were recorded to expose switching friction. WTP and retention remain unknown; proposed repeat-use mechanisms are explicitly treated as assumptions, not measured findings or falsifiable claims.
+Current primary statistics, official occupational resources, regulator/intergovernmental guidance and participant-based research were searched first. Direct learner/jobseeker reports were distinguished from population context, alternatives, feasibility and constraints. A candidate was retained only when it described a repeated individual workflow, stayed within the hard boundaries, had at least one traceable contextual evidence source and could state its uncertainty without inventing market size, price, demand or efficacy. Alternatives were recorded to expose switching friction. WTP and retention remain unknown; proposed repeat-use mechanisms are explicitly treated as assumptions, not measured findings or falsifiable claims.
 
 The source audit is in [SOURCE_REGISTER.md](SOURCE_REGISTER.md), reproducible queries in [SEARCH_LOG.md](SEARCH_LOG.md), the complete universe in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md), exclusions in [EXCLUSIONS.md](EXCLUSIONS.md), and unresolved uncertainty in [EVIDENCE_GAPS.md](EVIDENCE_GAPS.md).
 
@@ -34,7 +34,7 @@ The source audit is in [SOURCE_REGISTER.md](SOURCE_REGISTER.md), reproducible qu
 
 ### Time and fit are clearer frictions than a lack of course supply
 
-OECD reports that 24% of adults in the surveyed population encountered a barrier to non-formal job-related learning; among those with barriers, lack of time dominated and unsuitable provision and cost also appeared (L01). Eurostat reports substantial adult participation and a strong concentration in non-formal activity (L02). **Inference:** compact planning, practice and reflection workflows deserve discovery, but the evidence does not show that another content catalog is needed.
+OECD reports that 24% of adults in the surveyed population encountered a barrier to non-formal job-related learning; among those with barriers, lack of time dominated and unsuitable provision and cost also appeared (L01). The independent 2024 UK survey adds direct learner reports: work/time pressure, cost, confidence, transport, digital-confidence and caring responsibilities affected current/recent learners (L14). **Inference:** a time-boxed planning workflow (300) is directly adjacent to a reported problem, while note queues and refresher maps (301–302) remain unsupported workflow assumptions.
 
 ### Foundational and digital-skill gaps support practice workflows, not efficacy claims
 
@@ -44,9 +44,11 @@ NCES reports deteriorating U.S. literacy/numeracy results with explicit response
 
 BLS publishes 2024–34 occupation openings and entry/training context (L05), while O*NET provides detailed occupational data plus free exploration tools (L06–L07). **Inference:** candidate value would need to come from personal evidence organization or reflection rather than repackaging public listings. Free public alternatives are a competitive constraint, not evidence of a gap.
 
+DWP's 2025 synthesis directly observed and interviewed claimants and coaches: current applications, job-search evidence, barriers, skills and interview preparation were recurring work-search topics (L15). This strengthens the problem basis for interview practice (308), evidence organization (309) and application reflection (314), but the mandatory-benefit context and absence of payment evidence keep confidence bounded.
+
 ### Language relevance is visible; contextual practice remains an inference
 
-EU attitude data show broad support for multilingual capability (L08), and OECD policy synthesis describes shortcomings of generic language courses for workplace contexts (L09). This supports exploration of occupation-specific rehearsal and user-owned vocabulary workflows. It does not prove that users will pay, persist or learn more effectively.
+EU attitude data show broad support for multilingual capability (L08), while OECD participant-derived evidence identifies time conflicts between language courses, work and job search (L16) and its policy synthesis describes shortcomings of generic language courses for workplace contexts (L09). This supports exploration of occupation-specific rehearsal, but writing, speaking, vocabulary, pronunciation and tone workflows remain distinct low/medium-confidence inferences rather than directly observed needs.
 
 ### AI, educational integrity and employment fairness constrain the universe
 
@@ -63,6 +65,7 @@ The complete 20-candidate table is [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md).
 3. **Unknown:** candidate-specific WTP. Existing paid categories and employer-supported learning cannot substitute for direct evidence.
 4. **Risk:** AI feedback can be inaccurate, biased or privacy-invasive. Human confirmation and data minimization are non-negotiable constraints.
 5. **Risk:** content rights and dataset licenses vary. Only user-owned, licensed, public-domain or properly permissioned material is in scope.
+6. **Evidence ceiling:** candidates 301–302, 305–307, 309–312 and 315–319 still lack direct candidate-specific workflow observation; the coverage matrix marks that deficit rather than treating broad skill, API or policy evidence as pain.
 
 ## Confidence assessment
 
@@ -70,4 +73,4 @@ Overall confidence is **medium for the existence of broad learning and career fr
 
 ## Recommended next action
 
-Request independent Governance review of this Gate 1 evidence package and creator score. Do not authorize ranking, Gate 2, due diligence, customer validation, PRD creation or implementation from this draft.
+Request external Governance re-review of this Gate 1 evidence package and creator score. Do not authorize ranking, Gate 2, due diligence, customer validation, PRD creation or implementation from this draft.

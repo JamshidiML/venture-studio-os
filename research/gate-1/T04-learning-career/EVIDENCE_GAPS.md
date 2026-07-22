@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.1
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -10,7 +10,7 @@ last_reviewed: 2026-07-22
 | Gap | Affected candidates | Impact | Current ceiling | Evidence needed later | Owner / authorized timing |
 |---|---|---|---|---|---|
 | No candidate-specific WTP evidence | All | Cannot infer monetization | Opportunity confidence stays low/medium | Price-behavior data or consented buyer interviews | Strategy Agent, only after separate authorization |
-| No direct workflow-frequency observations | Most; especially 301–305, 314, 319 | Repeat-use assumptions may be wrong | Frequency labels are reasoned, not measured; Strategy Agent owns the assumption and cannot use it for advancement | Diary study or anonymized usage observation | Gate 5 only if separately authorized |
+| No direct workflow-frequency observations | Most; especially 301–307, 310–313 and 315–319 | Repeat-use assumptions may be wrong | L14–L16 strengthen selected problem contexts, but frequency labels remain reasoned and cannot support advancement | Diary study or anonymized usage observation | Gate 5 only if separately authorized |
 | English-language search bias | All | May miss non-English needs and alternatives | Localization conclusions prohibited | Native-language search and local reviewers | Additional Gate 1 research if Founder requests |
 | U.S./EU/OECD geographic concentration | All | Findings cannot be generalized globally | Scope explicitly bounded | Comparable primary sources in named launch geographies | Founder must choose geography before deeper work |
 | Learning efficacy untested | 301–304, 315–319 | No outcome claims are supportable | Candidates are workflow inferences only | Controlled or quasi-experimental evidence for specific method | Due diligence, not this thread |
@@ -22,4 +22,4 @@ last_reviewed: 2026-07-22
 
 ## Evidence ceiling
 
-The artifact can be complete as Gate 1 discovery while candidate attractiveness remains uncertain. The ceiling prevents any claim of product-market fit, efficacy, global applicability, price tolerance or employment outcome. No Founder exception is required for this discovery artifact; Governance scoring remains pending.
+The artifact can be complete as Gate 1 discovery while candidate attractiveness remains uncertain. Direct evidence now exists for selected learning barriers and job-search activities, but not for most proposed workflows. The ceiling prevents any claim of product-market fit, efficacy, global applicability, price tolerance or employment outcome. External Governance re-review is pending.

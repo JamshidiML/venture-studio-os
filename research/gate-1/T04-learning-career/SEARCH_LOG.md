@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.1
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -23,6 +23,9 @@ Search session: 2026-07-22. Search cutoff: 2026-07-22. Research covered the Unit
 | 10 | EEOC AI hiring disability discrimination | Enforce the no-high-stakes-decision boundary | L11 | No automated screening candidate was retained |
 | 11 | paid course platform market size downloads revenue | Test whether credible demand numbers were available | none | SEO reports and opaque estimates rejected; no market size recorded |
 | 12 | app-store learning rankings and reviews | Test alternative evidence | none | Rankings, review anecdotes and download estimates were not reproducible enough for material claims |
+| 13 | Learning and Work Institute Adult Participation in Learning Survey 2024 barriers | Add direct current/recent learner evidence | L14 | UK self-report was not generalized to all learners or converted into tool demand |
+| 14 | DWP work search reviews claimant interviews applications interview preparation journal | Add direct jobseeker/workflow evidence | L15 | Mandatory-benefit setting limits transfer to voluntary and employed jobseekers |
+| 15 | OECD migrant language training work daily life time barrier | Separate participant-derived language friction from broad multilingual context | L16 | Old underlying survey retained at low confidence; no candidate-level demand claim |
 
 ## Reproducibility notes
 
