@@ -35,4 +35,3 @@ last_reviewed: 2026-07-22
 ## Reproduction guidance
 
 Open each canonical URL in [SOURCE_REGISTER.md](SOURCE_REGISTER.md), confirm the page is still current, then compare the candidate’s stated path and risk in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md). A future implementation review must verify the exact endpoints, scopes, API version, app type, tenant/account type, plan, review status, and terms on that future date.
-

@@ -7,9 +7,9 @@ last_reviewed: 2026-07-22
 
 # T08 Creator Artifact Quality Score History
 
-Thread: T08  
-Issue: #11  
-Artifact version: 0.2.1  
+Thread: T08
+Issue: #11
+Artifact version: 0.2.1
 Governance reviewer: Governance Agent, independent from the creator, 2026-07-22
 
 ## Score history

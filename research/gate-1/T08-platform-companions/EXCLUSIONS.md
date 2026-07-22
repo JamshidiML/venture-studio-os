@@ -21,4 +21,3 @@ last_reviewed: 2026-07-22
 | General SMB workflow tool where platform dependency is incidental | Reserved for T07. | Issue #11 |
 | Platform popularity, install counts, or Marketplace rank used as opportunity evidence | Popularity is not problem, demand, or WTP evidence. | Issue #11 |
 | Product ranking, deep competitor diligence, customer validation, MVP, PRD, or implementation | Outside Gate 1. | Parent #3 and Issue #11 |
-

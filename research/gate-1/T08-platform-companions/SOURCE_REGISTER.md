@@ -45,4 +45,3 @@ Every source is an official platform/developer source. Access date: 2026-07-22. 
 - Dropbox’s lack of published exact rate limits is preserved as a limitation, not replaced with an estimate.
 - Different Microsoft resources impose different permissions and throttles; no single Graph limit is generalized.
 - Platform documentation establishes feasibility and constraints only. It does not establish popularity, installs, demand, revenue, or willingness to pay.
-
