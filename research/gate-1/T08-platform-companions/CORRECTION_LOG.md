@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.1
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -20,40 +20,76 @@ last_reviewed: 2026-07-22
 
 No Opportunity Score was created or altered.
 
-## Independent Governance review record
+## Internal Governance Simulation record (non-independent)
+
+The Codex-produced records below were originally labeled “Independent Governance.” They are preserved verbatim in substance but relabeled because the same execution system created and reviewed the artifacts; they are internal pre-review history and not authoritative Governance scores.
 
 | Review | Governance score | Critical blockers | Point loss | Required correction | Status |
 |---|---:|---:|---:|---|---|
-| Governance Cycle 1, 2026-07-22 | 99/100 | 0 | 1 — claim-level evidence and traceability | G08-GOV-001: assign exactly one explicit claim type to every candidate problem statement, while keeping platform-feasibility evidence separate from demand status | open |
-| Governance Cycle 2, 2026-07-22 | 96/100 | 1 | 4 — one traceability point and three rigor points | G08-GOV-001 explicit-type request implemented, but G08-GOV-002 opened because all 20 hypothesis labels lack measure, success threshold, kill threshold, and time box | open; creator correction required |
-| Governance Cycle 3, 2026-07-22 | 100/100 | 0 | 0 | G08-GOV-002 resolved: 20/20 report and index rows use the complete shared assumption treatment; C08-12 is complete; C08-13 retains its separate full hypothesis contract | resolved; Governance complete |
-| Governance Cycle 4, 2026-07-22 | 100/100 | 0 | 0 | Final lifecycle verification: all nine artifacts in-review v0.2.1; complete claim treatments preserved; checks and 20+20 candidate rows pass | resolved; Governance complete |
+| Internal Simulation Cycle 1, 2026-07-22 | 99/100 | 0 | 1 — claim-level evidence and traceability | G08-GOV-001: assign exactly one explicit claim type to every candidate problem statement, while keeping platform-feasibility evidence separate from demand status | open |
+| Internal Simulation Cycle 2, 2026-07-22 | 96/100 | 1 | 4 — one traceability point and three rigor points | G08-GOV-001 explicit-type request implemented, but G08-GOV-002 opened because all 20 hypothesis labels lack measure, success threshold, kill threshold, and time box | open; creator correction required |
+| Internal Simulation Cycle 3, 2026-07-22 | 100/100 | 0 | 0 | G08-GOV-002 resolved: 20/20 then-current report and index rows used the complete shared assumption treatment; C08-12 was complete; C08-13 retained its separate full hypothesis contract | resolved internally; superseded by external review |
+| Internal Simulation Cycle 4, 2026-07-22 | 100/100 | 0 | 0 | Final lifecycle verification: all nine artifacts were in-review v0.2.1; complete claim treatments preserved; checks and 20+20 candidate rows passed | resolved internally; superseded by external review |
 
-No source artifact was rewritten by Governance. Independent validation passed: repository validator, three unit tests, and git diff check.
+No source artifact was rewritten during the internal simulation. Internal validation passed: repository validator, three unit tests, and git diff check.
 
-## Creator response to Governance Cycle 1
+## Creator response to Internal Simulation Cycle 1
 
 | Correction ID | Governance finding | Targeted creator correction | Files changed | Verification | Status |
 |---|---|---|---|---|---|
 | C-08-009 | G08-GOV-001; one traceability point lost. | Assigned exactly one explicit problem/workflow claim type, hypothesis, to all 20 candidates in both candidate tables; preserved official feasibility sources, confidence, demand/WTP and attractiveness uncertainty. | MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md | 20 of 20 report rows and 20 of 20 index rows carry the same single explicit type. | resolved; Governance rescore requested |
 
-## Governance Cycle 2 correction request
+## Internal Simulation Cycle 2 correction request
 
 | Finding | Required correction | Source artifacts for Creator | Governance verification | Status |
 |---|---|---|---|---|
 | G08-GOV-002 | Complete the mandatory falsification contract for each hypothesis, or use a valid assumption/inference treatment. A shared assumption protocol may cover the 20 rows if it unambiguously names the Strategy Agent owner, impact if wrong, and planned review/test. Do not manufacture thresholds or direct demand evidence. | MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md, and any dependent summary/gap wording | Confirm exactly one valid claim type per row; rerun validator, tests, diff, nine-artifact and 20-candidate checks; independently rescore | open |
 
-Governance did not rewrite the source research. Independent validation passed, but the critical claim-treatment blocker prevents a 100/100 Governance score.
+The internal simulation did not rewrite the source research. Internal validation passed, but the internal claim-treatment blocker prevented a 100/100 simulation score.
 
-## Governance Cycle 3 disposition
+## Internal Simulation Cycle 3 disposition
 
-G08-GOV-002 is resolved. Independent validation passed: repository validator, three unit tests, `git diff --check`, exactly nine artifacts, exactly 20 index candidates, and exactly 20 report candidates. No critical blocker remains and the latest Governance score is 100/100. Historical lower scores and correction requests remain above as the audit trail.
+G08-GOV-002 was resolved within the internal simulation. Internal validation passed: repository validator, three unit tests, `git diff --check`, exactly nine artifacts, exactly 20 then-current index candidates, and exactly 20 then-current report candidates. No internal blocker remained and the internal simulation score was 100/100. Historical lower scores and correction requests remain above as the audit trail.
 
-Final lifecycle verification also passed at 100/100: all nine artifacts are `in-review` v0.2.1, all claim treatments remain conformant, and no blocker reopened.
+Final internal lifecycle verification also passed at 100/100: all nine artifacts were `in-review` v0.2.1, all claim treatments remained conformant, and no internal blocker reopened. This was not an independent external review.
 
-## Creator response to Governance Cycle 2
+## Creator response to Internal Simulation Cycle 2
 
 | Correction ID | Governance finding | Targeted creator correction | Files changed | Verification | Status |
 |---|---|---|---|---|---|
 | C-08-010 | G08-GOV-002; all 20 candidate hypotheses lacked per-claim falsification contracts. | Relabeled all 20 candidate problem/workflow statements as assumptions and applied one unambiguous shared protocol naming the Strategy Agent owner, impact if wrong, and separately authorized future review/test. Also completed C08-12 assumption treatment. | MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md | 20 of 20 report rows and 20 of 20 index rows carry assumption type; the shared protocol is present in both; C08-12 includes owner, impact, and planned review/test. | resolved; Governance Cycle 3 requested |
 | C-08-011 | Completed review-candidate lifecycle needed a consistent post-correction patch version. | Advanced all nine artifacts from version 0.2.0 to patch version 0.2.1 while retaining in-review status. | All nine artifact front matters | All nine files are in-review at 0.2.1. | resolved |
+
+## External Governance Cycle 1 — authoritative review
+
+External review submitted on PR #19 on 2026-07-22 assigned **84/100**. This score supersedes all internal simulation scores for Governance authority and opened **EXT-GOV-01** plus **T08-EXT-B02**.
+
+### External point-loss register
+
+| Dimension | Awarded | Points lost | External finding | Correction Cycle 2 disposition |
+|---|---:|---:|---|---|
+| Scope compliance and exclusions | 10/10 | 0 | Scope and stop boundaries were compliant. | Preserved. |
+| Source quality and freshness | 15/20 | 5 | Nearly all sources were API/policy pages rather than user-problem evidence. | Added W08-28 through W08-36 across all six hosts; feasibility sources remain separately labeled. |
+| Claim-level evidence and traceability | 12/15 | 3 | Problem support and technical feasibility were conflated. | Added a per-candidate two-axis matrix with separate problem and feasibility columns. |
+| Opportunity coverage and diversity | 12/15 | 3 | Concepts lacked segment, observable friction, and evidence-backed alternatives; arbitrary count was preserved. | Withdrew nine API-only concepts; 20 → 11; added segment/friction/alternative mapping. |
+| Analytical rigor and uncertainty | 11/15 | 4 | API availability carried too much opportunity weight and evidence ceiling was understated. | Downgraded five retained rows to assumptions, isolated OPP-711 as direct-evidence absent, and retained both external blockers pending re-review. |
+| Legal, safety, privacy, and platform | 10/10 | 0 | Platform controls were strong. | Preserved and separated as constraint evidence. |
+| Reproducibility | 10/10 | 0 | Search record was adequate for feasibility. | Added nine reproducible problem-evidence searches. |
+| Hygiene | 4/5 | 1 | Prior Codex reviews were mislabeled independent and external status was absent. | Relabeled history, recorded external blockers, bumped all artifacts to in-review v0.3.0. |
+| **Total** | **84/100** | **16** | **EXT-GOV-01 and T08-EXT-B02 opened.** | **External Governance re-review requested.** |
+
+### External findings and creator corrections
+
+| Correction ID | External finding | Targeted correction | Files changed | Verification | Status |
+|---|---|---|---|---|---|
+| C-08-012 | EXT-GOV-01: no independent external Governance re-review exists for version 0.3.0. | Recorded authoritative external 84/100 and kept the blocker open. | QUALITY_SCORE_HISTORY.md, EVIDENCE_GAPS.md, THREAD_SUMMARY.md | No internal score is presented as external. | open; external re-review requested |
+| C-08-013 | T08-EXT-B02: nearly all original sources were API/policy pages rather than user problems. | Added nine independent/direct-user problem sources covering all six hosts; kept bounded limitations explicit. | SOURCE_REGISTER.md, SEARCH_LOG.md, MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md | W08-28 through W08-36 present; source roles explicit. | open pending external determination |
+| C-08-014 | Each host needed independent problem/workflow evidence or unsupported concepts had to be downgraded/removed. | Removed IDs 700, 701, 702, 705, 707, 709, 710, 711, 714; downgraded 703, 704, 706, 708; supported the remaining inferences with W08 sources. | MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md, EXCLUSIONS.md, EVIDENCE_GAPS.md | Candidate count 20 → 11; six hosts remain represented. | resolved for creator cycle |
+| C-08-015 | Problem evidence and technical feasibility required a two-axis map. | Added a candidate matrix with separate direct-problem and technical-feasibility fields plus context and constraint roles. | MARKET_DISCOVERY_REPORT.md | 11/11 retained candidates mapped; API docs never appear in the direct-problem column. | resolved |
+| C-08-016 | Every candidate needed alternatives, observable friction, and user segments. | Added all three fields to the coverage matrix; rewrote retained rows to match the cited friction. | MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md | 11/11 rows expose segment, friction, and alternative. | resolved |
+| C-08-017 | Candidate count had to be reassessed rather than preserved at 20. | Withdrew nine concepts and preserved their IDs/reasons in exclusions. | EXCLUSIONS.md, MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md, THREAD_SUMMARY.md | Before 20; after 11; no ID reuse. | resolved |
+| C-08-018 | External 16-point loss and both blockers had to be logged. | Added complete point-loss register; EXT-GOV-01 and T08-EXT-B02 remain open. | CORRECTION_LOG.md, QUALITY_SCORE_HISTORY.md, EVIDENCE_GAPS.md | Lost points reconcile to 84/100. | resolved |
+| C-08-019 | Prior Codex “Independent Governance” labels were invalid. | Relabeled prior sections as Internal Governance Simulation/Internal Pre-review without deleting scores or findings. | CORRECTION_LOG.md, QUALITY_SCORE_HISTORY.md, THREAD_SUMMARY.md | Audit history remains present and non-authoritative. | resolved |
+| C-08-020 | Lifecycle/version/external status needed consistent correction. | Bumped all nine artifacts to version 0.3.0, retained `status: in-review`, and added external blockers. | All nine artifacts | 9/9 lifecycle headers match. | resolved |
+
+External Governance re-review requested.

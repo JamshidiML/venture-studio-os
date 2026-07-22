@@ -1,15 +1,15 @@
 ---
 status: in-review
-version: 0.2.1
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
 
 # T08 Source Register
 
-Every source is an official platform/developer source. Access date: 2026-07-22. “Date unavailable” is deliberate when the current page did not expose a reliable publication/update date.
+P08 sources are official platform/developer feasibility sources. W08 sources are independent review/research or direct user-workflow evidence. Access date for every source: 2026-07-22. “Date unavailable” is deliberate when the current page did not expose a reliable publication/update date.
 
-| ID | Official source | Publication/update date | Scope / geography | Supports | Confidence and limitation |
+| ID | Source | Publication/update date | Scope / geography | Supports | Confidence and limitation |
 |---|---|---|---|---|---|
 | P08-01 | [Google Workspace Marketplace — Configure OAuth](https://developers.google.com/workspace/marketplace/configure-oauth-consent-screen) | Updated 2026-06-03 | Public Workspace apps; generally global | C08-01, C08-02 | high; review applicability depends on scopes and app type. |
 | P08-02 | [Google Identity — Restricted scope verification](https://developers.google.com/identity/protocols/oauth2/production-readiness/restricted-scope-verification) | Updated 2026-07-18 | Google account data; exceptions listed by Google | C08-01 | high; exact scopes and assessment need re-check for final design. |
@@ -38,6 +38,15 @@ Every source is an official platform/developer source. Access date: 2026-07-22. 
 | P08-25 | [Shopify — API limits](https://shopify.dev/docs/api/usage/limits) | Date unavailable | Shopify APIs and plan tiers | C08-10; OPP-717 through 719 | high; limits and manual query costs may change. |
 | P08-26 | [Shopify — App review process](https://shopify.dev/docs/apps/launch/app-store-review/review-process) | Date unavailable | Shopify App Store | C08-10 | high; review is platform-controlled. |
 | P08-27 | [Shopify — App Store requirements](https://shopify.dev/docs/apps/launch/shopify-app-store/app-store-requirements) | Date unavailable | Shopify public apps | C08-10 | high; secure exchange and quality requirements are dynamic. |
+| W08-28 | [Capterra — Google Workspace verified user reviews](https://www.capterra.com/p/247901/Google-Workspace/reviews/) | Page updated 2026-07-14; individual review dates visible | Self-selected Workspace users; mixed industries/geographies | C08-14; OPP-703 | medium; direct user reports include confusing settings/permissions, but reviews are self-selected and some incentivized. No prevalence claim. |
+| W08-29 | [Capterra — Slack verified user reviews](https://www.capterra.com/p/135003/Slack/reviews/) | Page current 2026-07-22; reviewed entries dated 2025-12-30 through 2026-05-23 | Self-selected Slack users; mixed industries/geographies | C08-15; OPP-704, 706 | medium; direct reports of notification overload and buried messages, but self-selection/incentives and aggregation prevent prevalence claims. |
+| W08-30 | [Capterra — Microsoft Teams verified user reviews](https://www.capterra.com/p/168668/Microsoft-Teams/reviews/) | Page current 2026-07-22; individual dates visible | Self-selected Teams users; mixed industries/geographies | C08-16; OPP-708 | medium; direct reports of channel/notification overload and interface clutter, not evidence for approval or folder-audit demand. |
+| W08-31 | [ACM — A First Look at Self-Admitted Miscommunications in GitHub Issues](https://doi.org/10.1145/3691621.3694942) | 2024-10-27 | Open-source GitHub issue discussions | C08-17; OPP-712 | high for observed issue-discussion miscommunication; open-source sample may not generalize to private commercial repositories or prove tool demand. |
+| W08-32 | [ACM — Opportunities and Challenges in Repeated Revisions to Pull Requests: An Empirical Study](https://doi.org/10.1145/3555208) | 2022; exact day unavailable in reviewed record | Five long-lived public GitHub projects | C08-18; OPP-713 | high for observed PR revision/review practices; older, public-project sample and no direct WTP evidence. |
+| W08-33 | [Capterra — Dropbox verified user reviews](https://www.capterra.com/p/143068/Dropbox-Business/reviews/) | Page updated 2026-07-13; reviewed entries dated 2025-07-09 through 2026-06-06 | Self-selected Dropbox users; mixed industries/geographies | C08-19; OPP-715, 716 | medium; direct reports include external-sharing difficulty, sync delay/conflicts, organization and version-history limits; self-selected and sometimes incentivized. |
+| W08-34 | [Shopify Community — Email customers that have an unfulfilled line item](https://community.shopify.com/c/shopify-discussions/email-customers-that-have-an-unfulfilled-line-item/td-p/2972316) | Original merchant post 2025-03-07 | One Shopify merchant workflow; geography unavailable | C08-20; OPP-717 | low-medium; direct first-person fulfillment exception and manual segmentation/email workflow, but a single platform-hosted anecdote. |
+| W08-35 | [Shopify Community — New returns system and sales-data timing](https://community.shopify.com/c/accounting-and-taxes/anyone-else-notice-that-the-new-returns-system-breaks-all-of/m-p/3042616/highlight/true) | Merchant discussion and official response 2025-05-14 | Shopify merchant returns/reporting workflow; geography unavailable | C08-21; OPP-718 | low-medium; direct merchant reports plus platform response establish workflow friction/change, not prevalence or willingness to pay. |
+| W08-36 | [Shopify Community — Seeking audit-ready report for production changes](https://community.shopify.com/t/seeking-audit-ready-report-for-tracking-production-changes-to-products-pricing-and-subscriptions/420346) | Original user post 2025-06-20 | One Shopify Plus organization with audit requirements; geography unavailable | C08-22; OPP-719 | low-medium; direct workflow request and limitations, but one enterprise/Plus case and no SMB prevalence. |
 
 ## Freshness and conflict controls
 
@@ -45,3 +54,4 @@ Every source is an official platform/developer source. Access date: 2026-07-22. 
 - Dropbox’s lack of published exact rate limits is preserved as a limitation, not replaced with an estimate.
 - Different Microsoft resources impose different permissions and throttles; no single Graph limit is generalized.
 - Platform documentation establishes feasibility and constraints only. It does not establish popularity, installs, demand, revenue, or willingness to pay.
+- W08-28 through W08-36 provide independent or direct-user workflow evidence. They are not technical-feasibility sources and their self-selected, single-case, or public-project limitations remain explicit.

@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.1
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -9,8 +9,10 @@ last_reviewed: 2026-07-22
 
 Thread: T08
 Issue: #11
-Artifact version: 0.2.1
-Governance reviewer: Governance Agent, independent from the creator, 2026-07-22
+Artifact version: 0.3.0
+Authoritative external reviewer: ChatGPT Governance review on PR #19, 2026-07-22
+
+Historical Codex review cycles below are Internal Governance Simulations, not independent Governance. Their scores and findings are preserved for audit history but are superseded by the external score.
 
 ## Score history
 
@@ -18,12 +20,14 @@ Governance reviewer: Governance Agent, independent from the creator, 2026-07-22
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | 1 — complete first draft | 10 | 17 | 12 | 14 | 13 | 7 | 8 | 5 | 86 | pending | 0 | targeted correction |
 | 2 — corrected review candidate | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | 100 | pending | 0 | creator complete; Governance review required |
-| 3 — independent Governance review | 10 | 20 | 14 | 15 | 15 | 10 | 10 | 5 | — | 99 | 0 | targeted correction required |
+| 3 — Internal Governance Simulation | 10 | 20 | 14 | 15 | 15 | 10 | 10 | 5 | — | 99 internal | 0 | internal targeted correction |
 | 4 — creator traceability correction | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | 100 | pending re-review | 0 | Governance rescore requested |
-| 5 — independent Governance re-review | 10 | 20 | 14 | 15 | 12 | 10 | 10 | 5 | — | 96 | 1 | rework required; hypothesis contract incomplete |
+| 5 — Internal Governance Simulation re-review | 10 | 20 | 14 | 15 | 12 | 10 | 10 | 5 | — | 96 internal | 1 internal | internal rework; hypothesis contract incomplete |
 | 6 — creator assumption-treatment correction | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | 100 | pending re-review | 0 | Governance Cycle 3 requested |
-| 7 — independent Governance re-review | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | — | 100 | 0 | Governance complete; no blocker |
-| 8 — independent Governance final lifecycle verification | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | — | 100 | 0 | in-review v0.2.1 verified; Governance complete |
+| 7 — Internal Governance Simulation re-review | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | — | 100 internal | 0 | internally complete; non-authoritative |
+| 8 — Internal Governance Simulation lifecycle check | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | — | 100 internal | 0 | in-review v0.2.1 internally verified |
+| 9 — External Governance Cycle 1 | 10 | 15 | 12 | 12 | 11 | 10 | 10 | 4 | — | **84 external** | **2: EXT-GOV-01, T08-EXT-B02** | authoritative rework required |
+| 10 — External Correction Cycle 2 creator rescore | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | **100** | pending external re-review | **2 external blockers remain open** | creator execution complete; external re-review requested |
 
 ## Cycle 1 point-loss register
 
@@ -42,7 +46,7 @@ The creator awards 100/100 for artifact execution quality: exactly 20 field-comp
 
 The score does not measure attractiveness, guarantee platform approval, complete Governance review, or authorize Gate 2. Governance may independently reduce the score or open a blocker.
 
-## Independent Governance review — Cycle 1
+## Internal Governance Simulation — Cycle 1 (non-independent)
 
 | Dimension | Awarded | Evidence and rationale |
 |---|---:|---|
@@ -62,17 +66,17 @@ The score does not measure attractiveness, guarantee platform approval, complete
 |---|---:|---|---|
 | G08-GOV-001 — candidate problem statements are feasible concepts but lack an explicit repository claim type | 1 | Add exactly one explicit claim-type field/value per candidate, using evidence, inference, assumption, or hypothesis; keep API feasibility evidence separate from demand/problem status | All 20 candidates expose exactly one problem-claim type without adding unsupported demand evidence |
 
-Critical blockers: none. Governance verdict: **REWORK REQUIRED — 99/100**. This is an artifact-quality correction only and does not authorize Gate 2.
+Internal critical blockers: none. Internal simulation verdict: **REWORK REQUIRED — 99/100**. This is historical artifact-quality pre-review only and did not authorize Gate 2.
 
 ## Final creator verdict
 
 CREATOR COMPLETE 100/100 — INDEPENDENT GOVERNANCE REVIEW PENDING.
 
-## Creator response to Governance Cycle 1
+## Creator response to Internal Simulation Cycle 1
 
 G08-GOV-001 was applied without changing platform-feasibility evidence, source mappings, confidence, demand/WTP posture, or scope. Every candidate problem/workflow statement in the report and index now exposes exactly one explicit claim type: hypothesis. Official API availability remains feasibility evidence only and does not type the underlying problem as evidence.
 
-## Independent Governance re-review — Cycle 2
+## Internal Governance Simulation re-review — Cycle 2 (non-independent)
 
 G08-GOV-001's request for an explicit type was implemented, but the chosen `hypothesis` type creates a stricter unresolved requirement under `docs/EVIDENCE_AND_CONFIDENCE_RULES.md`. All 20 candidate problem statements in both the report and index omit the required measure, success threshold, kill threshold, and time box. The separately specified aggregate C08-13 hypothesis cannot serve as the falsification contract for 20 different candidate-problem claims.
 
@@ -94,18 +98,28 @@ G08-GOV-001's request for an explicit type was implemented, but the chosen `hypo
 |---|---|---|---|---|
 | G08-GOV-002 | Twenty candidate problem statements are typed as hypotheses without a per-claim measure, success threshold, kill threshold, and time box. | Either add a genuine complete falsification contract to each material hypothesis, or relabel the claims as assumptions/inferences and provide that type's required minimum treatment. The honest low-evidence option is a shared assumption protocol naming owner, impact if wrong, and planned review/test, applied unambiguously to all rows. Do not invent thresholds to recover points. | Strategy Agent | open |
 
-Independent checks passed: repository validator (32 required files; 37 governed Markdown files; links and empty-artifact checks), three unit tests, `git diff --check`, exactly nine thread artifacts, and exactly 20 candidates. Governance verdict: **REWORK REQUIRED — 96/100 — G08-GOV-002 OPEN**.
+Internal checks passed: repository validator (32 required files; 37 governed Markdown files; links and empty-artifact checks), three unit tests, `git diff --check`, exactly nine thread artifacts, and exactly 20 then-current candidates. Internal simulation verdict: **REWORK REQUIRED — 96/100 — G08-GOV-002 OPEN**.
 
-## Creator response to Governance Cycle 2
+## Creator response to Internal Simulation Cycle 2
 
 G08-GOV-002 was applied using the recommended honest assumption treatment. All 20 candidate problem/workflow statements are assumptions owned by the Strategy Agent; impact if wrong is that the affected candidate cannot advance because its problem remains unvalidated; planned review/test is limited to separately authorized future research or validation. The same protocol appears unambiguously in both candidate tables. C08-12 now also states its impact if wrong and planned review/test. No demand evidence or thresholds were invented, and API feasibility remains separate from demand and problem validation.
 
-## Independent Governance re-review — Cycle 3
+## Internal Governance Simulation re-review — Cycle 3 (non-independent)
 
-Governance verified all 20 candidate rows in both `MARKET_DISCOVERY_REPORT.md` and `OPPORTUNITY_INDEX.md`. Each problem/workflow claim is now explicitly an assumption governed by the same unambiguous Strategy Agent owner, impact-if-wrong, and separately authorized planned-review/test treatment. C08-12 independently contains the same required assumption fields. C08-13 remains a distinct valid hypothesis with measure, success threshold, kill threshold, and 14-day time box. API feasibility evidence remains separate from problem validation and no demand evidence, threshold, confidence, or Opportunity Score was invented or changed.
+The internal simulation verified all 20 then-current candidate rows in both `MARKET_DISCOVERY_REPORT.md` and `OPPORTUNITY_INDEX.md`. Each problem/workflow claim was explicitly an assumption governed by the same unambiguous Strategy Agent owner, impact-if-wrong, and separately authorized planned-review/test treatment. C08-12 contained the same required assumption fields. C08-13 remained a distinct valid hypothesis with measure, success threshold, kill threshold, and 14-day time box. API feasibility evidence remained separate from problem validation and no demand evidence, threshold, confidence, or Opportunity Score was invented or changed.
 
-G08-GOV-002 is resolved. Independent checks passed: repository validator (32 required files; 37 governed Markdown files; links and empty-artifact checks), three unit tests, `git diff --check`, exactly nine thread artifacts, exactly 20 index candidates, and exactly 20 report candidates. Governance verdict: **COMPLETE — 100/100 — ZERO CRITICAL BLOCKERS**. This does not pass Gate 1, authorize Gate 2, or select a product.
+G08-GOV-002 was resolved internally. Internal checks passed: repository validator (32 required files; 37 governed Markdown files; links and empty-artifact checks), three unit tests, `git diff --check`, exactly nine thread artifacts, exactly 20 then-current index candidates, and exactly 20 then-current report candidates. Internal simulation verdict: **COMPLETE — 100/100 — ZERO INTERNAL CRITICAL BLOCKERS**. This record was non-independent and did not pass Gate 1, authorize Gate 2, or select a product.
 
-## Independent Governance final lifecycle verification — Cycle 4
+## Internal Governance Simulation lifecycle verification — Cycle 4 (non-independent)
 
-Governance re-verified the post-review lifecycle patch. All nine artifacts are `in-review` at version `0.2.1`; the shared candidate assumption treatment, C08-12 treatment, and distinct complete C08-13 hypothesis remain intact; all 20 report and index candidate rows remain present. Repository validator, three unit tests, `git diff --check`, exact nine-artifact count, 9/9 lifecycle/version checks, and 20+20 candidate-row checks passed. Final Governance history: **99 → 96 → 100 → 100**. Open critical blockers: **0**.
+The internal simulation re-verified the post-review lifecycle patch. All nine artifacts were `in-review` at version `0.2.1`; the then-current shared candidate assumption treatment, C08-12 treatment, and distinct C08-13 hypothesis remained intact; all 20 then-current report and index candidate rows were present. Repository validator, three unit tests, `git diff --check`, exact nine-artifact count, 9/9 lifecycle/version checks, and 20+20 candidate-row checks passed. Internal simulation history: **99 → 96 → 100 → 100**. This record was not independent and is superseded by External Governance Cycle 1.
+
+## External Governance Cycle 1 — authoritative
+
+External Governance assigned **84/100** with dimension scores **10, 15, 12, 12, 11, 10, 10, 4**. The exact sixteen-point loss and all findings are recorded in [CORRECTION_LOG.md](CORRECTION_LOG.md). The review found that API/policy documentation dominated the register and required independent problem/workflow evidence for every host or honest downgrade/removal, a two-axis problem-versus-feasibility matrix, alternatives/observable friction/user segments, and a reassessed candidate count. It opened **EXT-GOV-01** and **T08-EXT-B02**.
+
+## External Correction Cycle 2 creator rationale
+
+The creator awards 100/100 for correction execution quality, not opportunity attractiveness. Nine verifiable independent/direct-user workflow sources were added with publication/access dates and freshness limits; no source was removed or replaced. Nine API-only concepts were withdrawn (20 → 11), and every retained candidate now has bounded problem evidence, context, current alternative, technical feasibility, legal/platform constraints, segment/friction, and unsupported assumptions separately recorded. All external findings and sixteen lost points are logged, historical internal review is correctly labeled, and lifecycle/version metadata is consistent.
+
+EXT-GOV-01 and T08-EXT-B02 remain open because only the external reviewer can close them and assign a new Governance score. **External Governance re-review requested.**
