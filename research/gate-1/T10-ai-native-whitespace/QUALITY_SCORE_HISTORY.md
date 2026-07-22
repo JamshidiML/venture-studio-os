@@ -58,8 +58,8 @@ Creator score remains `100/100` for the corrected review candidate. Thresholds a
 
 ## Independent Governance review
 
-Reviewer role: independent Governance Agent  
-Review date: 2026-07-22  
+Reviewer role: independent Governance Agent
+Review date: 2026-07-22
 Artifact reviewed: all nine T10 files at version 0.1.0
 
 | Dimension | Maximum | Awarded | Independent rationale |
@@ -101,8 +101,8 @@ Candidate confidence remains capped by G-01 through G-12. No Founder exception i
 
 ## Independent Governance re-review — Cycle 2
 
-Reviewer role: independent Governance Agent  
-Review date: 2026-07-22  
+Reviewer role: independent Governance Agent
+Review date: 2026-07-22
 Artifact reviewed: all nine T10 files at version 0.2.0
 
 | Dimension | Maximum | Awarded | Independent rationale |
