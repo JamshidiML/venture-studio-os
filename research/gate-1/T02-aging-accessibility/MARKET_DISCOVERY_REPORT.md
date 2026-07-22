@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.1
+version: 0.1.2
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T02
@@ -35,6 +35,8 @@ The search prioritized primary or authoritative demographic, disability, accessi
 
 Qualification required: direct fit with Issue #5; a traceable problem-category source; a defined user or caregiver; preservation of the older adult's or disabled person's agency; non-clinical wording; no emergency guarantee; no hidden monitoring; an accessible manual fallback; and explicit uncertainty. A candidate's inclusion is not evidence of commercial demand.
 
+External Governance Correction Cycle 2 added a source-classification audit and direct lived-experience evidence. ONS interviewed 56 disabled adults with varied impairments; participants described inaccessible online services, poor information, inflexible processes, extensive preparation and workarounds, reliance on family/friends, and inaccessible communication/format choices. This is direct barrier evidence, but it does not prove demand for the proposed workflow utilities.
+
 ## Evidence-Backed Problem Landscape
 
 | Material claim | Type | Source | Confidence | Interpretation and limitation |
@@ -45,6 +47,7 @@ Qualification required: direct fit with Issue #5; a traceable problem-category s
 | U.S. adults age 50+ use technology widely, but privacy, value, usability, and age-inappropriate design remain barriers. | evidence | T02-S05 | medium | AARP's 2025 fieldwork is an online survey; people without internet access may be underrepresented. |
 | Family caregiving is widespread and varies in intensity and support needs. | evidence | T02-S06 | medium | AARP/NAC national research is relevant but does not prove demand for a specific coordination tool. |
 | Automated testing found detectable WCAG failures on 94.8% of the top one million home pages tested in February 2025. | evidence | T02-S07 | high | Automated tools detect only a subset of barriers; absence of errors is not conformance, and home pages are not whole services. |
+| Disabled participants reported physical, digital, information, communication, and process barriers, plus preparation/workarounds and reliance on family or friends. | evidence | T02-S12 | medium | Direct qualitative lived-experience evidence from 56 UK interviews; not representative prevalence and not candidate demand. |
 | Revocable, user-controlled sharing will be trusted more than continuous monitoring. | assumption | No direct comparative source; owner: Strategy Agent | low | Must be tested with users and caregivers; it is a safety-preserving design assumption, not demand evidence. |
 | A candidate should be killed if consent cannot be understood and revoked independently by target users in moderated accessibility testing. | hypothesis | Not tested | low | Falsifiable later-gate safety threshold; no validation is claimed here. |
 
@@ -54,8 +57,8 @@ The full traceable index is in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md).
 
 | Opportunity ID | Bounded workflow | Primary user | Evidence status | Confidence | Critical boundary |
 |---|---|---|---|---|---|
-| OPP-2026-100 | Personal accessibility-preference passport | Person with access needs | inference from T02-S02/S03/S08 | medium | user-owned and selectively shared |
-| OPP-2026-101 | Plain-language document restatement | Older adult/person with cognitive or reading access need | inference from T02-S04/S07 | medium | no legal/medical interpretation |
+| OPP-2026-100 | Personal accessibility-preference passport | Person with access needs | inference from T02-S02/S03/S08/S12 | medium | user-owned and selectively shared |
+| OPP-2026-101 | Plain-language document restatement | Older adult/person with cognitive or reading access need | access barrier evidenced by T02-S12; workflow remains inference | medium | no legal/medical interpretation |
 | OPP-2026-102 | Large-print instruction-card maker | Person with low vision | inference from T02-S03/S08 | medium | preserve meaning; source visible |
 | OPP-2026-103 | Accessible step-by-step everyday task cards | Person needing cognitive/motor access support | inference from T02-S02/S04 | medium | non-clinical and user-configured |
 | OPP-2026-104 | Voice-first personal routine notebook | Person with visual/motor access need | inference from T02-S02/S03 | medium | local/manual fallback; no always-on audio |
@@ -64,16 +67,16 @@ The full traceable index is in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md).
 | OPP-2026-107 | Respite-help request pack | Unpaid family caregiver | inference from T02-S06 | medium | no service availability guarantee |
 | OPP-2026-108 | Appointment question-preparation sheet | Older/disabled adult | inference from T02-S02/S04 | low | no diagnosis, triage, or medical advice |
 | OPP-2026-109 | User-authored visit recap organizer | Older/disabled adult and chosen helper | inference from T02-S02/S06 | low | record only; no clinical interpretation |
-| OPP-2026-110 | Transport accessibility call-ahead checklist | Person with mobility/sensory access needs | inference from T02-S01/S03 | medium | verify with operator; no availability claim |
-| OPP-2026-111 | Accessible venue-preparation card | Person with mobility/sensory access needs | inference from T02-S01/S03 | medium | venue information can change |
-| OPP-2026-112 | Public-service document checklist | Older/disabled adult | inference from T02-S07/S09 | low | no eligibility or legal advice |
+| OPP-2026-110 | Transport accessibility call-ahead checklist | Person with mobility/sensory access needs | environmental preparation evidenced by T02-S12; checklist remains inference | medium | verify with operator; no availability claim |
+| OPP-2026-111 | Accessible venue-preparation card | Person with mobility/sensory access needs | physical barrier/planning evidenced by T02-S12; card remains inference | medium | venue information can change |
+| OPP-2026-112 | Public-service document checklist | Older/disabled adult | digital/process access context only; assembly workflow unsupported | low | no eligibility or legal advice |
 | OPP-2026-113 | Scam-message pause-and-verify worksheet | Older adult and chosen helper | inference from T02-S05 | low | education only; never guarantee authenticity |
-| OPP-2026-114 | Trusted technology-support session checklist | Older adult and helper | inference from T02-S05 | medium | no credential collection or remote control |
+| OPP-2026-114 | Trusted technology-support session checklist | Older adult and helper | support barrier evidenced by T02-S05/S12; session checklist remains inference | medium | no credential collection or remote control |
 | OPP-2026-115 | Hearing-friendly conversation preparation card | Person with hearing access needs | inference from T02-S02/S03 | medium | no hearing diagnosis or device claim |
 | OPP-2026-116 | Personal format converter for contrast, spacing, and text size | Person with visual/cognitive access needs | inference from T02-S07/S08 | medium | conversion must preserve source and not claim conformance |
 | OPP-2026-117 | Accessible personal emergency-information card | Older/disabled adult | inference from T02-S02/S03 | low | static information only; no emergency response |
-| OPP-2026-118 | Home accessibility observation inventory | Older/disabled adult and chosen helper | inference from T02-S01/S02 | medium | not a clinical or building-safety assessment |
-| OPP-2026-119 | User-directed social-connection cadence planner | Older adult at isolation risk | inference from T02-S10/S11 | medium | no mental-health treatment or coercion |
+| OPP-2026-118 | Home accessibility observation inventory | Older/disabled adult and chosen helper | environmental barrier context only; inventory workflow unsupported | low | not a clinical or building-safety assessment |
+| OPP-2026-119 | User-directed social-connection cadence planner | Older adult at isolation risk | isolation context only; cadence workflow unsupported | low | no mental-health treatment or coercion |
 
 ## Consent, Privacy, Safety, and Accessibility Controls
 
@@ -94,4 +97,4 @@ Overall confidence is `high` that accessibility and caregiving frictions exist a
 
 ## Recommended Next Action
 
-Request independent Governance review against `templates/THREAD_QUALITY_SCORECARD.md`, with particular attention to consent, clinical boundaries, emergency reliance, affordability, and disabled-user representation. Do not begin Gate 2 or select a product.
+External Governance re-review requested, with particular attention to the coverage matrices, direct-lived-experience classification, consent, clinical boundaries, emergency reliance, affordability, and disabled-user representation. Do not begin Gate 2 or select a product.

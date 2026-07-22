@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.1
+version: 0.1.2
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T02
@@ -22,8 +22,36 @@ gate: 1
 
 No opportunity score, winner, or attractiveness ranking was changed or created during correction.
 
-## Independent Governance Review
+## Internal Pre-review (not independent)
 
 | Review ID | Finding | Required correction | Verification | Status |
 |---|---|---|---|---|
-| T02-G01 | Governance review awarded 100/100 and verified closure of consent/emergency blocker T02-B01. | none | Re-read all nine artifacts; repository validator, three unit tests, whitespace check, exact-file count, and unique-ID count passed. | closed |
+| T02-G01 | A prior Codex self-review simulated 100/100 and checked the creator blocker. | Preserve as internal history; do not present it as an independent score. | Relabeled here, in score history, and in summary. | superseded by external review |
+
+## External Governance Review — Cycle 1
+
+Authoritative external score: `94/100`. Common blocker: `EXT-GOV-01`.
+
+### External Point-Loss Register
+
+| Dimension | Maximum | External award | Lost | Finding |
+|---|---:|---:|---:|---|
+| Scope compliance and exclusions | 10 | 10 | 0 | no loss |
+| Source quality and freshness | 20 | 18 | 2 | no lived-experience or participatory source from older/disabled people/caregivers |
+| Claim-level evidence and traceability | 15 | 15 | 0 | no loss |
+| Opportunity coverage and diversity | 15 | 13 | 2 | no source-domain matrix across required domains |
+| Analytical rigor and uncertainty | 15 | 14 | 1 | digital-access evidence was not consistently separated from workflow pain |
+| Legal, safety, privacy, and platform constraints | 10 | 10 | 0 | no loss |
+| Reproducibility of search method | 10 | 10 | 0 | no loss |
+| Clarity and repository hygiene | 5 | 4 | 1 | same-process Codex review mislabeled independent |
+| **Total** | **100** | **94** | **6** | **external score is authoritative** |
+
+| Review ID | External finding / required correction | Applied correction | Verification | Status |
+|---|---|---|---|---|
+| EXT-GOV-01 | Prior Codex review was not independent. | Relabeled all surviving references as Internal Pre-review/Simulation and preserved the historical 100 as non-authoritative. | QUALITY_SCORE_HISTORY.md, CORRECTION_LOG.md, THREAD_SUMMARY.md | correction applied; external verification pending |
+| T02-EXT-C01 | Add at least one lived-experience/participatory source from older adults, disabled people, or unpaid caregivers. | Added T02-S12: 56 ONS qualitative interviews with disabled adults, with method, date, geography, limitations, and confidence. | SOURCE_REGISTER.md, SEARCH_LOG.md, MARKET_DISCOVERY_REPORT.md | resolved internally |
+| T02-EXT-C02 | Add source-domain coverage for visual, hearing, cognitive, mobility, caregiver, transport, public-service, and social domains. | Added an eight-domain source matrix using direct/context/technical/legal codes. | OPPORTUNITY_INDEX.md | resolved internally |
+| T02-EXT-C03 | Distinguish digital-access evidence from workflow-pain evidence for 101, 112–114, 118, and 119. | Rewrote rationales, downgraded 118/119, and added 20-row source coverage separating barrier from workflow. | MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md, EVIDENCE_GAPS.md | resolved internally |
+| T02-EXT-C04 | Log the exact six-point loss. | Added the dimension-level point-loss register above. | CORRECTION_LOG.md, QUALITY_SCORE_HISTORY.md | resolved internally |
+
+External Governance re-review requested.

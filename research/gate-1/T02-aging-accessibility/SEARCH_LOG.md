@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.1
+version: 0.1.2
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T02
@@ -29,6 +29,7 @@ gate: 1
 | 8 | `site:nia.nih.gov health loneliness social isolation older people 2024 2025` | T02-S11 | included: authoritative outreach synthesis |
 | 9 | `site:census.gov older adults living alone 2024 report 65` | T02-S10 | included with living-alone/loneliness distinction |
 | 10 | `site:europa.eu European Accessibility Act 28 June 2025 official` | T02-S09 | included as EU regulatory context, not legal advice |
+| 11 | `site:ons.gov.uk disabled people's experiences activities goods services qualitative interviews accessibility` | T02-S12 | included: 56 lived-experience interviews; supports reported access/workaround barriers, not prevalence or product demand |
 
 ## Searches Not Converted Into Claims
 

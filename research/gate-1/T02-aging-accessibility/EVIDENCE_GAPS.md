@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.1
+version: 0.1.2
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T02
@@ -12,7 +12,8 @@ gate: 1
 
 | Gap | Affected IDs | Why unresolved | Evidence needed before any later decision | Risk if ignored | Current ceiling |
 |---|---|---|---|---|---|
-| Lived-experience confirmation across disability types | all | Gate 1 used published sources; no interviews or participatory design were authorized. | Paid, accessible research with disabled people and older adults across visual, hearing, mobility, cognitive, communication, and independent-living needs. | Designing around stereotypes or one impairment. | medium problem-family confidence |
+| Participatory confirmation across disability types | all | T02-S12 supplies published lived-experience interviews, but this thread did not involve disabled people or older adults as co-researchers and has no candidate-specific participatory testing. | Paid, accessible co-design with disabled people and older adults across visual, hearing, mobility, cognitive, communication, and independent-living needs. | Treating a 2022 UK qualitative sample as universal or designing around one impairment. | medium problem-family confidence |
+| Access-barrier versus proposed-workflow evidence | 101, 112–114, 118–119 | Direct/context sources establish barriers or population conditions, not the named restatement, checklist, inventory, or cadence pain. | Candidate-specific observation/interview evidence and current-alternative mapping. | Demographic, standard, or barrier evidence misrepresented as workflow demand. | low candidate confidence |
 | Consent comprehension and revocation | 100, 105–107, 109, 114, 117–119 | No prototype or moderated test exists. | Accessible consent prototype tested independently by care recipients, including conflict scenarios. | Caregiver convenience overrides autonomy. | safety requirement, not validated capability |
 | Offline and low-bandwidth reach | all | AARP technology evidence is online and may underrepresent excluded users. | Recruitment through libraries, aging/disability organizations, phone, print, and community services. | Digital-only sample bias. | reachability low/medium |
 | Affordability and payment source | all | No candidate-specific WTP or reimbursement evidence. | Direct price research distinguishing user, caregiver, nonprofit, employer, and public payer without assuming coverage. | Excluding intended users or inventing payer demand. | no WTP claim |
@@ -24,4 +25,4 @@ gate: 1
 
 ## Evidence Ceiling Decision
 
-No artifact-quality evidence-ceiling exception is requested: gaps are fully disclosed and the Gate 1 universe can be reviewed honestly. Governance may still classify consent, clinical, or accessibility treatment as a blocker. Governance score is pending.
+No Creator artifact-quality evidence-ceiling exception is requested: gaps are fully disclosed and the Gate 1 universe can be reviewed honestly. `EXT-GOV-01` remains open until external re-review verifies the correction. The authoritative external score remains 94/100.

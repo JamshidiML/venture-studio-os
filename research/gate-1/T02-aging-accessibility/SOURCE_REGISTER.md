@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.1
+version: 0.1.2
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T02
@@ -25,6 +25,7 @@ Access date for every source: `2026-07-22`.
 | T02-S09 | [The EU becomes more accessible for all](https://digital-strategy.ec.europa.eu/en/news/eu-becomes-more-accessible-all), European Commission | 2025-06-27; EAA application 2025-06-28 | European Union | EAA applies accessibility requirements to specified products/services. | High-level summary; obligations depend on product, service, member-state implementation, and legal analysis. | high |
 | T02-S10 | [How Many Young and Older Adults Lived Alone?](https://www.census.gov/library/stories/2024/05/living-arrangements.html), U.S. Census Bureau | 2024-05-30; data year 2022 | U.S. adults | Nearly three in ten adults 65+ lived alone, relevant to independence and connection context. | Living alone is not the same as loneliness or support need; 2022 data. | high |
 | T02-S11 | [Social Isolation and Loneliness Outreach Toolkit](https://www.nia.nih.gov/toolkits/social-isolation), National Institute on Aging | updated 2026-06-02 | Older adults and caregivers, primarily U.S. | Older adults face social-isolation risk; toolkit cites one in four community-dwelling adults 65+ as socially isolated. | Outreach synthesis; source statistic is older peer-reviewed research; does not prove app efficacy. | medium |
+| T02-S12 | [Disabled people's experiences with activities, goods and services, UK](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/disability/bulletins/disabledpeoplesexperienceswithactivitiesgoodsandservicesuk/februarytomarch2022), UK Office for National Statistics | 2022-07-18; 56 interviews conducted 2022-02 to 2022-03 | Disabled adults 18+ across the UK with varied impairments | Participants described inaccessible online services, poor information, inflexible systems, preparation/workarounds, reliance on family/friends, cognitive demands, screen-reader/format barriers, communication-preference failures, and the need to involve disabled people in service decisions. | Purposive qualitative sample; not representative prevalence; private-sector focus and 2022 fieldwork; it supports lived experience, not demand for any candidate. | medium |
 
 ## Conflict and Transfer Notes
 
@@ -32,3 +33,4 @@ Access date for every source: `2026-07-22`.
 - WHO global projections, U.S. surveys, and EU regulatory context answer different questions; no one geography is silently generalized to another.
 - AARP online samples may exclude some of the people most affected by digital barriers, so adoption estimates do not erase offline support needs.
 - WebAIM automated results indicate detectable technical barriers, not complete conformance or lived-experience quality.
+- T02-S12 supplies direct lived-experience evidence through qualitative interviews. It is deliberately not converted into prevalence, market size, or proof that any proposed workflow is wanted.
