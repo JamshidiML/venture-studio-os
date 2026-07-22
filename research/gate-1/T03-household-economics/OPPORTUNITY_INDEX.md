@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.1
+version: 0.1.2
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T03
@@ -19,24 +19,51 @@ Exactly 20 candidates are qualified for the unranked Gate 1 universe. Evidence I
 | OPP-2026-202 | Consumers need a record of cancellation attempts and confirmations. | Subscription users; email folder/screenshots. | T03-S03/S04 | medium | consumer-protection content | records only; no cancellation execution, dispute filing, or legal conclusion |
 | OPP-2026-203 | Free-trial deadlines are easy to miss. | Trial users; calendar. | T03-S04 | medium: regulator guidance explicitly recommends calendar tracking | free-trial help search | user verifies terms; no “safe offer” determination |
 | OPP-2026-204 | Bills have heterogeneous due dates and frequencies. | Households; calendar/bank reminder. | T03-S01/S02 | medium: bill difficulty direct, organization effect unknown | budgeting and bill-organization search | manual schedule only; no payment or cash-flow advice |
-| OPP-2026-205 | A changed bill is hard to reconcile with prior usage/terms. | Utility/service customers; spreadsheet/calls. | T03-S02/S10 | low: broad cost pressure only | bill-help search | arithmetic and annotations only; no causal or legal determination |
+| OPP-2026-205 | A changed bill is hard to reconcile with prior usage/terms. | Utility/service customers; spreadsheet/calls. | unsupported hypothesis; T03-S02/S10 are context only | very low: no direct variance-reconciliation evidence | bill-help search | arithmetic and annotations only; no causal or legal determination |
 | OPP-2026-206 | Package sizes make shelf prices hard to compare; a unit calculator normalizes units. | Grocery/household-goods shoppers; mental math. | T03-S05/S06 | high: NIST directly supports unit-pricing comparison | unit-price search and consumer educators | compatible units only; store label/user input verified |
 | OPP-2026-207 | Consumers lack a dated personal price history for repeat purchases. | Repeat shoppers; receipts/spreadsheet. | T03-S05/S06/S10 | medium: comparison method direct, demand unknown | grocery savings communities | local observations, no market-wide “fair price” claim |
 | OPP-2026-208 | Package downsizing obscures effective price changes. | Repeat shoppers; memory/old packages. | T03-S06 | medium: NIST explicitly identifies shrinkflation context | unit-price education channels | product matching and units must be verified |
 | OPP-2026-209 | Basket alternatives have different quantities and availability. | Household shopper; spreadsheet/calculator. | T03-S05/S06 | medium | grocery planning search | scenario only; taxes, availability, quality, travel cost shown separately |
 | OPP-2026-210 | Households cannot see the cost of personally discarded food. | Adults managing groceries; waste log. | T03-S07 | medium: cost category direct, diary adoption unknown | food-waste education channels | use personal entries; never assign EPA average as promised savings |
-| OPP-2026-211 | Repair/replace comparisons mix upfront cost, expected life, energy, and uncertainty. | Appliance-owning households; mental estimate. | T03-S01/S08 | low: components relevant, failure workflow unmeasured | appliance-maintenance search | transparent scenario, no safety, financing, or provider recommendation |
+| OPP-2026-211 | Repair/replace comparisons mix upfront cost, expected life, energy, and uncertainty. | Appliance-owning households; mental estimate. | unsupported hypothesis; T03-S01/S08 are context only | very low: repair/replace workflow unmeasured | appliance-maintenance search | transparent scenario, no safety, financing, or provider recommendation |
 | OPP-2026-212 | Appliance operating cost is opaque without usage and tariff math. | Households; energy label/calculator. | T03-S08 | medium: end-use variation direct | energy-information search | user tariff/usage; timestamp; no guaranteed saving |
 | OPP-2026-213 | Energy bills lack a household annotation history for weather, occupancy, or appliance changes. | Utility customers; spreadsheet/notes. | T03-S08/S10 | medium | energy-bill help search | correlations only; no causal diagnosis or tariff-switch advice |
 | OPP-2026-214 | Broadband offers present comparable facts in labels but users still need a side-by-side record. | Home internet shoppers; tabs/spreadsheet. | T03-S09 | high: label purpose direct | broadband-label search | use current user-supplied labels; no eligibility/API/speed guarantee |
-| OPP-2026-215 | Home-service quotes use inconsistent scopes and units. | Households seeking routine services; spreadsheet. | T03-S01/S02 | low: cost pressure only, quote friction not directly measured | home-service planning search | normalize user-entered scope; no provider ranking, licensing, or safety judgment |
+| OPP-2026-215 | Home-service quotes use inconsistent scopes and units. | Households seeking routine services; spreadsheet. | unsupported hypothesis; T03-S01/S02 are context only | very low: quote friction not directly measured | home-service planning search | normalize user-entered scope; no provider ranking, licensing, or safety judgment |
 | OPP-2026-216 | Receipts and warranties become separated when a claim is needed. | Owners of household goods; paper/email folders. | T03-S11 | medium: FTC directly advises keeping both | warranty/repair help search | redact sensitive fields; retention/deletion; no credential or inbox requirement |
 | OPP-2026-217 | Return windows and required records vary by seller. | Shoppers; receipt/calendar. | T03-S12 | medium: FTC explicitly notes varying deadlines/documents | return/refund help search | seller/jurisdiction controls; tracker is not a rights determination |
-| OPP-2026-218 | Store credits and gift cards have hard-to-track issuer terms. | Consumers holding credits; wallet/email. | T03-S02 | low: household difficulty broad, specific problem unevidenced | consumer-protection search | issuer/jurisdiction research missing; no value custody |
-| OPP-2026-219 | Cooling-off rights apply only to bounded transactions and deadlines. | Consumers in covered in-person/temporary-location sales; paper forms. | T03-S12 | medium: FTC guidance direct, coverage narrow | consumer-protection organizations | show source/jurisdiction and exclusions; no legal advice or submission |
+| OPP-2026-218 | Store credits and gift cards have hard-to-track issuer terms. | Consumers holding credits; wallet/email. | unsupported hypothesis; no direct source | very low: household difficulty source is not issuer-term evidence | consumer-protection search | issuer/jurisdiction research missing; no value custody |
+| OPP-2026-219 | Cooling-off rights apply only to bounded transactions and deadlines. | Consumers in covered home/workplace/dormitory or seller temporary-location sales; paper forms. | T03-S13 | medium: dedicated FTC guidance directly states locations, exclusions, and midnight of the third business day; checklist adoption unknown | consumer-protection organizations | show source/jurisdiction/exclusions; not online/general retail; no coverage decision, advice, or submission |
+
+## Candidate-to-Source Coverage Matrix
+
+`Direct` means a source observes user pain or behavior tied to the candidate problem. Population statistics, price indexes, regulations, and guidance are never classified as direct pain; they appear as context, alternatives, feasibility, or constraints.
+
+| ID | Direct problem evidence | Contextual / population evidence | Current-alternative evidence | Technical feasibility | Legal / privacy / safety / platform evidence | Unsupported assumption or hypothesis |
+|---|---|---|---|---|---|---|
+| 200 | S03 complaints/difficult cancellation | — | S04 terms/records guidance | manual inventory assumed | S03 current rule status | inventory demand |
+| 201 | — | S03 complaint context | S04 calendar/records guidance | manual log assumed | jurisdiction/terms vary | longitudinal comparison value |
+| 202 | S03 cancellation complaints | — | S04 confirmation/records guidance | manual evidence pack | no execution/legal conclusion | pack improves outcomes |
+| 203 | — | — | S04 calendar recommendation | calendar feasible in principle | user-entered terms | adoption/frequency |
+| 204 | S02 difficulty paying bills, not calendar pain | S01 financial resilience | calendar stated, not sourced | manual calendar assumed | no payment/bank access | heterogeneous dates create sufficient pain |
+| 205 | — | S02 cost pressure; S10 dated prices | spreadsheet/calls stated, not sourced | arithmetic feasible in principle | no causal/advice claim | variance reconciliation pain |
+| 206 | — | S05/S06 comparison guidance | mental math stated, not sourced | unit arithmetic specified by S05/S06 | jurisdiction/store-label variation | separate calculator demand |
+| 207 | — | S05/S06 unit-pricing context; S10 dated prices | receipts/spreadsheet stated, not sourced | manual history assumed | local/time-specific only | personal history demand |
+| 208 | — | S06 package-size comparison context | old package/memory stated, not sourced | unit arithmetic specified | product matching accuracy | history changes decisions |
+| 209 | — | S05/S06 unit-comparison guidance | spreadsheet stated, not sourced | scenario arithmetic assumed | taxes/availability shown | basket comparer demand |
+| 210 | — | S07 modeled food-waste cost, not diary pain | log stated, not sourced | manual diary assumed | no inherited average/savings | diary completion/value |
+| 211 | — | S01 resilience; S08 energy context | mental estimate stated, not sourced | scenario math assumed | no safety/finance/provider advice | repair/replace pain |
+| 212 | — | S08 energy-use components, not user pain | label/calculator stated, not sourced | tariff/usage arithmetic assumed | timestamp/no saving guarantee | standalone calculator demand |
+| 213 | — | S08 energy; S10 prices | spreadsheet/notes stated, not sourced | annotation assumed | correlation only | annotation history demand |
+| 214 | — | S09 regulatory comparison-label context | tabs/spreadsheet stated, not sourced | user-supplied label comparison | no API/eligibility/speed guarantee | extra comparer demand |
+| 215 | — | S01/S02 household cost context | spreadsheet stated, not sourced | normalization assumed | no ranking/licensing/safety judgment | inconsistent-scope pain |
+| 216 | — | S11 record-retention guidance | paper/email folders stated, not sourced | manual vault assumed | sensitive-data minimization | separation/loss frequency |
+| 217 | — | S12 seller-policy/deadline context | S12 receipt/calendar guidance | manual tracker assumed | seller/jurisdiction controls | tracker adoption |
+| 218 | — | — | wallet/email stated, not sourced | record assumed | issuer/jurisdiction research missing | expiry/term pain |
+| 219 | — | — | paper forms/certified mail S13 | checklist arithmetic/manual record assumed | S13 narrow federal rule, locations, exclusions, three-business-day deadline, state variation, no advice | covered-user pain, checklist adoption and comprehension |
 
 ## Coverage Notes
 
 - Candidate families: recurring charges (200–203), bills (204–205), retail comparison (206–209), food/energy economics (210–213), plan/quote comparison (214–215), and consumer records/deadlines (216–219).
-- `OPP-2026-218` is intentionally low confidence pending issuer/jurisdiction evidence.
+- `OPP-2026-205`, `211`, `215`, and `218` are explicitly downgraded to `very low` pending direct workflow evidence; `219` now uses dedicated T03-S13.
 - No candidate touches funds, creditworthiness, investments, loans, insurance decisions, debt collection, tax filing, or regulated advice.

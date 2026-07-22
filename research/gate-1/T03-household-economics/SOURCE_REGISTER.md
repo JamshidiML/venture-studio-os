@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.1
+version: 0.1.2
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T03
@@ -26,6 +26,7 @@ Access date for every source: `2026-07-22`. Geography is United States unless st
 | T03-S10 | [Consumer Price Index — latest numbers](https://www.bls.gov/cpi/latest-numbers.htm), U.S. BLS | observed 2026-07-22; data through 2026-06 | U.S. urban consumers | Prices change over time; dated comparison baselines are necessary. | Aggregate index is not a household's bill or local price; latest values are volatile. | high |
 | T03-S11 | [Warranties](https://consumer.ftc.gov/articles/warranties), FTC Consumer Advice | 2023-07 | U.S. consumers | Keep warranty and receipt; written terms and state law matter. | General guidance; warranty rights and state law vary; not legal advice. | medium |
 | T03-S12 | [Returns, refunds, and other resolutions](https://consumer.ftc.gov/articles/solving-problems-business-returns-refunds-and-other-resolutions), FTC Consumer Advice | 2024-09 | U.S. consumers | Return deadlines and key records vary by seller; collect receipts, warranties, invoices, and contracts. | Seller policy and jurisdiction control; examples are not universal rights. | medium |
+| T03-S13 | [Buyer's Remorse: The FTC's Cooling-Off Rule May Help](https://consumer.ftc.gov/articles/buyers-remorse-ftcs-cooling-rule-may-help), FTC Consumer Advice | 2025-09 | U.S. consumers in covered sales | The rule covers certain sales at a home, workplace, dormitory, or seller's temporary location; cancellation runs through midnight of the third business day; the page states dollar, channel, purpose, emergency/repair, real-estate, insurance, securities, vehicle, and arts/crafts exclusions and describes required records. | Narrow federal rule; not most retail or online purchases; state law may add rights; the checklist cannot determine coverage or provide legal advice. | high |
 
 ## Currency and Conflict Notes
 
@@ -33,3 +34,4 @@ Access date for every source: `2026-07-22`. Geography is United States unless st
 - CPI is included only to justify dated baselines, not to forecast prices or explain any user's bill.
 - EPA's national food-waste estimate is not assigned to an individual and is not a claimed saving.
 - FCC and NIST materials require current provider/jurisdiction verification before any user-facing conclusion.
+- T03-S13, not the general returns page, is the dedicated authority for `OPP-2026-219`. T03-S12 remains relevant only to ordinary seller return/refund records.

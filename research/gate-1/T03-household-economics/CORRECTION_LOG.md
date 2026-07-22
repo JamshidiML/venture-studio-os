@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.1
+version: 0.1.2
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T03
@@ -21,8 +21,36 @@ gate: 1
 
 No Opportunity Score was changed or created to obtain the Artifact Quality Score.
 
-## Independent Governance Review
+## Internal Pre-review (not independent)
 
 | Review ID | Finding | Required correction | Verification | Status |
 |---|---|---|---|---|
-| T03-G01 | Governance review awarded 100/100 and verified closure of stale-law blocker T03-B01. | none | Re-read all nine artifacts; repository validator, three unit tests, whitespace check, exact-file count, and unique-ID count passed. | closed |
+| T03-G01 | A prior Codex self-review simulated 100/100 and checked creator blocker T03-B01. | Preserve as internal audit history; do not treat it as independent Governance. | Relabeled here, in score history, and in summary. | superseded by external review |
+
+## External Governance Review — Cycle 1
+
+Authoritative external score: `92/100`. Critical blockers: `EXT-GOV-01` and `T03-EXT-B02`.
+
+### External Point-Loss Register
+
+| Dimension | Maximum | External award | Lost | Finding |
+|---|---:|---:|---:|---|
+| Scope compliance and exclusions | 10 | 10 | 0 | no loss |
+| Source quality and freshness | 20 | 18 | 2 | candidate 219 lacked the dedicated current Cooling-Off Rule source |
+| Claim-level evidence and traceability | 15 | 14 | 1 | candidate 219 pointed to a general returns source |
+| Opportunity coverage and diversity | 15 | 13 | 2 | source coverage for weak workflows was not explicit |
+| Analytical rigor and uncertainty | 15 | 14 | 1 | broad context needed explicit downgrade treatment |
+| Legal, safety, privacy, and platform constraints | 10 | 9 | 1 | cooling-off locations, exclusions, and deadline lacked authoritative candidate linkage |
+| Reproducibility of search method | 10 | 10 | 0 | no loss |
+| Clarity and repository hygiene | 5 | 4 | 1 | same-process Codex review mislabeled independent |
+| **Total** | **100** | **92** | **8** | **external score is authoritative** |
+
+| Review ID | External finding / required correction | Applied correction | Verification | Status |
+|---|---|---|---|---|
+| EXT-GOV-01 | Prior Codex review was not independent. | Relabeled all surviving references as Internal Pre-review/Simulation while preserving history. | QUALITY_SCORE_HISTORY.md, CORRECTION_LOG.md, THREAD_SUMMARY.md | correction applied; external verification pending |
+| T03-EXT-B02 | Candidate 219 cited a general returns page instead of dedicated current Cooling-Off Rule authority. | Added T03-S13, the FTC September 2025 article, and made it the exclusive candidate-219 rule source. | SOURCE_REGISTER.md, SEARCH_LOG.md, MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md | correction applied; external verification pending |
+| T03-EXT-C01 | Record limited covered locations, exclusions, three-business-day deadline, and September 2025 publication. | T03-S13 and candidate 219 now state all four; matrix separates legal authority from checklist adoption. | SOURCE_REGISTER.md, OPPORTUNITY_INDEX.md | resolved internally |
+| T03-EXT-C02 | Strengthen, downgrade, or remove 205, 211, 215, and 218. | Downgraded all four to `very low` and named their absent direct evidence. | MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md, EVIDENCE_GAPS.md | resolved internally |
+| T03-EXT-C03 | Add candidate-to-source matrix and log exact eight-point loss. | Added 20/20 source coverage and the dimension-level register above. | OPPORTUNITY_INDEX.md, QUALITY_SCORE_HISTORY.md | resolved internally |
+
+External Governance re-review requested.

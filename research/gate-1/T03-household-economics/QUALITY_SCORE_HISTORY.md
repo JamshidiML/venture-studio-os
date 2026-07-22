@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.1
+version: 0.1.2
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T03
@@ -10,7 +10,7 @@ gate: 1
 
 # T03 Artifact Quality Score History
 
-Scoring contract: `templates/THREAD_QUALITY_SCORECARD.md` from `origin/main` as of 2026-07-22. Governance review is independent and pending.
+Scoring contract: `templates/THREAD_QUALITY_SCORECARD.md` from `origin/main` as of 2026-07-22. External Governance Cycle 1 is authoritative; re-review is pending.
 
 ## Cycle 1 — Complete First Draft
 
@@ -50,19 +50,35 @@ Critical blockers: `1` — T03-B01, stale legal premise: the 2024 expanded FTC r
 
 ## Correction-Loop History
 
-| Cycle | Artifact version | Creator score | Governance score | Critical blockers | Outcome | Commit |
+| Cycle | Artifact version | Creator score | External Governance score | Critical blockers | Outcome | Commit |
 |---:|---|---:|---:|---:|---|---|
 | 1 | 0.1.0 | 79 | pending | 1 | rework | uncommitted working draft |
 | 2 | 0.1.1 | 100 | pending | 0 | creator complete; Governance review required | uncommitted working tree |
-| 3 | 0.1.1 | 100 | 100 | 0 | independent Governance pass | uncommitted working tree |
+| 3 | 0.1.1 | 100 | not scored | 1 | Internal Pre-review simulation recorded 100; not independent | f5f3873 |
+| 4 | 0.1.1 | 100 | 92 | 2 (`EXT-GOV-01`, `T03-EXT-B02`) | authoritative external rework decision | f5f3873 |
+| 5 | 0.1.2 | 100 | re-review pending | 2 pending external verification | targeted correction complete | uncommitted correction |
+
+## Cycle 5 — Creator Reassessment After External Findings
+
+| Dimension | Maximum | Creator awarded | Correction evidence |
+|---|---:|---:|---|
+| Scope compliance and exclusions | 10 | 10 | Same authorized 20 IDs and non-regulated boundary; no product selection. |
+| Source quality and freshness | 20 | 20 | Dedicated September 2025 FTC source resolves the source defect without padding. |
+| Claim-level evidence and traceability | 15 | 15 | Candidate 219 links to T03-S13; 20-row matrix classifies every source role. |
+| Opportunity coverage and diversity | 15 | 15 | 205, 211, 215, and 218 are explicitly downgraded rather than artificially supported. |
+| Analytical rigor and uncertainty | 15 | 15 | Context, legal authority, direct workflow evidence, and assumptions are separated. |
+| Legal, safety, privacy, and platform constraints | 10 | 10 | Candidate 219 records limited locations, exclusions, three business days, jurisdiction, and no-advice boundary. |
+| Reproducibility of search method | 10 | 10 | Dedicated FTC query and source replacement are logged. |
+| Clarity and repository hygiene | 5 | 5 | Internal review relabeled; all nine artifacts use version 0.1.2 and remain in-review. |
+| **Total** | **100** | **100** | **Creator execution quality only; external re-review required.** |
 
 ## Current Verdict
 
-`CREATOR COMPLETE 100/100 — GOVERNANCE PASS 100/100 — NO CRITICAL BLOCKER`
+`CREATOR CORRECTION COMPLETE 100/100 — EXTERNAL GOVERNANCE 92/100 — BLOCKER CLOSURE AWAITING EXTERNAL VERIFICATION`
 
-## Independent Governance Review — 2026-07-22
+## Internal Pre-review Simulation — 2026-07-22 (not independent)
 
-| Dimension | Maximum | Governance awarded | Review evidence |
+| Dimension | Maximum | Internal simulation awarded | Review evidence |
 |---|---:|---:|---|
 | Scope compliance and exclusions | 10 | 10 | Twenty candidates stay inside low-regulatory household economics, remain unranked, and exclude regulated finance, custody, execution, and adjacent threads. |
 | Source quality and freshness | 20 | 20 | Twelve official sources include dates, access, scope, limitations, and confidence; the vacated 2024 FTC rule is corrected using current 2026 regulator evidence. |
@@ -72,9 +88,27 @@ Critical blockers: `1` — T03-B01, stale legal premise: the 2024 expanded FTC r
 | Legal, safety, privacy, and platform constraints | 10 | 10 | Current-law, jurisdiction, advice, custody, calculation, security, API, and manual-fallback controls are explicit. |
 | Reproducibility of search method | 10 | 10 | Exact queries include the legal-currency follow-up, selection rules, non-search decisions, and source outcomes. |
 | Clarity and repository hygiene | 5 | 5 | Nine required artifacts, valid links/front matter, 20 unique IDs, and all repository checks pass. |
-| **Total** | **100** | **100** | **Independent pass; stale-law blocker closure verified.** |
+| **Total** | **100** | **100** | **Historical Codex simulation only; not independent or authoritative.** |
 
-Governance critical blockers: `0`. Governance evidence ceiling: candidate-level demand, payment, retention, distribution, legal applicability, and realized savings remain bounded as disclosed; no artifact-quality exception is required.
+This same-process Codex review is preserved for audit history and was superseded by external Governance.
+
+## Authoritative External Governance Review — Cycle 1
+
+| Dimension | Maximum | External award | Lost |
+|---|---:|---:|---:|
+| Scope compliance and exclusions | 10 | 10 | 0 |
+| Source quality and freshness | 20 | 18 | 2 |
+| Claim-level evidence and traceability | 15 | 14 | 1 |
+| Opportunity coverage and diversity | 15 | 13 | 2 |
+| Analytical rigor and uncertainty | 15 | 14 | 1 |
+| Legal, safety, privacy, and platform constraints | 10 | 9 | 1 |
+| Reproducibility of search method | 10 | 10 | 0 |
+| Clarity and repository hygiene | 5 | 4 | 1 |
+| **Total** | **100** | **92** | **8** |
+
+Critical blockers: `EXT-GOV-01` and `T03-EXT-B02`. T03-S13 and the source matrix apply the requested corrections; no new independent Governance score or blocker closure is claimed.
+
+External Governance re-review requested.
 
 ## Validation Evidence
 
@@ -84,3 +118,5 @@ Governance critical blockers: `0`. Governance evidence ceiling: candidate-level 
 | `python3 -m unittest discover -s tests -p 'test_*.py'` | passed: 3 tests |
 | `git diff --check` | passed: no whitespace errors |
 | `find research/gate-1 -type f -name '*.md'` | exactly 9 thread Markdown artifacts |
+| lifecycle / ID / coverage audit | passed: 9/9 `status: in-review`, 9/9 version `0.1.2`, 20 unique assigned IDs, 0 range violations, 20/20 coverage rows |
+| registered source URL request check | 13/13 hosts resolved and returned HTTP responses: seven 200; six bot-protected 403 |

@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.1
+version: 0.1.2
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T03
@@ -33,6 +33,8 @@ gate: 1
 
 The search prioritized current U.S. regulator, official survey, standards, energy, telecommunications, and environmental sources. The first complete draft defined 20 candidate workflows and broad evidence. The correction pass added source dates/access dates/geographies/limitations, current negative-option rule status, candidate-level claim types and constraints, jurisdiction flags, manual fallback, exact query logs, evidence ceilings, and a boundary between information organization and regulated advice.
 
+External Governance Correction Cycle 2 separately resolved the Cooling-Off Rule blocker with the FTC's dedicated September 2025 article. It also audited every candidate's source classification. Candidates `205`, `211`, `215`, and `218` remain only as `very low` hypotheses because broad cost, energy, or legal context does not directly measure their named workflow pain.
+
 Qualification required: a recurring household-economic workflow authorized by Issue #6; at least one traceable official source; no handling or movement of funds; no credit/insurance/tax/investment decision; no assumed bank or inbox access; user-verifiable inputs; an explicit jurisdiction or source-date warning where relevant; and no guaranteed savings claim.
 
 ## Evidence-Backed Problem Landscape
@@ -59,21 +61,21 @@ The detailed index is in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md).
 | OPP-2026-202 | Cancellation evidence pack | inference from T03-S03/S04 | medium | records only; no legal conclusion |
 | OPP-2026-203 | Free-trial deadline calendar | inference from T03-S04 | medium | user-entered terms; no guarantee |
 | OPP-2026-204 | Household bill calendar | inference from T03-S01/S02 | medium | no payment execution or bank access |
-| OPP-2026-205 | Manual bill-variance explainer | inference from T03-S02/T03-S10 | low | arithmetic only; no advice or cause claim |
+| OPP-2026-205 | Manual bill-variance explainer | unsupported workflow hypothesis; T03-S02/S10 are context only | very low | arithmetic only; no advice or cause claim |
 | OPP-2026-206 | Grocery unit-price calculator | inference from T03-S05/S06 | high | consistent units and user verification |
 | OPP-2026-207 | Personal price book | inference from T03-S05/S06 | medium | local/time-specific observations only |
 | OPP-2026-208 | Package-size history | inference from T03-S06 | medium | barcode/product matching accuracy |
 | OPP-2026-209 | Grocery basket scenario comparer | inference from T03-S05/S06 | medium | no price guarantee; taxes/availability vary |
 | OPP-2026-210 | Food-waste cost diary | inference from T03-S07 | medium | personal measurements, no inherited national savings |
-| OPP-2026-211 | Repair-versus-replace worksheet | inference from T03-S01/S08 | low | scenario tool, not financial/safety advice |
+| OPP-2026-211 | Repair-versus-replace worksheet | unsupported workflow hypothesis; T03-S01/S08 are context only | very low | scenario tool, not financial/safety advice |
 | OPP-2026-212 | Appliance operating-cost calculator | inference from T03-S08 | medium | user tariff and usage inputs; dated assumptions |
 | OPP-2026-213 | Energy-bill usage annotation | inference from T03-S08/T03-S10 | medium | no causal or tariff-switch advice |
 | OPP-2026-214 | Broadband-label plan comparer | inference from T03-S09 | high | labels/current offers user-verified |
-| OPP-2026-215 | Home-service quote normalizer | inference from T03-S01/S02 | low | does not recommend provider or assess safety |
+| OPP-2026-215 | Home-service quote normalizer | unsupported workflow hypothesis; T03-S01/S02 are context only | very low | does not recommend provider or assess safety |
 | OPP-2026-216 | Receipt and warranty record vault | inference from T03-S11 | medium | sensitive data minimization and retention |
 | OPP-2026-217 | Return/refund deadline tracker | inference from T03-S12 | medium | retailer/jurisdiction terms control |
-| OPP-2026-218 | Gift-card/store-credit expiry record | inference from T03-S02 | low | jurisdiction/issuer rules not researched |
-| OPP-2026-219 | Purchase cooling-off checklist | inference from T03-S12 | medium | narrow FTC rule coverage; legal disclaimer |
+| OPP-2026-218 | Gift-card/store-credit expiry record | unsupported workflow hypothesis; no direct source | very low | jurisdiction/issuer rules not researched |
+| OPP-2026-219 | Purchase cooling-off checklist | direct rule/deadline evidence T03-S13; utility remains inference | medium | narrow FTC rule coverage; legal disclaimer |
 
 ## Legal, Privacy, Security, and Trust Controls
 
@@ -94,4 +96,4 @@ Overall confidence is `high` that household cost organization, recurring-charge,
 
 ## Recommended Next Action
 
-Request independent Governance review of the nine artifacts, including current-law treatment, jurisdiction labels, manual fallback, security, calculation transparency, and the absence of regulated advice. Do not select a winner or begin Gate 2.
+External Governance re-review requested, including verification of T03-S13, source classification, explicit downgrades, current-law treatment, jurisdiction labels, manual fallback, security, and the absence of regulated advice. Do not select a winner or begin Gate 2.

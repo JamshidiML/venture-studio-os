@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.1
+version: 0.1.2
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T03
@@ -31,6 +31,7 @@ gate: 1
 | 10 | `site:bls.gov/cpi latest annual 2025 consumer prices food energy household official` | T03-S10 | included only for dated-baseline requirement |
 | 11 | `site:consumer.ftc.gov warranties receipts returns cooling off rule 2025 consumer` | T03-S11/T03-S12 | included with policy/jurisdiction limitations |
 | 12 | `site:energy.gov/energysaver estimating appliance energy use operating cost official` | no additional source | not used: current result did not provide a sufficiently clear dated consumer page; EIA retained |
+| 13 | `site:consumer.ftc.gov cooling-off rule September 2025 three business days temporary location exclusions` | T03-S13 | included: dedicated current FTC article; replaces T03-S12 as support for candidate 219 |
 
 ## Searches Not Performed
 
