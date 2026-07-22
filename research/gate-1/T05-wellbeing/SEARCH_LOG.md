@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.1
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -24,6 +24,11 @@ Search date and cutoff: 2026-07-22. Geography was recorded per source rather tha
 | 11 | CDC adult stress anxiety prevalence current | Test demand context | W12 | Archived experimental series retained only for limitations; no current prevalence claim used |
 | 12 | wellness app market size downloads revenue | Test commercial evidence | none | Opaque forecasts and estimated downloads rejected |
 | 13 | sleep supplement effectiveness app reviews | Test alternatives | none | Medical/supplement advice and anecdotal reviews excluded |
+| 14 | 2024 daily water intake habitualness barriers UK adults | Add direct hydration behavior without inventing an intake target | W13 | Small study bounded to behavior; no health or app-effect claim |
+| 15 | Ofcom Online Nation 2024 adult offline time do-not-disturb | Add direct digital-boundary behavior and current alternatives | W14 | Self-reported strategies were not treated as distress or product demand |
+| 16 | APA Stress in America 2025 adults stress planning isolation | Add current direct lived-experience context | W15 | Broad survey cannot validate a journal, timer or clinical outcome |
+| 17 | ONC HINTS 2024 patient portal multiple records organizing app | Verify current health-information alternatives | W16 | Portal access is alternative/context evidence, not direct symptom-log pain |
+| 18 | 2024 outpatient patient-entered history before consultation pilot | Find adjacent observed symptom/history workflow | W17 | Uncontrolled clinical workflow retained at low confidence; no triage interpretation |
 
 ## Reproducibility constraints
 

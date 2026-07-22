@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.1
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -13,6 +13,7 @@ last_reviewed: 2026-07-22
 | 2 | Creator | 10/10 | 20/20 | 15/15 | 15/15 | 15/15 | 10/10 | 10/10 | 5/5 | 100/100 | 0 | creator-complete; Governance pending |
 | 3 | Creator correction | 10/10 | 20/20 | 15/15 | 15/15 | 15/15 | 10/10 | 10/10 | 5/5 | 100/100 | 0 | GOV-T05-B001 correction applied; re-review requested |
 | 4 | Creator lifecycle alignment | 10/10 | 20/20 | 15/15 | 15/15 | 15/15 | 10/10 | 10/10 | 5/5 | 100/100 | 0 | all nine artifacts set to in-review v0.2.1; lifecycle re-verification requested |
+| 5 | Creator external-correction cycle | 10/10 | 20/20 | 15/15 | 15/15 | 15/15 | 10/10 | 10/10 | 5/5 | 100/100 | 0 creator-open; EXT-GOV-01 pending external disposition | external findings remediated; re-review requested |
 
 ## Cycle 1 point-loss register
 
@@ -37,9 +38,11 @@ last_reviewed: 2026-07-22
 
 The creator awards 100/100 for Gate 1 artifact execution because scope, source provenance, traceability, coverage, uncertainty, safety, search reproducibility and repository hygiene are complete. The score does not represent health benefit or opportunity attractiveness. Governance score is **pending** and all artifacts remain draft.
 
-## Independent Governance Review — G1
+## Internal Pre-review — Governance Simulation G1
 
-Review date: `2026-07-22`. Reviewer role: `Governance Agent`. Review scope: all nine T05 artifacts at version `0.2.0`.
+Audit classification: G1–G3 were Codex-authored internal simulations. Historical scores remain visible but are not independent Governance scores.
+
+Review date: `2026-07-22`. Reviewer role: `Internal Governance Simulation`. Review scope: all nine T05 artifacts at version `0.2.0`.
 
 | Dimension | Maximum | Governance awarded | Evidence and rationale |
 |---|---:|---:|---|
@@ -70,11 +73,11 @@ Governance verdict: `REWORK REQUIRED — 96/100 — GOV-T05-B001 OPEN`.
 
 ## Creator Correction Cycle 3
 
-The incomplete hypothesis treatment was corrected without inventing measures, health or engagement thresholds, evidence, demand, or Opportunity Scores. Live research statements now treat repeat-use mechanisms as assumptions with a named owner (Strategy Agent), explicit impact if wrong, and a planned review/test limited to a separately authorized Gate 5 issue. Candidate claim types and evidence-gap wording were aligned. Historical Governance text above remains unchanged as the audit trail; independent Governance re-review is requested.
+The incomplete hypothesis treatment was corrected without inventing measures, health or engagement thresholds, evidence, demand, or Opportunity Scores. Live research statements became assumptions with a named owner (Strategy Agent), explicit impact if wrong, and a planned review/test limited to a separately authorized Gate 5 issue. Candidate claim types and evidence-gap wording were aligned. Historical Internal Pre-review text remains as the audit trail; an internal simulation re-review was requested.
 
-## Independent Governance Re-review — G2
+## Internal Pre-review — Governance Simulation G2
 
-Review date: `2026-07-22`. Reviewer role: `Governance Agent`. Re-read scope: all nine T05 artifacts after Creator Cycle 3.
+Review date: `2026-07-22`. Reviewer role: `Internal Governance Simulation`. Re-read scope: all nine T05 artifacts after Creator Cycle 3.
 
 | Dimension | Maximum | Governance awarded | Re-review evidence |
 |---|---:|---:|---|
@@ -86,7 +89,7 @@ Review date: `2026-07-22`. Reviewer role: `Governance Agent`. Re-read scope: all
 | Legal, safety, privacy, and platform constraints | 10 | 10 | Clinical/crisis, sensitive-data, nutrition, hydration, permission, platform, and retention-ethics controls remain intact. |
 | Reproducibility of search method | 10 | 10 | Search log and source mappings remain complete. |
 | Clarity and repository hygiene | 5 | 5 | Repository validator, 3 unit tests, `git diff --check`, exact nine-file check, and exact 20-candidate check passed. |
-| **Total** | **100** | **100** | **Independent Governance pass.** |
+| **Total** | **100** | **100** | **Internal simulation pass; not independent.** |
 
 Blocker disposition: `GOV-T05-B001 RESOLVED`. Open Governance critical blockers: `0`.
 
@@ -94,15 +97,54 @@ Governance verdict: `COMPLETE 100/100 — NO CRITICAL BLOCKER`.
 
 ## Creator Lifecycle Alignment — Cycle 4
 
-After the Governance content pass, all nine artifacts were moved from `draft` to `in-review` and patch-bumped consistently from `0.2.0` to `0.2.1`, as required by `docs/ARTIFACT_LIFECYCLE.md` for a completed review candidate. This metadata-only correction changes no research claim, source, candidate, confidence, evidence ceiling, Opportunity Score, clinical boundary, or gate authority. Independent lifecycle re-verification is requested.
+After the internal simulation content pass, all nine artifacts were moved from `draft` to `in-review` and patch-bumped consistently from `0.2.0` to `0.2.1`, as required by `docs/ARTIFACT_LIFECYCLE.md` for a completed review candidate. This metadata-only correction changed no research claim, source, candidate, confidence, evidence ceiling, Opportunity Score, clinical boundary, or gate authority. Internal lifecycle re-verification was requested.
 
-## Independent Governance Lifecycle Re-verification — G3
+## Internal Pre-review — Governance Simulation G3
 
-Review date: `2026-07-22`. Reviewer role: `Governance Agent`.
+Review date: `2026-07-22`. Reviewer role: `Internal Governance Simulation`.
 
 - Verified all nine T05 Markdown artifacts declare `status: in-review`, `version: 0.2.1`, `owner_role: Strategy Agent`, and `last_reviewed: 2026-07-22`.
 - Verified Creator Cycle 4 and correction `3→4` preserve the earlier content score and blocker history.
 - Rechecked the research invariants: 12 retained sources, exactly 20 candidates (`OPP-2026-400` through `OPP-2026-419`), unchanged evidence ceiling and clinical boundary, no Opportunity Score, no ranking, and no later-gate authority.
 - Lifecycle disposition: the `draft → in-review` transition is appropriate for the completed review candidate; patch version `0.2.1` consistently records the metadata-only correction.
 
-Governance score remains `100/100`. Open critical blockers: `0`. Governance lifecycle verdict: `VERIFIED — IN-REVIEW v0.2.1 — NO RESEARCH-MEANING CHANGE`.
+Internal simulation score remained `100/100`. Internal simulation critical blockers: `0`. Historical lifecycle verdict: `VERIFIED — IN-REVIEW v0.2.1 — NO RESEARCH-MEANING CHANGE`.
+
+## Authoritative External Governance Review — Cycle 1
+
+Review date: `2026-07-22`. External Artifact Quality Score: **89/100**. This is the latest and only independent Governance score.
+
+| Dimension | Maximum | External awarded | Points lost |
+|---|---:|---:|---:|
+| Scope compliance and exclusions | 10 | 10 | 0 |
+| Source quality and freshness | 20 | 17 | 3 |
+| Claim-level evidence and traceability | 15 | 14 | 1 |
+| Opportunity coverage and diversity | 15 | 12 | 3 |
+| Analytical rigor and uncertainty | 15 | 13 | 2 |
+| Legal, safety, privacy and platform constraints | 10 | 9 | 1 |
+| Reproducibility | 10 | 10 | 0 |
+| Clarity and repository hygiene | 5 | 4 | 1 |
+| **Total** | **100** | **89** | **11** |
+
+### External point-loss register
+
+| Dimension | Lost | External reason | Cycle 2 correction | Disposition |
+|---|---:|---|---|---|
+| Source quality and freshness | 3 | Direct problem evidence was weak across stress, hydration, digital breaks, mood/energy and symptom observation | Added W13–W17 with direct/adjacent/alternative classification; kept absent evidence explicit | pending external re-review |
+| Claim traceability | 1 | Source types were not separated candidate by candidate | Added six-class 20-row matrix | pending external re-review |
+| Coverage and diversity | 3 | Sleep and movement clusters had overlapping concepts | Added boundary and consolidation/removal triggers | pending external re-review |
+| Analytical rigor | 2 | Broad context/policy risked standing in for workflow pain | Downgraded 418/419 and separated direct, context, alternative, feasibility and constraint evidence | pending external re-review |
+| Safety/privacy/platform | 1 | Candidate 419 lacked a jurisdiction/data-classification screen | Added matrix and absolute no-interpretation/no-triage boundary | pending external re-review |
+| Clarity/hygiene | 1 | Internal review mislabeled independent; external history absent | Relabeled internal material and added authoritative external audit trail | pending external re-review |
+
+### External critical blocker
+
+| ID | Finding | Correction | Status |
+|---|---|---|---|
+| EXT-GOV-01 | Codex-authored review was not independent Governance | Relabeled historical review material Internal Pre-review / Internal Governance Simulation everywhere summarized | remediation applied; external re-review pending |
+
+## Creator External Correction Cycle 5
+
+The Creator score is **100/100 for execution quality**: every external finding and lost point is logged, all 20 candidates appear in the complete evidence-class matrix, source limitations remain honest, candidate 419 is non-interpretive, and all nine artifacts are consistently `in-review` v0.3.0. This does not assert health benefit, product demand or a new Governance score. The authoritative external score remains **89/100** until external re-review.
+
+External Governance re-review requested.

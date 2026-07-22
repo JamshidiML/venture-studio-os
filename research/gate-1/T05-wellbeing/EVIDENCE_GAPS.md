@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.1
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -19,7 +19,9 @@ last_reviewed: 2026-07-22
 | Nutrition guidance is U.S.-specific | 410–413 | Localization and cultural fit unknown | No global claim | Local public-health guidance and cultural review | Additional research if geography chosen |
 | Platform policies can change | Mobile candidates | Distribution feasibility may shift | Dated policy snapshots retained | Recheck at implementation decision | Engineering/Governance later |
 | Sensitive-journal deletion/export behavior untested | 414, 418, 419 | Privacy promise may fail in practice | Local-first, user-controlled requirement | Threat model and deletion verification | Gate 6/7 only if authorized |
+| Direct mood/energy journaling pain absent | 418 | Broad stress/mood context could be mistaken for workflow demand | Candidate downgraded to low-confidence unsupported assumption | Direct diary/interview evidence about current recording behavior and failure modes | Additional Gate 1 only if Founder requests |
+| Direct consumer symptom-log pain absent | 419 | Adjacent clinical workflow and portal use do not establish consumer demand | Candidate remains neutral, low confidence and non-interpretive | Direct patient research on factual pre-visit recording, alternatives and non-use | Additional Gate 1 or later research if authorized |
 
 ## Evidence ceiling
 
-The package is complete for Gate 1 discovery, but it cannot support medical, behavioral-outcome, WTP, retention or launch-readiness conclusions. Candidate attractiveness remains low/medium confidence. Governance review is pending; no Founder exception is requested at this stage.
+The package is complete for Gate 1 discovery, but it cannot support medical, behavioral-outcome, WTP, retention or launch-readiness conclusions. Direct evidence remains absent for multiple sleep/movement sub-workflows, mood-energy journaling and consumer symptom-log demand. Candidate attractiveness remains low/medium confidence. External Governance re-review is pending.
