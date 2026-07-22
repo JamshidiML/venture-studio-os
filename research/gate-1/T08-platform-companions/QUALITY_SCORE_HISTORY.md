@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -9,8 +9,8 @@ last_reviewed: 2026-07-22
 
 Thread: T08
 Issue: #11
-Artifact version: 0.3.0
-Authoritative external reviewer: ChatGPT Governance review on PR #19, 2026-07-22
+Artifact version: 0.4.0
+Authoritative external reviewer: ChatGPT Governance Cycle 2 re-review on PR #19, 2026-07-22
 
 Historical Codex review cycles below are Internal Governance Simulations, not independent Governance. Their scores and findings are preserved for audit history but are superseded by the external score.
 
@@ -28,6 +28,8 @@ Historical Codex review cycles below are Internal Governance Simulations, not in
 | 8 — Internal Governance Simulation lifecycle check | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | — | 100 internal | 0 | in-review v0.2.1 internally verified |
 | 9 — External Governance Cycle 1 | 10 | 15 | 12 | 12 | 11 | 10 | 10 | 4 | — | **84 external** | **2: EXT-GOV-01, T08-EXT-B02** | authoritative rework required |
 | 10 — External Correction Cycle 2 creator rescore | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | **100** | pending external re-review | **2 external blockers remain open** | creator execution complete; external re-review requested |
+| 11 — External Governance Cycle 2 re-review | 10 | 19 | 15 | 14 | 14 | 10 | 10 | 5 | — | **97 external** | **0; EXT-GOV-01 and T08-EXT-B02 resolved** | rework required for EXT2-T08-01 |
+| 12 — External Correction Cycle 3 creator rescore | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | **100** | **97 external remains authoritative** | 0 critical blockers | qualified/watchlist split complete; re-review requested |
 
 ## Cycle 1 point-loss register
 
@@ -123,3 +125,15 @@ External Governance assigned **84/100** with dimension scores **10, 15, 12, 12, 
 The creator awards 100/100 for correction execution quality, not opportunity attractiveness. Nine verifiable independent/direct-user workflow sources were added with publication/access dates and freshness limits; no source was removed or replaced. Nine API-only concepts were withdrawn (20 → 11), and every retained candidate now has bounded problem evidence, context, current alternative, technical feasibility, legal/platform constraints, segment/friction, and unsupported assumptions separately recorded. All external findings and sixteen lost points are logged, historical internal review is correctly labeled, and lifecycle/version metadata is consistent.
 
 EXT-GOV-01 and T08-EXT-B02 remain open because only the external reviewer can close them and assign a new Governance score. **External Governance re-review requested.**
+
+## External Governance Cycle 2 re-review — authoritative
+
+External Governance assigned **97/100** with dimension scores **10, 19, 15, 14, 14, 10, 10, 5**. It externally **resolved EXT-GOV-01 and T08-EXT-B02**, verified the two-axis model, the nine API-only withdrawals, the GitHub/Dropbox/Shopify observable-friction evidence, and CI on the exact Cycle-2 SHA. It opened completion finding **EXT2-T08-01**: candidates 703, 704, 706, and 708 converted broad permissions, notification, or interface complaints into exact Drive, Slack, and Teams jobs without direct evidence for those jobs; Shopify evidence remained direct but single-case.
+
+## External Correction Cycle 3 creator rationale
+
+Candidates 712, 713, 715, 716, 717, 718, and 719 remain Qualified Gate 1 Candidates. Candidates 703, 704, 706, and 708 moved to the Hypothesis Watchlist with their complete Issue #11 contracts, problem/context evidence, API feasibility, permission/policy/distribution/shutdown risks, fallbacks, confidence, missing evidence, reconsideration conditions, and T08 ownership preserved. The coverage matrix retains all 11 auditable candidates and states each Cycle-3 status. Shopify evidence is explicitly treated as sufficient only for investigability, not prevalence, demand, or WTP. The nine earlier withdrawals remain separately preserved and no ID was reused.
+
+The creator awards **100/100** for Cycle-3 execution and artifact quality only. The latest external Governance score remains **97/100**; this record does not claim an external score of 100, pass Gate 1, rank candidates, or authorize Gate 2 or an integration build. EXT2-T08-01 is creator-resolved by the explicit qualified/watchlist split and Shopify limitation, pending external confirmation.
+
+External Governance Cycle 3 re-review requested

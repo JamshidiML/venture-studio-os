@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -92,4 +92,18 @@ External review submitted on PR #19 on 2026-07-22 assigned **84/100**. This scor
 | C-08-019 | Prior Codex “Independent Governance” labels were invalid. | Relabeled prior sections as Internal Governance Simulation/Internal Pre-review without deleting scores or findings. | CORRECTION_LOG.md, QUALITY_SCORE_HISTORY.md, THREAD_SUMMARY.md | Audit history remains present and non-authoritative. | resolved |
 | C-08-020 | Lifecycle/version/external status needed consistent correction. | Bumped all nine artifacts to version 0.3.0, retained `status: in-review`, and added external blockers. | All nine artifacts | 9/9 lifecycle headers match. | resolved |
 
-External Governance re-review requested.
+## External Governance Cycle 2 re-review and Correction Cycle 3
+
+External Governance re-reviewed PR #19 on 2026-07-22 and assigned **97/100** with dimensions **10, 19, 15, 14, 14, 10, 10, 5**. It externally resolved **EXT-GOV-01** and **T08-EXT-B02**, verifying the Cycle-2 problem-evidence model, withdrawals, two-axis matrix, and CI. The remaining completion finding was **EXT2-T08-01**: candidates 703, 704, 706, and 708 still inferred exact Drive/Slack/Teams jobs from broad friction, and Shopify evidence remained single-case.
+
+| Correction ID | Cycle-2 external finding | Targeted Cycle-3 correction | Files changed | Verification | Status |
+|---|---|---|---|---|---|
+| C-08-021 | EXT-GOV-01 and T08-EXT-B02 required external disposition. | Recorded the external 97/100 re-review and explicit closure of both blockers. | QUALITY_SCORE_HISTORY.md, CORRECTION_LOG.md, EVIDENCE_GAPS.md, THREAD_SUMMARY.md | No internal score is presented as external; 97/100 remains authoritative. | externally resolved |
+| C-08-022 | EXT2-T08-01 found four assumption-led candidates in the retained set. | Kept 712, 713, 715, 716, 717, 718, and 719 qualified; moved 703, 704, 706, and 708 to the Hypothesis Watchlist. | MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md, EXCLUSIONS.md, EVIDENCE_GAPS.md | Qualified 7 + watchlist 4 = prior auditable universe 11; prior withdrawals remain separate. | creator-resolved; external Cycle-3 confirmation pending |
+| C-08-023 | Shopify evidence was direct but single-case. | Stated in the report, matrix, summary, and gaps that W08-34–W08-36 establish investigability only, not prevalence, demand, or WTP. | MARKET_DISCOVERY_REPORT.md, EVIDENCE_GAPS.md, THREAD_SUMMARY.md | All three Shopify matrix rows carry the explicit single-case limit. | resolved for creator cycle |
+| C-08-024 | Watchlist movement must retain the two-axis platform contract. | Preserved each watchlist ID, concept, exact evidence searched, API feasibility, current alternative, permissions/policy/distribution/shutdown risk, fallback, confidence, missing evidence, reconsideration conditions, and T08 ownership. | EXCLUSIONS.md | Four complete Issue #11 contract rows and four qualification-gap rows are present. | resolved for creator cycle |
+| C-08-025 | Coverage and lifecycle must match the final split. | Added Cycle-3 status to all 11 matrix rows; updated all counts; advanced all nine artifacts to in-review version 0.4.0. | All nine artifacts | Matrix, lifecycle, assigned-range, uniqueness, validator, tests, and diff checks prepared for final verification. | resolved for creator cycle |
+
+No source was added, removed, or replaced in Cycle 3. No Opportunity Score was created or altered.
+
+External Governance Cycle 3 re-review requested

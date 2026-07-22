@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -37,3 +37,27 @@ These rows are preserved for audit history and are no longer counted as retained
 | OPP-2026-710 | Outlook Calendar change brief | Subscription feasibility did not establish owner-brief pain. |
 | OPP-2026-711 | OneDrive/SharePoint approval-context review | Delta/API feasibility and broad Teams-review context did not establish evidence-folder approval pain. |
 | OPP-2026-714 | GitHub release readiness packet | GitHub App feasibility did not establish inconsistent release-evidence packaging. |
+
+## Hypothesis Watchlist
+
+These four records were part of the 11-candidate Cycle-2 auditable universe but are not Qualified Gate 1 Candidates in Cycle 3. They remain owned by T08 and retain their full Issue #11 platform-companion contracts. They are not withdrawn, ranked, selected, or authorized for integration work.
+
+### Preserved Issue #11 candidate contracts
+
+| ID | Original host, concept, user workflow, and claim type | Authorized integration path | Evidence searched and current alternative | Dependency, permissions, policy, distribution, and shutdown risk | Fallback strategy | Current confidence |
+|---|---|---|---|---|---|---|
+| OPP-2026-703 | Google Drive; owner reviews selected-folder permission/change drift; problem type: assumption | Drive API changes plus minimum metadata/permission scope for selected resources | W08-28 documents broad admin permissions/settings friction; native Admin/Drive controls; P08-01–P08-04 and P08-07 establish feasibility only | Shared-drive/user logs, state reconstruction, broad scopes, OAuth verification/security assessment, Marketplace/domain deployment, API/policy change or loss of access | User selects/exports folder report; no full-drive crawl | medium-low |
+| OPP-2026-704 | Slack; user captures an important message as a decision with owner and rationale; problem type: assumption | Message shortcut, modal, scoped write to app store; event context only | W08-29 documents important messages buried broadly; native search/saved messages; P08-08–P08-12 establish feasibility only | OAuth scopes, 3-second acknowledgement, message privacy, Marketplace review, method-limit/change risk, event disablement or app removal | Signed web form with user-chosen permalink/text | medium |
+| OPP-2026-706 | Slack; opted-in handoff messages receive owner/age reminders to reduce loss in message flow; problem type: assumption | Events API for explicit channels and message posting with minimal scopes | W08-29 documents overload/missed messages broadly; native notifications/search; P08-08, P08-09, P08-11 establish feasibility only | History/replies limits, channel visibility, notification spam, Marketplace/customer approval, event disablement, host policy or API shutdown | Manual queue or scheduled digest from user-submitted handoffs | medium-low |
+| OPP-2026-708 | Teams; user captures a channel decision without indexing all chat history; problem type: assumption | User-invoked bot/action; resource-specific consent or narrow Graph permission | W08-30 documents channel/notification overload broadly; native channels/search; P08-13–P08-15 establish feasibility only | Broad chat read is high-friction; tenant consent, throttling, Teams Store/catalog distribution, permission/policy change or host shutdown | User submits message link/text to external register | low-medium |
+
+### Qualification gap and reconsideration record
+
+| ID | Why not currently qualified | Missing evidence | Risk and safety constraints retained | Conditions required for reconsideration | Original Thread ownership |
+|---|---|---|---|---|---|
+| OPP-2026-703 | Broad permissions/settings complaints do not directly establish selected-folder drift review as the user job. | Exact-workflow observation, frequency/severity, current workaround friction, buyer authority, and WTP. | Least privilege, selected resources only, no full-drive crawl, verification/security-assessment and shutdown fallback. | Independent or direct-user evidence must observe the bounded Drive drift workflow; API feasibility alone cannot qualify it. | T08 — platform companions |
+| OPP-2026-704 | Buried-message evidence does not directly establish decision capture with owner/rationale as a repeated job. | Decision-specific incidence, user-invoked capture behavior, adoption, privacy acceptance, and WTP. | User invocation, minimum message context, scope review, acknowledgement and Marketplace limits, no history scraping. | Exact Slack decision-capture workflow evidence must be added while preserving privacy and non-scraping boundaries. | T08 — platform companions |
+| OPP-2026-706 | Notification overload does not directly establish aged handoff reminders as the bounded problem. | Observed handoff loss/aging, recurrence, reminder benefit/harm, current alternative friction, and WTP. | Opted-in channels only, anti-spam limits, visibility controls, no broad history ingestion, shutdown fallback. | Exact Slack handoff workflow evidence must demonstrate investigability without relying on API availability or notification volume alone. | T08 — platform companions |
+| OPP-2026-708 | Teams overload complaints do not directly establish a channel-decision registry/capture job. | Observed decision-retrieval failure, frequency, admin acceptance, current workaround friction, and WTP. | User-invoked capture, no tenant-wide indexing, least privilege, admin consent, throttling and shutdown fallback. | Exact Teams decision-capture workflow evidence must be added; Graph feasibility and broad overload cannot qualify it. | T08 — platform companions |
+
+External Governance Cycle 3 re-review requested

@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -9,11 +9,11 @@ last_reviewed: 2026-07-22
 
 ## Executive summary
 
-This report documents 11 unranked companion-tool candidates across Google Workspace, Slack, Microsoft 365/Teams, GitHub, Dropbox, and Shopify. External Governance Correction Cycle 2 removed nine concepts whose only support was API or policy documentation. Every retained candidate has an official, documented integration route, a bounded problem-evidence record, and an explicit fallback that does not rely on scraping, credentials, private APIs, spam, surveillance, or circumvention.
+This report documents seven unranked Qualified Gate 1 Candidates across GitHub, Dropbox, and Shopify. External Governance Correction Cycle 2 removed nine concepts whose only support was API or policy documentation; Cycle 3 moved four assumption-led Google Drive, Slack, and Teams concepts to the [Hypothesis Watchlist](EXCLUSIONS.md#hypothesis-watchlist). Every qualified candidate has an official, documented integration route, a bounded problem-evidence record, and an explicit fallback that does not rely on scraping, credentials, private APIs, spam, surveillance, or circumvention.
 
 Feasibility is conditional. Google may require OAuth verification and, for server-side restricted-scope data, an annual independent security assessment. Slack ties events to OAuth scopes, applies method-specific limits, and manually reviews Marketplace submissions. Microsoft Graph requires least-privilege consent and can throttle requests; tenant administrators may control installation. GitHub Apps expose granular permissions and Marketplace rules. Dropbox uses OAuth scopes, does not publish exact general rate limits, and recommends least access. Shopify reviews apps, rate-limits APIs, and separately reviews protected customer data.
 
-Official API availability proves an authorized path, not customer demand, popularity, or commercial attractiveness. No platform usage, install, revenue, download, or WTP figures are claimed. No winner is selected and Gate 2 has not begun.
+Official API availability proves an authorized path, not customer demand, popularity, or commercial attractiveness. The Shopify evidence is single-case or community-based and establishes only investigability—not prevalence, demand, or WTP. No platform usage, install, revenue, download, or WTP figures are claimed. No winner is selected and Gate 2 has not begun.
 
 ## Objective and scope
 
@@ -22,12 +22,12 @@ Official API availability proves an authorized path, not customer demand, popula
 - Scope: companion tools that extend messaging, email, calendar, cloud-storage, commerce, and collaboration workflows without replacing the host.
 - Geography: platform documentation is generally global; tenant, plan, app type, account type, national cloud, and local-law limitations are recorded.
 - Source cutoff and access date: 2026-07-22.
-- Candidate count: 11 retained candidates within OPP-2026-700 through OPP-2026-719; nine withdrawn concepts are preserved in [EXCLUSIONS.md](EXCLUSIONS.md).
+- Candidate count: seven qualified plus four watchlist candidates within the 11-candidate Cycle-2 auditable universe; nine earlier withdrawn concepts are preserved in [EXCLUSIONS.md](EXCLUSIONS.md).
 - Exclusions: see [EXCLUSIONS.md](EXCLUSIONS.md).
 
 ## Methodology
 
-Official developer documentation and platform policies are used only for API, permission, review, distribution, rate-limit, and shutdown-risk claims. Independent research, moderated user reviews, and platform-hosted first-person workflow reports are separately used for problem evidence. Dynamic pages record access date; missing page dates are marked “date unavailable.” Each retained candidate qualified only when it had:
+Official developer documentation and platform policies are used only for API, permission, review, distribution, rate-limit, and shutdown-risk claims. Independent research, moderated user reviews, and platform-hosted first-person workflow reports are separately used for problem evidence. Dynamic pages record access date; missing page dates are marked “date unavailable.” A candidate remains qualified only when it has:
 
 1. a host-specific user workflow and at least bounded direct or observable-friction evidence;
 2. a current official API, component, webhook, action, or app route;
@@ -39,7 +39,7 @@ Official developer documentation and platform policies are used only for API, pe
 
 Full source records are in [SOURCE_REGISTER.md](SOURCE_REGISTER.md), queries in [SEARCH_LOG.md](SEARCH_LOG.md), and candidate-level integration records in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md).
 
-Each candidate problem/workflow statement below has exactly one type. Inferences cite direct or observable-friction evidence plus explicit limits. Assumptions (OPP-2026-703, 704, 706, and 708) are owned by the Strategy Agent; impact if wrong: the affected candidate cannot advance regardless of API feasibility; planned review/test: revisit only through separately authorized future research or validation. No such work is authorized in Gate 1.
+Each qualified candidate problem/workflow statement below has exactly one type. Inferences cite direct or observable-friction evidence plus explicit limits. Assumptions OPP-2026-703, 704, 706, and 708 are now in the Hypothesis Watchlist and remain owned by the Strategy Agent; impact if wrong: the affected concept cannot qualify regardless of API feasibility; planned review/test: reconsider only through separately authorized exact-workflow research. No such work is authorized in Gate 1.
 
 ## Material claims
 
@@ -70,12 +70,10 @@ Each candidate problem/workflow statement below has exactly one type. Inferences
 
 ## Opportunity universe
 
+Only the seven rows below are Qualified Gate 1 Candidates. The four Cycle-3 watchlist concepts retain their complete Issue #11 contracts in [EXCLUSIONS.md](EXCLUSIONS.md#hypothesis-watchlist).
+
 | ID | Host platform and recurring problem | Authorized path | Problem claim type; feasibility support | Confidence | Principal policy/dependency risk |
 |---|---|---|---|---|---|
-| OPP-2026-703 | Google Drive: selected-folder permission/change drift is hard to review. | Drive Changes API and authorized permissions read | assumption; problem C08-14; feasibility C08-01 through C08-03 | medium-low | Scope breadth, shared-drive coverage, state reconstruction. |
-| OPP-2026-704 | Slack: important decisions can be buried in message flow and need user-invoked capture. | User-invoked message shortcut and modal | assumption; problem C08-15; feasibility C08-04, C08-05 | medium | Scope review, 3-second acknowledgement, Marketplace approval. |
-| OPP-2026-706 | Slack: important handoff messages can be buried or missed amid notification overload. | Events API for opted-in channels plus reminders | assumption; problem C08-15; feasibility C08-04 | medium-low | History/replies limits, channel visibility, spam risk. |
-| OPP-2026-708 | Teams: channel decisions can be difficult to retrieve amid channel/notification overload. | Bot/action or scoped events, human capture | assumption; problem C08-16; feasibility C08-06, C08-07 | low-medium | Broad chat permissions can block adoption. |
 | OPP-2026-712 | GitHub Issues: miscommunication can make acceptance criteria incomplete at handoff. | GitHub App, Issues metadata/write on selected repos | inference; problem C08-17; feasibility C08-08 | medium-high | Installation approval and write permission. |
 | OPP-2026-713 | GitHub PRs: repeated revisions and review context need a linked evidence bundle. | GitHub App webhooks and read permissions | inference; problem C08-18; feasibility C08-08 | medium-high | Rate limits, repository selection, sensitive code metadata. |
 | OPP-2026-715 | Dropbox: client/external file collection can be slowed by sharing and synchronization friction. | OAuth App Folder or Chooser/Saver components | inference; problem C08-19; feasibility C08-09 | medium-low | Full Dropbox scope must be avoided unless necessary. |
@@ -90,19 +88,19 @@ The field-complete, unranked index is [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.m
 
 `—` means no qualifying evidence was found. Problem evidence and technical feasibility are separate axes; API documentation never counts as user pain.
 
-| Candidate | User segment / observable friction | Direct problem evidence | Context / population evidence | Current alternative evidence | Technical feasibility evidence | Legal / privacy / safety / platform evidence | Unsupported assumption / hypothesis |
-|---|---|---|---|---|---|---|---|
-| OPP-2026-703 | Workspace admins; confusing permissions/settings | W08-28 | — | Native Admin/Drive controls in W08-28 | P08-01 to P08-03, P08-07 | P08-02 to P08-04 | Permission drift prevalence, review frequency, WTP |
-| OPP-2026-704 | Slack team members; important messages buried | W08-29 | — | Slack search/saved messages in W08-29 | P08-08 to P08-12 | P08-09 to P08-12 | Decision-specific incidence, capture adoption, WTP |
-| OPP-2026-706 | Slack ops teams; overload/missed messages | W08-29 | — | Notifications/search in W08-29 | P08-08, P08-09, P08-11 | P08-08, P08-09 | Handoff-aging incidence, reminder benefit, WTP |
-| OPP-2026-708 | Teams users; channel/notification overload | W08-30 | — | Native channels/search in W08-30 | P08-13 to P08-15 | P08-13 to P08-15 | Decision-registry need, frequency, WTP |
-| OPP-2026-712 | GitHub issue authors/maintainers; miscommunication | W08-31 | Public OSS sample W08-31 | Issue templates/forms are observable host alternatives | P08-18 to P08-21 | P08-18 to P08-21 | Acceptance-checklist effectiveness, private-team transfer, WTP |
-| OPP-2026-713 | GitHub reviewers/authors; repeated revisions | W08-32 | Public OSS sample W08-32 | Native checks/comments/reviews | P08-18 to P08-21 | P08-18 to P08-21 | Evidence-bundle benefit and WTP |
-| OPP-2026-715 | Dropbox teams/external collaborators; sharing/sync friction | W08-33 | — | Dropbox sharing and manual checklist W08-33 | P08-22, P08-23 | P08-22, P08-23 | Missing-file incidence, benefit, WTP |
-| OPP-2026-716 | Dropbox team file owners; sync conflicts/version limits | W08-33 | — | Native version/history/organization W08-33 | P08-22, P08-23 | P08-22, P08-23 | Digest adoption, frequency, WTP |
-| OPP-2026-717 | Shopify merchant operations; partial-fulfillment communication | W08-34 | Single merchant only | Flow/tags/export described in W08-34 | P08-24 to P08-27 | P08-24 to P08-27 | Prevalence, paid gap, WTP |
-| OPP-2026-718 | Shopify returns/reporting teams; state reconciliation | W08-35 | Single discussion only | Native returns/reporting workflow W08-35 | P08-24 to P08-27 | P08-24 to P08-27 | Prevalence, packet benefit, WTP |
-| OPP-2026-719 | Shopify Plus compliance/catalog teams; audit-detail gap | W08-36 | Single enterprise case only | Admin activity/API workarounds W08-36 | P08-25 to P08-27 | P08-24, P08-26, P08-27 | SMB transfer, actor attribution feasibility, WTP |
+| Candidate | Cycle 3 status | User segment / observable friction | Direct problem evidence | Context / population evidence | Current alternative evidence | Technical feasibility evidence | Legal / privacy / safety / platform evidence | Unsupported assumption / hypothesis |
+|---|---|---|---|---|---|---|---|---|
+| OPP-2026-703 | Hypothesis Watchlist | Workspace admins; confusing permissions/settings | W08-28 | — | Native Admin/Drive controls in W08-28 | P08-01 to P08-03, P08-07 | P08-02 to P08-04 | Permission drift prevalence, review frequency, WTP |
+| OPP-2026-704 | Hypothesis Watchlist | Slack team members; important messages buried | W08-29 | — | Slack search/saved messages in W08-29 | P08-08 to P08-12 | P08-09 to P08-12 | Decision-specific incidence, capture adoption, WTP |
+| OPP-2026-706 | Hypothesis Watchlist | Slack ops teams; overload/missed messages | W08-29 | — | Notifications/search in W08-29 | P08-08, P08-09, P08-11 | P08-08, P08-09 | Handoff-aging incidence, reminder benefit, WTP |
+| OPP-2026-708 | Hypothesis Watchlist | Teams users; channel/notification overload | W08-30 | — | Native channels/search in W08-30 | P08-13 to P08-15 | P08-13 to P08-15 | Decision-registry need, frequency, WTP |
+| OPP-2026-712 | Qualified | GitHub issue authors/maintainers; miscommunication | W08-31 | Public OSS sample W08-31 | Issue templates/forms are observable host alternatives | P08-18 to P08-21 | P08-18 to P08-21 | Acceptance-checklist effectiveness, private-team transfer, WTP |
+| OPP-2026-713 | Qualified | GitHub reviewers/authors; repeated revisions | W08-32 | Public OSS sample W08-32 | Native checks/comments/reviews | P08-18 to P08-21 | P08-18 to P08-21 | Evidence-bundle benefit and WTP |
+| OPP-2026-715 | Qualified | Dropbox teams/external collaborators; sharing/sync friction | W08-33 | — | Dropbox sharing and manual checklist W08-33 | P08-22, P08-23 | P08-22, P08-23 | Missing-file incidence, benefit, WTP |
+| OPP-2026-716 | Qualified | Dropbox team file owners; sync conflicts/version limits | W08-33 | — | Native version/history/organization W08-33 | P08-22, P08-23 | P08-22, P08-23 | Digest adoption, frequency, WTP |
+| OPP-2026-717 | Qualified | Shopify merchant operations; partial-fulfillment communication | W08-34 | Single merchant; investigability only, not prevalence/demand/WTP | Flow/tags/export described in W08-34 | P08-24 to P08-27 | P08-24 to P08-27 | Prevalence, paid gap, WTP |
+| OPP-2026-718 | Qualified | Shopify returns/reporting teams; state reconciliation | W08-35 | Single discussion; investigability only, not prevalence/demand/WTP | Native returns/reporting workflow W08-35 | P08-24 to P08-27 | P08-24 to P08-27 | Prevalence, packet benefit, WTP |
+| OPP-2026-719 | Qualified | Shopify Plus compliance/catalog teams; audit-detail gap | W08-36 | Single enterprise case; investigability only, not prevalence/demand/WTP | Admin activity/API workarounds W08-36 | P08-25 to P08-27 | P08-24, P08-26, P08-27 | SMB transfer, actor attribution feasibility, WTP |
 
 ## Platform feasibility matrix
 
@@ -130,8 +128,10 @@ Confidence in API/policy feasibility is high for the bounded paths recorded. Pro
 
 ## Quality and lifecycle
 
-The complete first draft scored 86/100. Earlier Codex review sections are now correctly labeled Internal Governance Simulation. External Governance Cycle 1 assigned the authoritative 84/100 and opened EXT-GOV-01 plus T08-EXT-B02. Correction Cycle 2 adds nine workflow-evidence sources, removes nine API-only concepts, and creates a two-axis problem/feasibility coverage record. The new creator execution score is 100/100; no new independent Governance score is claimed. See [QUALITY_SCORE_HISTORY.md](QUALITY_SCORE_HISTORY.md) and [CORRECTION_LOG.md](CORRECTION_LOG.md).
+The complete first draft scored 86/100. Earlier Codex review sections are correctly labeled Internal Governance Simulation. External Governance Cycle 2 assigned the authoritative 97/100, resolved EXT-GOV-01 and T08-EXT-B02, and opened EXT2-T08-01. Correction Cycle 3 keeps seven problem-supported candidates qualified, moves four assumption-led concepts to the watchlist, retains the two-axis evidence model, and preserves all platform controls. The Cycle-3 creator execution score is 100/100; no external score of 100 is claimed. See [QUALITY_SCORE_HISTORY.md](QUALITY_SCORE_HISTORY.md) and [CORRECTION_LOG.md](CORRECTION_LOG.md).
 
 ## Recommended next action
 
-External Governance re-review requested. Keep every candidate unranked and stop before Gate 2, due diligence, validation, product selection, PRD, or implementation.
+Keep every candidate unranked and stop before Gate 2, due diligence, validation, product selection, PRD, or implementation.
+
+External Governance Cycle 3 re-review requested
