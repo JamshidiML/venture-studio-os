@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -9,7 +9,7 @@ last_reviewed: 2026-07-22
 
 ## Executive Summary
 
-- **A screening-ready universe was created without selecting a product.** Twenty unranked candidates cover adult foundational skills, time-bounded learning, workplace communication, language practice, career exploration and job-search reflection.
+- **The original 20-ID universe is now separated without selecting a product.** Five candidates qualify for Gate 1 investigation; fifteen context-only, unsupported or consolidated concepts are preserved in the Hypothesis Watchlist.
 - **Direct reports now sit beside broad context.** A 2024 UK learner survey directly records time, cost, confidence, transport, digital-confidence and caring challenges; DWP qualitative work directly records job-search applications, evidence journals, barriers and interview preparation. Older migrant-language evidence remains low confidence. Candidate-specific WTP and retention remain unknown.
 - **Free alternatives and safety constraints are material.** O*NET already provides capable public career tools, while UNESCO, the U.S. Department of Education and EEOC require human oversight, privacy, integrity, accessibility and a hard boundary against high-stakes automated decisions.
 - **Gate 1 should remain open for independent review only.** The report does not rank candidates, score opportunity attractiveness, begin due diligence or authorize Gate 2.
@@ -26,7 +26,7 @@ last_reviewed: 2026-07-22
 
 ## Methodology
 
-Current primary statistics, official occupational resources, regulator/intergovernmental guidance and participant-based research were searched first. Direct learner/jobseeker reports were distinguished from population context, alternatives, feasibility and constraints. A candidate was retained only when it described a repeated individual workflow, stayed within the hard boundaries, had at least one traceable contextual evidence source and could state its uncertainty without inventing market size, price, demand or efficacy. Alternatives were recorded to expose switching friction. WTP and retention remain unknown; proposed repeat-use mechanisms are explicitly treated as assumptions, not measured findings or falsifiable claims.
+Current primary statistics, official occupational resources, regulator/intergovernmental guidance and participant-based research were searched first. Direct learner/jobseeker reports were distinguished from population context, alternatives, feasibility and constraints. Cycle 3 qualifies a candidate only when direct observed problem evidence or clearly adjacent observed workflow evidence supports the bounded problem. Context, policy, public data, alternatives and a plausible idea do not independently qualify it. Unsupported ideas remain auditable in the Hypothesis Watchlist. WTP, efficacy and retention remain unknown.
 
 The source audit is in [SOURCE_REGISTER.md](SOURCE_REGISTER.md), reproducible queries in [SEARCH_LOG.md](SEARCH_LOG.md), the complete universe in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md), exclusions in [EXCLUSIONS.md](EXCLUSIONS.md), and unresolved uncertainty in [EVIDENCE_GAPS.md](EVIDENCE_GAPS.md).
 
@@ -34,7 +34,7 @@ The source audit is in [SOURCE_REGISTER.md](SOURCE_REGISTER.md), reproducible qu
 
 ### Time and fit are clearer frictions than a lack of course supply
 
-OECD reports that 24% of adults in the surveyed population encountered a barrier to non-formal job-related learning; among those with barriers, lack of time dominated and unsuitable provision and cost also appeared (L01). The independent 2024 UK survey adds direct learner reports: work/time pressure, cost, confidence, transport, digital-confidence and caring responsibilities affected current/recent learners (L14). **Inference:** a time-boxed planning workflow (300) is directly adjacent to a reported problem, while note queues and refresher maps (301–302) remain unsupported workflow assumptions.
+OECD reports that 24% of adults in the surveyed population encountered a barrier to non-formal job-related learning; among those with barriers, lack of time dominated and unsuitable provision and cost also appeared (L01). The independent 2024 UK survey adds direct learner reports: work/time pressure, cost, confidence, transport, digital-confidence and caring responsibilities affected current/recent learners (L14). **Inference:** a time-boxed planning workflow (300) is directly adjacent to a reported problem. The overlapping note-queue/refresher-map family (301–302) was consolidated and moved to the watchlist because neither workflow is observed.
 
 ### Foundational and digital-skill gaps support practice workflows, not efficacy claims
 
@@ -48,7 +48,7 @@ DWP's 2025 synthesis directly observed and interviewed claimants and coaches: cu
 
 ### Language relevance is visible; contextual practice remains an inference
 
-EU attitude data show broad support for multilingual capability (L08), while OECD participant-derived evidence identifies time conflicts between language courses, work and job search (L16) and its policy synthesis describes shortcomings of generic language courses for workplace contexts (L09). This supports exploration of occupation-specific rehearsal, but writing, speaking, vocabulary, pronunciation and tone workflows remain distinct low/medium-confidence inferences rather than directly observed needs.
+EU attitude data show broad support for multilingual capability (L08), while OECD participant-derived evidence identifies time conflicts between language courses, work and job search (L16) and its policy synthesis describes shortcomings of generic language courses for workplace contexts (L09). This adjacent evidence supports bounded investigation of occupation-specific language scenarios (316). Writing, meeting-speaking and email-tone ideas (306, 307, 318) were consolidated into one watchlist family; vocabulary, pronunciation and retrieval-planning ideas (315, 317, 319) were consolidated into another watchlist family because their exact workflows remain unobserved.
 
 ### AI, educational integrity and employment fairness constrain the universe
 
@@ -56,21 +56,23 @@ UNESCO and the U.S. Department of Education emphasize privacy, age appropriatene
 
 ## Opportunity universe
 
-The complete 20-candidate table is [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md). Coverage is deliberately diverse across learner type and event cadence. No comparative screening, weighted opportunity score, advance/hold/exclude disposition or winner selection was performed because those actions belong to a separately authorized Gate 2.
+The original 20-ID universe now contains **5 Qualified Gate 1 Candidates** and **15 Hypothesis Watchlist Candidates**. [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md) contains the qualified set and full status matrix; [EXCLUSIONS.md](EXCLUSIONS.md) preserves every watchlist contract. No ranking, weighted score, Gate 2 disposition or winner selection was performed.
 
 ## Risks, assumptions and unknowns
 
-1. **Assumption:** repeated small workflows may fit time-poor learners better than long courses. Owner: Strategy Agent. Impact if wrong: candidates 300–305 and 319 have no supported format advantage and cannot advance on this basis. Planned review/test: consented workflow study only after separate authorization.
-2. **Assumption:** event-triggered career and communication workflows may create repeat use during active transitions. Owner: Strategy Agent. Impact if wrong: retention logic for candidates 307–314 and 318 is unsupported and those mechanisms must not influence advancement. Planned review/test: only if a later Gate 5 issue separately authorizes validation, define a consented per-application/per-meeting study before treating the statement as a hypothesis; no measure or threshold is authorized at Gate 1.
+1. **Assumption:** repeated small workflows may fit time-poor learners better than long courses. Owner: Strategy Agent. Impact if wrong: even qualified candidate 300 has no supported format advantage and cannot advance on this basis. Planned review/test: consented workflow study only after separate authorization.
+2. **Assumption:** event-triggered career and language workflows may create repeat use during active transitions. Owner: Strategy Agent. Impact if wrong: repeat-use logic for 308, 309, 314 and 316 is unsupported and must not influence advancement. Planned review/test: only if a later Gate 5 issue separately authorizes validation.
 3. **Unknown:** candidate-specific WTP. Existing paid categories and employer-supported learning cannot substitute for direct evidence.
 4. **Risk:** AI feedback can be inaccurate, biased or privacy-invasive. Human confirmation and data minimization are non-negotiable constraints.
 5. **Risk:** content rights and dataset licenses vary. Only user-owned, licensed, public-domain or properly permissioned material is in scope.
-6. **Evidence ceiling:** candidates 301–302, 305–307, 309–312 and 315–319 still lack direct candidate-specific workflow observation; the coverage matrix marks that deficit rather than treating broad skill, API or policy evidence as pain.
+6. **Evidence ceiling:** five rows qualify only for investigation, not advancement. Fifteen IDs remain watchlisted; even qualified rows lack candidate-specific WTP, retention and efficacy evidence.
 
 ## Confidence assessment
 
-Overall confidence is **medium for the existence of broad learning and career frictions** and **low for candidate-specific demand, WTP, retention and efficacy**. High-quality sources improve contextual confidence, but most candidates are inferences derived from aggregate evidence rather than direct workflow observation.
+Overall confidence is **medium for broad learning and career frictions** and **low for candidate-specific demand, WTP, retention and efficacy**. Qualification means the bounded problem is investigable, not that demand or effect is proven.
 
 ## Recommended next action
 
-Request external Governance re-review of this Gate 1 evidence package and creator score. Do not authorize ranking, Gate 2, due diligence, customer validation, PRD creation or implementation from this draft.
+Request external Governance Cycle 3 re-review of the qualified/watchlist distinction. Do not authorize ranking, Gate 2, due diligence, customer validation, PRD creation or implementation from this draft.
+
+External Governance Cycle 3 re-review requested

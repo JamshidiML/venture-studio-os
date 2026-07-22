@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -19,6 +19,8 @@ last_reviewed: 2026-07-22
 | 3→4 | Completed review candidate still declared the incomplete `draft` lifecycle state | Set all nine artifacts to `status: in-review` and version `0.2.1`; recorded the lifecycle-only correction | All nine T04 artifacts | Lifecycle metadata aligned; internal simulation re-verification requested |
 | 4→5 | External Governance scored the artifact 94/100 and found broad sources did not independently support many specific rehearsal, tracking, portfolio and vocabulary workflows | Added direct learner/jobseeker/participant-derived language sources, downgraded weak mappings, added a six-class candidate coverage matrix and explicit adjacent-candidate boundaries | SOURCE_REGISTER.md, SEARCH_LOG.md, MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md, EVIDENCE_GAPS.md | External findings remediated; re-review requested |
 | 4→5 | Prior Codex-authored reviews were labeled independent even though Codex created the artifacts | Relabeled the preserved reviews as `Internal Pre-review` / `Internal Governance Simulation`; recorded external score and point loss without deleting audit history | CORRECTION_LOG.md, QUALITY_SCORE_HISTORY.md, THREAD_SUMMARY.md | EXT-GOV-01 remediation applied; external disposition pending |
+| 5→6 | Cycle 2 External Governance scored 95/100 and found the qualified universe still included context-only ideas and only future consolidation triggers | Separated 5 qualified from 15 watchlist IDs; executed 301/302, 306/307/318 and 315/317/319 consolidation decisions; preserved full watchlist contracts | All nine T04 artifacts | Creator Cycle 3 correction complete; external re-review requested |
+| 5→6 | Cycle 2 externally verified the internal-review relabeling | Marked EXT-GOV-01 externally resolved while preserving G1–G3 audit history | QUALITY_SCORE_HISTORY.md, CORRECTION_LOG.md, THREAD_SUMMARY.md | EXT-GOV-01 externally resolved |
 
 No correction changed another thread, reused an Opportunity ID, ranked candidates, selected a winner or began Gate 2.
 
@@ -61,3 +63,18 @@ Authoritative review: PR #20 external review submitted 2026-07-22. Latest extern
 | External six-point loss needed a durable register | Added the authoritative external point-loss register to QUALITY_SCORE_HISTORY.md | Loss totals equal six and score remains 94 until external re-review | applied |
 
 External Governance re-review requested.
+
+## External Governance Correction Cycle 3
+
+Authoritative Cycle 2 review: PR #20, 2026-07-22. Latest external Artifact Quality Score: **95/100**.
+
+| Finding | Resolution | Status |
+|---|---|---|
+| `EXT-GOV-01` internal/independent attribution | External Cycle 2 review verified the prior relabeling | **externally resolved** |
+| `EXT-GOV-C3-T04-01` qualified set remained overbroad | 5 IDs retained as qualified; 15 moved to a complete Hypothesis Watchlist | creator correction complete; external re-review pending |
+| Three overlap families were only assigned future triggers | Executed consolidation: 301 canonical for 301/302; 306 canonical for 306/307/318; 315 canonical for 315/317/319. All are watchlisted because direct/adjacent evidence is absent | resolved in artifact; external verification pending |
+| Counts and matrix needed final-status agreement | Report, index, summary, quality history and correction log now state 5 qualified + 15 watchlist = 20; matrix covers all IDs exactly once | resolved in artifact; external verification pending |
+
+No source was added or removed. No correction ranks candidates, selects a product, begins Gate 2 or reuses a consolidated ID.
+
+External Governance Cycle 3 re-review requested

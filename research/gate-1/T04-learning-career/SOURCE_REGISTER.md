@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -31,3 +31,7 @@ Access date for every web source: 2026-07-22. Geography and limitations are expl
 ## Source-selection rule
 
 Primary statistical agencies, intergovernmental datasets, regulators, official occupational resources and independent participant research were preferred. L14–L16 are separated from population/context sources because they contain direct learner, jobseeker or language-learner reports. Vendor marketing pages, unsourced market-size pages, app-store rankings, social posts and estimated download/revenue sites were excluded from material claims. The register supports a broad opportunity universe; it does not prove product-market fit, willingness to pay or learning efficacy for any candidate.
+
+## Cycle 3 source disposition
+
+No source was added, removed or reclassified to pad qualification. The same 16-source register supports 5 qualified candidates and contextualizes 15 watchlist candidates. Only L14–L16 contribute direct or adjacent observed problem/workflow evidence; the status matrix records their narrower candidate-level use.

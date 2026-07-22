@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -33,3 +33,7 @@ Search session: 2026-07-22. Search cutoff: 2026-07-22. Research covered the Unit
 - Candidate-to-source mappings appear in OPPORTUNITY_INDEX.md.
 - Search used English-language queries, which creates a localization blind spot recorded in EVIDENCE_GAPS.md.
 - No account-gated datasets, paid reports, user interviews, private analytics or copyrighted course corpora were used.
+
+## Cycle 3 search disposition
+
+No new search was used to rescue context-only ideas. Cycle 3 reapplied the qualification rule to the existing evidence: 5 candidates qualified and 15 moved to the Hypothesis Watchlist. The original 20-ID universe and all rejected-source decisions remain auditable.

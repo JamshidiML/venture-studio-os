@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -16,6 +16,7 @@ Artifact quality evaluates execution, not opportunity attractiveness.
 | 3 | Creator correction | 10/10 | 20/20 | 15/15 | 15/15 | 15/15 | 10/10 | 10/10 | 5/5 | 100/100 | 0 | GOV-T04-B001 correction applied; re-review requested |
 | 4 | Creator lifecycle alignment | 10/10 | 20/20 | 15/15 | 15/15 | 15/15 | 10/10 | 10/10 | 5/5 | 100/100 | 0 | all nine artifacts set to in-review v0.2.1; lifecycle re-verification requested |
 | 5 | Creator external-correction cycle | 10/10 | 20/20 | 15/15 | 15/15 | 15/15 | 10/10 | 10/10 | 5/5 | 100/100 | 0 creator-open; EXT-GOV-01 pending external disposition | external findings remediated; external re-review requested |
+| 6 | Creator external-correction Cycle 3 | 10/10 | 20/20 | 15/15 | 15/15 | 15/15 | 10/10 | 10/10 | 5/5 | 100/100 | 0 creator-open; Cycle 3 external re-review pending | 5 qualified + 15 watchlist; overlap actually consolidated |
 
 ## Cycle 1 point-loss register
 
@@ -112,7 +113,7 @@ Internal simulation score remained `100/100`. Internal simulation critical block
 
 ## Authoritative External Governance Review — Cycle 1
 
-Review date: `2026-07-22`. External Artifact Quality Score: **94/100**. This is the latest and only independent Governance score.
+Review date: `2026-07-22`. External Artifact Quality Score: **94/100**. This was the first independent Governance score and is superseded by the Cycle 2 external review below.
 
 | Dimension | Maximum | External awarded | Points lost |
 |---|---:|---:|---:|
@@ -146,3 +147,18 @@ Review date: `2026-07-22`. External Artifact Quality Score: **94/100**. This is 
 The Creator score is **100/100 for artifact execution** after all external findings were logged and remediated, 20/20 candidates were audited in the six-class matrix, direct evidence was added without converting context into pain, weak mappings were downgraded, and lifecycle metadata was consistently bumped to `in-review` v0.3.0. This is not a new independent Governance score. The authoritative external score remains **94/100** until external re-review.
 
 External Governance re-review requested.
+
+## Authoritative External Governance Review — Cycle 2
+
+Review date: `2026-07-22`. External Artifact Quality Score: **95/100**. This is the latest independent Governance score; no external score of 100 is claimed.
+
+| Finding ID | Authoritative finding | Cycle 3 required correction | Status |
+|---|---|---|---|
+| EXT-GOV-01 | The external reviewer verified that historical Codex reviews are now correctly labeled Internal Pre-review / Internal Governance Simulation | Preserve labels and audit history | **externally resolved in Cycle 2** |
+| EXT-GOV-C3-T04-01 | The 20-row universe still described context-only concepts as candidates and documented only future consolidation triggers for 301/302, 306/307/318 and 315/317/319 | Separate qualified from watchlist; execute consolidation; preserve original IDs/contracts | Creator correction complete; external Cycle 3 re-review pending |
+
+## Creator External Correction Cycle 6
+
+Artifact execution remains **100/100**: all 20 original IDs appear exactly once in the final status matrix, 5 are qualified, 15 have complete watchlist contracts, named clusters are consolidated, 16 sources remain unchanged, and all nine artifacts are `in-review` v0.4.0. This is a Creator quality score only. The authoritative external score remains **95/100** until external Cycle 3 re-review.
+
+External Governance Cycle 3 re-review requested
