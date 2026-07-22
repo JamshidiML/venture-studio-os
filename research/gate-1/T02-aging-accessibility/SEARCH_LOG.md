@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.2
+version: 0.1.3
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T02
@@ -34,5 +34,9 @@ gate: 1
 ## Searches Not Converted Into Claims
 
 - Product/vendor searches were intentionally avoided because popularity, marketing, and feature lists do not establish unmet need.
-- No source was found that directly compares willingness to pay for the 20 candidates; no such claim is made.
+- No source was found that directly compares willingness to pay for any of the 20 auditable concepts; no such claim is made.
 - Clinical-condition searches were stopped at the hard boundary because this issue authorizes non-clinical independence support only.
+
+## Cycle 3 Evidence Decision
+
+Cycle 3 added no search and no source. It used the existing lived-experience, source-domain, and candidate matrices to retain eight directly supported or clearly adjacent communication, format, transport/venue-preparation, and technology-support candidates. The 12 context-only workflows moved to the Hypothesis Watchlist; their evidence classifications and constraints remain auditable.

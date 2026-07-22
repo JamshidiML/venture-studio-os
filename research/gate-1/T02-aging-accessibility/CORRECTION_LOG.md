@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.2
+version: 0.1.3
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T02
@@ -48,10 +48,21 @@ Authoritative external score: `94/100`. Common blocker: `EXT-GOV-01`.
 
 | Review ID | External finding / required correction | Applied correction | Verification | Status |
 |---|---|---|---|---|
-| EXT-GOV-01 | Prior Codex review was not independent. | Relabeled all surviving references as Internal Pre-review/Simulation and preserved the historical 100 as non-authoritative. | QUALITY_SCORE_HISTORY.md, CORRECTION_LOG.md, THREAD_SUMMARY.md | correction applied; external verification pending |
+| EXT-GOV-01 | Prior Codex review was not independent. | Relabeled all surviving references as Internal Pre-review/Simulation and preserved the historical 100 as non-authoritative. | External Cycle-2 review explicitly marked this blocker resolved. | externally resolved |
 | T02-EXT-C01 | Add at least one lived-experience/participatory source from older adults, disabled people, or unpaid caregivers. | Added T02-S12: 56 ONS qualitative interviews with disabled adults, with method, date, geography, limitations, and confidence. | SOURCE_REGISTER.md, SEARCH_LOG.md, MARKET_DISCOVERY_REPORT.md | resolved internally |
 | T02-EXT-C02 | Add source-domain coverage for visual, hearing, cognitive, mobility, caregiver, transport, public-service, and social domains. | Added an eight-domain source matrix using direct/context/technical/legal codes. | OPPORTUNITY_INDEX.md | resolved internally |
 | T02-EXT-C03 | Distinguish digital-access evidence from workflow-pain evidence for 101, 112–114, 118, and 119. | Rewrote rationales, downgraded 118/119, and added 20-row source coverage separating barrier from workflow. | MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md, EVIDENCE_GAPS.md | resolved internally |
 | T02-EXT-C04 | Log the exact six-point loss. | Added the dimension-level point-loss register above. | CORRECTION_LOG.md, QUALITY_SCORE_HISTORY.md | resolved internally |
 
-External Governance re-review requested.
+## Authoritative External Governance Re-review — Cycle 2
+
+Authoritative external score: `96/100` (`10 + 19 + 15 + 13 + 14 + 10 + 10 + 5`). `EXT-GOV-01` was externally resolved. The remaining four-point loss comprised one source-quality point, two opportunity-coverage points, and one analytical-rigor point because 12 named concepts remained qualified despite only contextual support.
+
+| Review ID | External finding / required correction | Cycle-3 resolution | Verification | Status |
+|---|---|---|---|---|
+| EXT2-T02-01 | IDs 103–109, 112–113, and 117–119 lack direct candidate-level workflow evidence; use a two-tier universe while retaining domain and safety controls. | Retained eight candidates whose communication, format, transport/venue-preparation, or technology-support problem families have direct or clearly adjacent T02-S12 evidence. Moved all 12 named context-only IDs to the full Hypothesis Watchlist. | MARKET_DISCOVERY_REPORT.md and OPPORTUNITY_INDEX.md contain only eight qualified rows; EXCLUSIONS.md preserves 12 complete watchlist entries; the 20-row matrix records final status. | resolved internally; external verification pending |
+| C3-T02-01 | Cycle 3 must preserve consent/revocation, care-recipient agency, non-clinical and non-emergency boundaries, offline accessibility, affordability, and digital-exclusion limitations across both tiers. | Preserved each control in the report, index, evidence gaps, and candidate-specific watchlist rows; versioned all nine artifacts to 0.1.3 and retained `status: in-review`. | Nine-artifact lifecycle, count, range, uniqueness, matrix, repository, unit-test, and diff checks. | correction complete; external re-review requested |
+
+No source was added or removed in Cycle 3. No Opportunity Score was created or inflated.
+
+External Governance Cycle 3 re-review requested
