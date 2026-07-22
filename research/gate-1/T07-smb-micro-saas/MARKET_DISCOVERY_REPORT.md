@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.1
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -9,7 +9,7 @@ last_reviewed: 2026-07-22
 
 ## Executive summary
 
-This report documents 20 unranked, screening-ready workflow wedges for small businesses and small teams. The strongest direct problem evidence concerns invoice/payment administration; official sources also establish recurring privacy, cybersecurity, employment-record, supplier-risk, and quality-documentation duties. Official paid workflow products show that businesses buy software in adjacent categories, but they do not prove willingness to pay for any candidate here. Candidate-specific demand, pricing, and unit economics remain untested.
+This report documents 14 unranked workflow wedges for small businesses and small teams after External Governance Correction Cycle 2 removed six concepts that lacked sufficient problem evidence. The strongest direct problem evidence concerns invoice/payment administration. Direct but bounded survey or user evidence now also covers supplier delays, supply/inventory pressure, quote/job splitting, scheduling friction, and field-photo synchronization. Official guidance establishes privacy, cybersecurity, employer-record, supplier-risk, and quality-documentation duties; those duties remain contextual or constraint evidence, not proof of user pain. Candidate-specific demand, pricing, and unit economics remain untested.
 
 The opportunity universe deliberately favors overlays, checklists, evidence packets, and exception queues that can begin with manual entry or CSV import. It excludes ERP replacement, payroll, tax filing, regulated accounting advice, medical records, automated employment decisions, and deep multi-year integrations. No candidate is a winner, no Opportunity Score has been assigned, and Gate 2 has not begun.
 
@@ -20,7 +20,7 @@ The opportunity universe deliberately favors overlays, checklists, evidence pack
 - Scope: narrow, repetitive administration, quoting, scheduling, documentation, quality records, customer follow-up, inventory coordination, and compliance-preparation friction for SMBs and small teams.
 - Geography: United States, United Kingdom, and European Union evidence; candidate applicability is not assumed outside the cited geography.
 - Source cutoff and access date: 2026-07-22.
-- Candidate count: exactly 20, using OPP-2026-600 through OPP-2026-619.
+- Candidate count: 14 retained candidates within OPP-2026-600 through OPP-2026-619; six withdrawn concepts are preserved in [EXCLUSIONS.md](EXCLUSIONS.md).
 - Explicit exclusions: see [EXCLUSIONS.md](EXCLUSIONS.md).
 
 ## Methodology
@@ -30,7 +30,7 @@ Research began with official government and regulator evidence, then used first-
 A candidate qualified when it met all of these Gate 1 conditions:
 
 1. narrow repeated workflow owned by an identifiable SMB buyer and user;
-2. at least one traceable source supporting the problem category, duty, or paid adjacent workflow;
+2. at least one traceable source supporting the problem, category, duty, or current alternative, with those evidence roles kept separate;
 3. a founder-buildable first path that is not an ERP or system-of-record replacement;
 4. an explicit low-scope integration path and manual or CSV fallback;
 5. legal, privacy, and security constraints recorded;
@@ -51,7 +51,11 @@ A candidate qualified when it met all of these Gate 1 conditions:
 | C07-09 | A CSV-first overlay should usually impose less migration and integration burden than replacing an SMB system of record. | inference | C07-04 through C07-08 | SMB software adoption | medium | Must be tested against real stacks and switching costs. |
 | C07-10 | Compliance-oriented candidates should assemble evidence and human review queues, not make legal, payroll, accounting, safety, or employment decisions. | inference | Scope boundaries plus S07-03 through S07-09 | Multi-jurisdictional | high | Product counsel would still be required before launch. |
 | C07-11 | Buyers will prefer a narrow wedge over another all-in-one suite. | assumption | Owner: Strategy Agent | Initial target segments | low | Impact if wrong: narrow-wedge preference cannot support candidate advancement. If later authorized, test by buyer interviews and purchase-intent behavior before Gate 2 scoring. |
-| C07-12 | At least 5 of 20 workflows will be reported weekly-or-more often by a majority of a relevant future interview sample. | hypothesis | Measure: self-reported frequency; success: at least 6 of 10 relevant buyers; kill: fewer than 3 of 10; time box: 14 days after separate validation authorization | Future bounded samples | low | No outreach is authorized or performed in Gate 1. |
+| C07-12 | At least 4 of 14 retained workflows will be reported weekly-or-more often by a majority of a relevant future interview sample. | hypothesis | Measure: self-reported frequency; success: at least 6 of 10 relevant buyers for at least four workflows; kill: fewer than 3 workflows meet that threshold; time box: 14 days after separate validation authorization | Future bounded samples | low | No outreach is authorized or performed in Gate 1. |
+| C07-13 | Census BTOS/SBPS results show that U.S. small businesses directly reported domestic and foreign supplier delays, although reported incidence declined by the latest 2023 period discussed. | evidence | S07-15 | U.S. businesses | high | Supports supplier-delay occurrence, not a software remedy or current 2026 prevalence. |
+| C07-14 | In NFIB's 2024 member survey, cost of supplies/inventories was a highly ranked owner problem. | evidence | S07-16 | U.S. NFIB small-business owners | medium-high | Membership sample and advocacy context; does not establish reorder-process friction. |
+| C07-15 | Current verified field-service user reviews describe quote/job splitting and scheduling limitations alongside use of scheduling, quotes, invoices, and customer communication. | evidence | S07-17, S07-18 | Self-selected field-service software reviewers | medium | Qualitative/self-selected evidence; no prevalence, causality, or candidate WTP claim. |
+| C07-16 | A 2026 hands-on editorial test reported field-photo synchronization friction in a field-service workflow. | evidence | S07-19 | One editorial test | medium | Single-product observation; cannot be generalized to all field-service teams. |
 
 ## Opportunity universe
 
@@ -59,32 +63,47 @@ A candidate qualified when it met all of these Gate 1 conditions:
 |---|---|---|---|---|---|---|
 | OPP-2026-600 | Invoice packets fail customer requirements and enter exception loops. | B2B service SMBs | Email, PDFs, accounting notes | inference; C07-02 | medium | None identified; no accounting advice. |
 | OPP-2026-601 | Owners chase overdue invoices inconsistently while protecting relationships. | Micro B2B firms | Calendar reminders and email | inference; C07-02, C07-03 | medium-high | None identified; human approves messages. |
-| OPP-2026-602 | Accepted quotes lose scope details during job handoff. | Field-service teams | Printed quote and chat | inference; C07-04 | medium | None identified. |
-| OPP-2026-603 | Change orders lack a clean acknowledgement trail. | Trades and project services | Email threads and revised PDFs | inference; C07-04 | medium | Must not replace legal review or contract advice. |
-| OPP-2026-604 | Field photos and notes do not become timely customer updates. | Mobile service crews | Camera roll and messaging | inference; C07-04 | medium | Customer/location data minimization required. |
-| OPP-2026-605 | Cancellations leave appointment capacity unused. | Appointment-based SMBs | Manual callback lists | inference; C07-04 | low-medium | Consent and messaging rules required. |
-| OPP-2026-606 | Recurring visits lack a consistent completion-evidence packet. | Cleaning, maintenance, inspection services | Photos plus checklist PDFs | inference; C07-04, C07-05 | medium | Sensitive site images may be prohibited. |
-| OPP-2026-607 | Waitlist backfill is slow and duplicates outreach. | Small service teams | Phone/text spreadsheet | inference; C07-04 | low-medium | Human-controlled outreach and opt-out required. |
-| OPP-2026-608 | Supplier delays are discovered after customer commitments are at risk. | Small makers and installers | Inbox and spreadsheet | inference; C07-13 | medium | None identified. |
-| OPP-2026-609 | Reorder suggestions lack an owner/approval trail. | Small wholesalers and workshops | Whiteboard and spreadsheet | inference; C07-13 | low-medium | No autonomous purchasing. |
-| OPP-2026-610 | Purchase-order and receipt mismatches remain unassigned. | Small goods businesses | Email and accounting notes | inference; C07-02, C07-13 | medium | No bookkeeping or payment execution. |
-| OPP-2026-611 | Staff cannot prove they saw the current SOP revision. | Small operational teams | Shared folder and sign-off sheet | inference; C07-05, C07-09 | medium | Identity and retention controls required. |
+| OPP-2026-602 | Accepted quotes need manual restructuring or context repair when converted into multiple jobs. | Small field-service teams | Field-service suite plus manual notes | inference; C07-15 | medium | Direct evidence is product-specific and self-selected. |
+| OPP-2026-604 | Field photos can fail to synchronize into the office job record promptly. | Mobile service crews | Field-service suite, camera roll, manual retry | inference; C07-16 | medium-low | Customer/location data minimization required; single-test evidence only. |
+| OPP-2026-605 | Scheduling changes and route constraints require repeated manual reshuffling. | Small field-service teams | Field-service calendar plus manual adjustment | inference; C07-15 | medium-low | Cancellation-capacity recovery itself remains unsupported and was narrowed out. |
+| OPP-2026-606 | Recurring visits need a consistent completion-evidence packet across job forms and photos. | Cleaning, maintenance, inspection services | Job forms/photos in field-service or inspection suites | inference; C07-15, C07-16 | low-medium | Current-alternative evidence is stronger than unmet-gap evidence. |
+| OPP-2026-608 | Supplier delays are discovered after customer commitments are at risk. | Small makers and installers | Inbox and spreadsheet | inference; C07-13 | medium | Direct evidence establishes delays, not discovery timing or the proposed workflow. |
+| OPP-2026-609 | Inventory pressure creates a need to review reorder decisions and ownership. | Small wholesalers and workshops | Whiteboard and spreadsheet | inference; C07-14 | low | Survey supports cost pressure, not the approval-trail problem; no autonomous purchasing. |
 | OPP-2026-612 | Training and credential evidence expires without an owner. | Small employers and contractors | Calendar plus document folder | inference; C07-07, C07-08 | medium | Reminder only; no eligibility decision. |
 | OPP-2026-613 | Nonconformance actions lose owners and evidence. | Small manufacturers | Spreadsheet and email | inference; C07-05, C07-08 | medium-high | Human quality authority remains accountable. |
 | OPP-2026-614 | Inspection evidence is difficult to assemble for customers or auditors. | Small suppliers and service firms | PDFs and folders | inference; C07-05, C07-08 | medium | Evidence assembly only; no certification claim. |
-| OPP-2026-615 | Customer promises made in calls or email are not followed through. | Owner-led service SMBs | CRM notes and memory | inference; C07-04 | low-medium | Recording/transcription consent if used. |
-| OPP-2026-616 | Warranty and return cases lack a complete evidence packet. | Small product businesses | Inbox, photos, spreadsheet | inference; C07-04 | medium-low | No automated entitlement determination. |
 | OPP-2026-617 | Data access/deletion requests lack a deadline and evidence trail. | UK SMBs handling personal data | Inbox and manual checklist | inference; C07-05, C07-06 | medium-high | Legal review; data minimization and access control. |
 | OPP-2026-618 | Vendor security questionnaires repeatedly recreate the same evidence. | SMB suppliers to larger firms | Spreadsheets and shared folders | inference; C07-03, C07-06 | medium | No unsupported compliance attestation. |
 | OPP-2026-619 | Offboarding and periodic access checks are incomplete across small teams. | Digitally enabled SMBs | Manual checklist | inference; C07-03, C07-06 | medium-high | Never collect passwords; least privilege and audit logs. |
 
 Detailed buyer, user, frequency, workaround, integration, sales/WTP, and security records are in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md).
 
+## Candidate-to-source coverage matrix
+
+`—` means no qualifying evidence was found. Vendor features and regulatory duties are never counted as direct problem evidence.
+
+| Candidate | Direct problem evidence | Context / population evidence | Current-alternative evidence | Technical feasibility evidence | Legal / privacy / safety / platform evidence | Unsupported assumption or hypothesis |
+|---|---|---|---|---|---|---|
+| OPP-2026-600 | S07-02: invoicing/admin errors | S07-01 | S07-10 vendor invoicing feature | —; CSV/PDF path is inference | S07-03 to S07-06 controls | Exact preflight failure rate and WTP |
+| OPP-2026-601 | S07-02: payment delay and relationship restraint | S07-01 | S07-10 vendor reminder feature | —; CSV path is inference | Contact/privacy controls inferred from S07-05, S07-06 | Message effectiveness and WTP |
+| OPP-2026-602 | S07-17: user-reported quote/job splitting friction | S07-18 | S07-10, S07-17 field-service suite | —; import path is inference | Customer/site-data controls | Prevalence, severity, WTP |
+| OPP-2026-604 | S07-19: field-photo sync friction in one test | S07-18 | S07-10, S07-19 field-service suite | S07-19 demonstrates an incumbent path, not this wedge | Image/location privacy controls | Generalizability and WTP |
+| OPP-2026-605 | S07-17: scheduling/route limitations | S07-18 | S07-10, S07-17 field-service calendar | —; calendar import is inference | Consent/anti-spam boundary | Frequency, avoided capacity loss, WTP |
+| OPP-2026-606 | S07-17, S07-19: job forms/photo workflow observations | S07-18 | S07-10 to S07-12 | Incumbent paths exist; wedge feasibility untested | Image/site privacy; no certification | Unmet gap, packet frequency, WTP |
+| OPP-2026-608 | S07-15: directly reported supplier delays | S07-16 | Inbox/spreadsheet is assumption | —; CSV/forwarding path is inference | Supplier confidentiality | Discovery timing, severity, WTP |
+| OPP-2026-609 | —; S07-16 is inventory-cost context only | S07-15, S07-16 | Whiteboard/spreadsheet is assumption | —; CSV path is inference | No autonomous purchasing | Approval-trail problem, frequency, WTP |
+| OPP-2026-612 | —; S07-07, S07-08 establish duties | S07-07, S07-08 | S07-11 vendor training feature | —; calendar/file path is inference | Employment/eligibility boundary | Expiry pain, frequency, WTP |
+| OPP-2026-613 | —; S07-09 establishes QMS category | S07-09 | S07-11, S07-12 vendor QMS features | —; CSV path is inference | Human quality authority | Action-loss frequency, WTP |
+| OPP-2026-614 | —; S07-09 establishes audit category | S07-09 | S07-11, S07-12 vendor inspection features | —; file export is inference | No certification guarantee | Assembly burden, frequency, WTP |
+| OPP-2026-617 | —; S07-05, S07-06 establish privacy duties | S07-05, S07-06 | Inbox/checklist is assumption | — | Direct legal/privacy constraint evidence S07-05, S07-06 | Workflow pain, frequency, WTP |
+| OPP-2026-618 | —; S07-03, S07-04 establish security controls | S07-03, S07-04 | Spreadsheet/folder is assumption | — | Security/attestation constraints S07-03, S07-04, S07-06 | Rework frequency, WTP |
+| OPP-2026-619 | —; S07-03, S07-04 establish access controls | S07-03, S07-04 | Manual checklist is assumption | — | Least-privilege controls S07-03, S07-04, S07-06 | Incompleteness rate, WTP |
+
 ## Analytical interpretation
 
 The evidence supports recurring workflow categories, not a winner. Invoice/payment administration has the best direct pain evidence in this pass. Quality, privacy, security, and employment records have strong evidence of duties or controls but weaker candidate-specific WTP evidence. Scheduling, inventory, and customer-follow-up wedges are supported mainly by the existence of paid adjacent systems and by workflow inference, so they remain lower-confidence.
 
-Candidate diversity is intentional: five revenue/quote/payment wedges, three scheduling/field-service wedges, three supply/inventory wedges, four quality/document-control wedges, three customer/privacy evidence wedges, and two security/access wedges. Cross-category overlap is preserved for later synthesis rather than silently removed.
+Candidate diversity remains broad, but evidence quality now controls inclusion. Six unsupported concepts were withdrawn rather than preserved for numerical symmetry. The 14 retained rows include payment, field-service, supply/inventory, employer-record, quality, privacy, and security workflows; seven still lack direct candidate-level problem evidence and are explicitly low-confidence assumptions/inferences.
 
 ## Legal, safety, privacy, integration, and sales boundaries
 
@@ -105,8 +124,8 @@ Overall confidence is medium. Source quality is high for the claims official sou
 
 ## Quality and lifecycle
 
-The first complete draft scored 88/100. Targeted corrections added claim IDs, field-complete candidate records, source metadata, security/legal boundaries, reproducible queries, and linked hygiene. The corrected creator self-score is 100/100; independent Governance score is pending. See [QUALITY_SCORE_HISTORY.md](QUALITY_SCORE_HISTORY.md) and [CORRECTION_LOG.md](CORRECTION_LOG.md).
+The first complete draft scored 88/100. Earlier Codex review sections are now correctly labeled Internal Governance Simulation. External Governance Cycle 1 assigned the authoritative 92/100 and opened EXT-GOV-01. Correction Cycle 2 adds independent workflow evidence, removes six unsupported concepts, and makes the evidence-role matrix auditable. The new creator execution score is 100/100; no new independent Governance score is claimed. See [QUALITY_SCORE_HISTORY.md](QUALITY_SCORE_HISTORY.md) and [CORRECTION_LOG.md](CORRECTION_LOG.md).
 
 ## Recommended next action
 
-Request independent Governance review of this version against the 100-point thread scorecard. Keep Gate 1 open and do not rank, select, validate, or perform due diligence on a candidate.
+External Governance re-review requested. Keep Gate 1 open and do not rank, select, validate, or perform due diligence on a candidate.

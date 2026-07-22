@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.1
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -9,8 +9,10 @@ last_reviewed: 2026-07-22
 
 Thread: T07
 Issue: #10
-Artifact version: 0.2.1
-Governance reviewer: Governance Agent, independent from the creator, 2026-07-22
+Artifact version: 0.3.0
+Authoritative external reviewer: ChatGPT Governance review on PR #18, 2026-07-22
+
+Historical Codex review cycles below are Internal Governance Simulations, not independent Governance. Their scores and findings are preserved for audit history but are superseded by the external score.
 
 ## Score history
 
@@ -18,10 +20,12 @@ Governance reviewer: Governance Agent, independent from the creator, 2026-07-22
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | 1 — complete first draft | 10 | 17 | 12 | 15 | 13 | 8 | 8 | 5 | 88 | pending | 0 | targeted correction |
 | 2 — corrected review candidate | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | 100 | pending | 0 | creator complete; Governance review required |
-| 3 — independent Governance review | 10 | 20 | 14 | 15 | 15 | 10 | 10 | 5 | — | 99 | 0 | targeted correction required |
+| 3 — Internal Governance Simulation | 10 | 20 | 14 | 15 | 15 | 10 | 10 | 5 | — | 99 internal | 0 | internal targeted correction |
 | 4 — creator traceability correction | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | 100 | pending re-review | 0 | Governance rescore requested |
-| 5 — independent Governance re-review | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | — | 100 | 0 | Governance complete; no blocker |
-| 6 — independent Governance final lifecycle verification | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | — | 100 | 0 | in-review v0.2.1 verified; Governance complete |
+| 5 — Internal Governance Simulation re-review | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | — | 100 internal | 0 | internally complete; non-authoritative |
+| 6 — Internal Governance Simulation lifecycle check | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | — | 100 internal | 0 | in-review v0.2.1 internally verified |
+| 7 — External Governance Cycle 1 | 10 | 17 | 14 | 13 | 14 | 10 | 10 | 4 | — | **92 external** | **1: EXT-GOV-01** | authoritative rework required |
+| 8 — External Correction Cycle 2 creator rescore | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | **100** | pending external re-review | **1: EXT-GOV-01** | creator execution complete; external re-review requested |
 
 ## Cycle 1 point-loss register
 
@@ -39,7 +43,7 @@ The creator awards 100/100 for artifact execution quality, not attractiveness. A
 
 This does not complete Governance review, pass Gate 1, authorize Gate 2, or imply that any opportunity is good. Governance may independently reduce the score or open blockers.
 
-## Independent Governance review — Cycle 1
+## Internal Governance Simulation — Cycle 1 (non-independent)
 
 | Dimension | Awarded | Evidence and rationale |
 |---|---:|---|
@@ -59,22 +63,32 @@ This does not complete Governance review, pass Gate 1, authorize Gate 2, or impl
 |---|---:|---|---|
 | G07-GOV-001 — candidate problem/workflow statements are not uniformly assigned exactly one explicit claim type | 1 | Add an explicit claim-type field or unambiguous per-row label using only evidence, inference, assumption, or hypothesis; do not change confidence, attractiveness or Opportunity Scores | All 20 candidates expose exactly one type and retain their existing source/uncertainty mapping |
 
-Critical blockers: none. Governance verdict: **REWORK REQUIRED — 99/100**. This is an artifact-quality correction only and does not authorize Gate 2.
+Internal critical blockers: none. Internal simulation verdict: **REWORK REQUIRED — 99/100**. This is historical artifact-quality pre-review only and did not authorize Gate 2.
 
 ## Final creator verdict
 
 CREATOR COMPLETE 100/100 — INDEPENDENT GOVERNANCE REVIEW PENDING.
 
-## Creator response to Governance Cycle 1
+## Creator response to Internal Simulation Cycle 1
 
 G07-GOV-001 was applied without changing source mappings, confidence, WTP posture, attractiveness, or scope. Every candidate problem/workflow statement in the report and index now exposes exactly one explicit claim type: inference. This reflects a reasoned candidate-level conclusion from the cited category evidence, not direct demand evidence.
 
-## Independent Governance re-review — Cycle 2
+## Internal Governance Simulation re-review — Cycle 2 (non-independent)
 
-Governance verified all 20 report rows and all 20 index rows. Each candidate problem/workflow statement is explicitly typed as an inference, retains its cited basis and confidence/uncertainty, and does not become direct demand evidence. G07-GOV-001 is resolved. No source mapping, confidence, WTP posture, attractiveness conclusion, or Opportunity Score changed.
+The internal simulation verified all 20 then-current report rows and all 20 then-current index rows. Each candidate problem/workflow statement was explicitly typed as an inference, retained its cited basis and confidence/uncertainty, and did not become direct demand evidence. G07-GOV-001 was resolved internally. No source mapping, confidence, WTP posture, attractiveness conclusion, or Opportunity Score changed.
 
-Independent checks passed: repository validator (32 required files; 37 governed Markdown files; links and empty-artifact checks), three unit tests, `git diff --check`, exactly nine thread artifacts, and exactly 20 candidates. Governance verdict: **COMPLETE — 100/100 — ZERO CRITICAL BLOCKERS**. This does not pass Gate 1, authorize Gate 2, or select a product.
+Internal checks passed: repository validator (32 required files; 37 governed Markdown files; links and empty-artifact checks), three unit tests, `git diff --check`, exactly nine thread artifacts, and exactly 20 then-current candidates. Internal simulation verdict: **COMPLETE — 100/100 — ZERO INTERNAL CRITICAL BLOCKERS**. This record was non-independent and did not pass Gate 1, authorize Gate 2, or select a product.
 
-## Independent Governance final lifecycle verification — Cycle 3
+## Internal Governance Simulation lifecycle verification — Cycle 3 (non-independent)
 
-Governance re-verified the post-review lifecycle patch and C07-11 clarification. All nine artifacts are `in-review` at version `0.2.1`; C07-11 explicitly names owner, impact if wrong, and planned test; all 20 report and index candidate rows remain intact. Repository validator, three unit tests, `git diff --check`, exact nine-artifact count, 9/9 lifecycle/version checks, and 20+20 candidate-row checks passed. Final Governance history: **99 → 100 → 100**. Open critical blockers: **0**.
+The internal simulation re-verified the post-review lifecycle patch and C07-11 clarification. All nine artifacts were `in-review` at version `0.2.1`; C07-11 named owner, impact if wrong, and planned test; all 20 then-current report and index candidate rows remained intact. Repository validator, three unit tests, `git diff --check`, exact nine-artifact count, 9/9 lifecycle/version checks, and 20+20 candidate-row checks passed. Internal simulation history: **99 → 100 → 100**. This record was not independent and is superseded by External Governance Cycle 1.
+
+## External Governance Cycle 1 — authoritative
+
+External Governance assigned **92/100** with dimension scores **10, 17, 14, 13, 14, 10, 10, 4**. The exact eight-point loss and all findings are recorded in [CORRECTION_LOG.md](CORRECTION_LOG.md). The review required direct workflow evidence for the scheduling/cancellations, quote-to-job, field-photo, inventory/reorder, customer-promise, and warranty clusters; separation of vendor features from independent problem/WTP evidence; a candidate-to-source coverage matrix; and honest narrowing/removal where evidence remained weak. It opened common blocker **EXT-GOV-01**.
+
+## External Correction Cycle 2 creator rationale
+
+The creator awards 100/100 for correction execution quality, not opportunity attractiveness. Six concepts without sufficient problem evidence were withdrawn (20 → 14). Five verifiable independent/direct sources were added with freshness limits; no source was removed or replaced. Every retained candidate now has a matrix separating direct problem, context/population, current alternative, technical feasibility, legal/privacy/safety/platform, and unsupported assumptions. All external findings and eight lost points are logged, prior internal review history is correctly labeled, and lifecycle/version metadata is consistent.
+
+EXT-GOV-01 remains open because only the external reviewer can assign a new Governance score. **External Governance re-review requested.**

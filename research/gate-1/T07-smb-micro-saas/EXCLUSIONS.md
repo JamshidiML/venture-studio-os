@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.1
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -25,3 +25,16 @@ last_reviewed: 2026-07-22
 | Unauthorized scraping, credential collection, or private APIs | Security and platform-risk boundary. | Evidence rules and Issue #10 |
 
 Rejected concepts remain excluded even if they appear commercially attractive. Nothing here authorizes Gate 2.
+
+## Correction Cycle 2 candidate withdrawals
+
+These rows are preserved for audit history and are no longer counted as retained candidates.
+
+| Opportunity ID | Withdrawn concept | Reason |
+|---|---|---|
+| OPP-2026-603 | Change-order acknowledgement ledger | Vendor quote features did not establish acknowledgement-trail pain; legal/workflow evidence was insufficient. |
+| OPP-2026-607 | Waitlist backfill coordinator | Scheduling-category availability did not establish duplicated waitlist outreach or its frequency. |
+| OPP-2026-610 | Purchase-order/receipt mismatch triage | Late-payment and supply-risk sources did not establish unassigned PO/receipt mismatch pain. |
+| OPP-2026-611 | SOP revision acknowledgement | Inspection/document-control vendor features established an alternative, not direct acknowledgement failure. |
+| OPP-2026-615 | Customer promise tracker | No direct evidence established lost promises in the specified owner-led SMB segment. |
+| OPP-2026-616 | Warranty/return evidence packet | No source established packet-assembly pain; a broad field-service product page was not qualifying evidence. |

@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.1
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -25,11 +25,17 @@ Access date for every external source: 2026-07-22. “Date unavailable” means 
 | S07-12 | [SafetyCulture — Inspection management](https://safetyculture.com/inspections-and-reports) | Date unavailable; current page | Inspection and report workflows | C07-05; OPP-606, 613, 614 | medium | Customer examples are not independently verified prevalence evidence. |
 | S07-13 | [NIST MEP — How small manufacturers can develop risk management](https://www.nist.gov/mep/manufacturing-reports/supply-chain/how-small-manufacturers-can-develop-risk-management) | 2026; day unavailable | U.S. small and medium manufacturers | C07-08; OPP-608 through 610 | medium-high | Guidance supports the workflow category, not demand for a specific tool. |
 | S07-14 | [European Commission — 2025 annual progress report on simplification, implementation and enforcement](https://commission.europa.eu/document/download/94b7b6dd-8401-4da1-90fe-05a39f2fc3d7_en) | 2025; day unavailable | EU businesses and public administration | Administrative/reporting burden context | medium-high | Policy-level evidence; does not isolate the candidates or measure software demand. |
+| S07-15 | [U.S. Census Bureau — Economic Surveys Show Drop in Supply Delays Since Peak of COVID-19](https://www.census.gov/library/stories/2023/10/inflation-impact-small-business.html) | 2023-10-05 | U.S. businesses; BTOS and predecessor SBPS, including small-business reporting | C07-13; OPP-608 | high | Direct survey evidence that supplier delays occurred, but the latest figures discussed are from 2023 and do not prove a lead-time exception product is wanted. |
+| S07-16 | [NFIB Research Center — 2024 Small Business Problems and Priorities](https://www.nfib.com/small-business-problems-and-priorities/) | 2024; survey fielded February–April 2024 | 2,873 U.S. NFIB small-business owner members | C07-14; OPP-609 | medium-high | Direct owner survey; membership/advocacy context limits representativeness. It supports supply/inventory cost pressure, not reorder-approval software. |
+| S07-17 | [Capterra — Jobber verified user reviews](https://www.capterra.com/p/127994/Jobber/reviews/) | Page updated 2026-07-11; individual reviews dated 2025-10-01 through 2026-05-01 in the reviewed sample | Mainly small field-service businesses; reviewer geography varies | C07-15; OPP-602, 605 | medium | Direct user accounts expose quote/job splitting and scheduling friction, but the sample is self-selected and includes incentivized or vendor-referred reviews. It is not a prevalence estimate. |
+| S07-18 | [Capterra — Field Service Management Software user-review summary](https://www.capterra.com/field-service-management-software/) | Page current 2026-07-22 | Field-service software reviewers; mixed business sizes/geographies | C07-15; OPP-602, 605, 606 | medium | Independent aggregator summary of user reviews; supports the workflow/alternative category, not a specific unmet gap or WTP for these wedges. |
+| S07-19 | [TechRadar — Jobber CRM review](https://www.techradar.com/pro/software-services/jobber-crm-review) | 2026-06-02 | Hands-on editorial test focused on service businesses | C07-16; OPP-604, 606 | medium | One editorial test observed field-photo sync friction and job-form workflow; not a representative field-business study and not proof of demand. |
 
 ## Conflict and freshness notes
 
 - S07-01 uses a broad U.S. small-business definition; it must not be converted into a serviceable market estimate.
 - S07-02 directly measures payment practices but cautions against definitive sector/size generalization.
 - S07-10 through S07-12 are vendor sources. They support category existence and a weak WTP proxy only; they cannot establish a market gap.
+- S07-17 through S07-19 add direct user/editorial workflow observations, but their self-selected or single-test designs prevent prevalence, causal, or demand claims.
 - Dynamic legal and regulatory pages S07-05 through S07-08 require re-check before any future product or customer-facing claim.
 - No downloads, revenue, conversion, market-size, or customer-demand values were inferred.
