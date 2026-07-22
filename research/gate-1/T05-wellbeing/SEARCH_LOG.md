@@ -1,6 +1,6 @@
 ---
-status: draft
-version: 0.2.0
+status: in-review
+version: 0.2.1
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
