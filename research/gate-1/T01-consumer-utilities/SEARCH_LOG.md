@@ -1,8 +1,8 @@
 ---
 status: in-review
-version: 0.1.3
+version: 0.1.4
 owner_role: Strategy Agent
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-23
 thread_id: T01
 issue_number: 4
 gate: 1
@@ -35,8 +35,12 @@ gate: 1
 
 The Cycle-2 correction did not pad the register with adjacent sources. A candidate-by-candidate audit found no direct problem evidence in the existing register for possession location, borrowed-item return, reusable packing, plant care, pet handoff, idle-time queues, completion capture, or routine restart. Those candidates were downgraded to unsupported `very low` confidence hypotheses; T01-S08 remains contextual animal-keeping evidence and is not represented as pet-handoff pain.
 
-Cycle 3 added no search and no source. It accepted the Cycle-2 external finding that those eight concepts lack qualifying evidence, moved them to the Hypothesis Watchlist, and retained the existing evidence classifications and full 20-ID coverage matrix.
+Cycle 3 added no search and no source. It accepted the Cycle-2 external finding that eight concepts lack qualifying evidence, moved them to the Hypothesis Watchlist, and retained the existing classifications and full 20-ID matrix.
+
+Issue #25 applies the same rule to the nine remaining disputed rows. The External Cycle-3 matrix showed no direct problem evidence for `001`–`003`, `007`–`010`, `013`, or `017`; only household activity, cadence guidance, safety guidance, or logical utility was present. No source was added merely to preserve candidate count. Those nine IDs moved to the existing watchlist, while `004`–`006` remain qualified on T01-S02/S03 observed food-management behavior. Strengthened IDs: none. Source changes: `9 → 9` (`+0/−0`).
 
 ## Search Coverage Check
 
-The search covered frequency, food management, household maintenance, safety cadence, and non-clinical animal care. Direct demand, willingness-to-pay, retention, and acquisition evidence were intentionally not inferred from these sources and remain in [EVIDENCE_GAPS.md](EVIDENCE_GAPS.md).
+The search covered frequency, food management, household maintenance, safety cadence, and non-clinical animal care. Direct demand, willingness-to-pay, retention, and acquisition evidence were intentionally not inferred from these sources and remain in [EVIDENCE_GAPS.md](EVIDENCE_GAPS.md). The final audit yields three qualified and 17 watchlist IDs without a new search.
+
+Final External Governance re-review requested

@@ -1,8 +1,8 @@
 ---
 status: in-review
-version: 0.1.3
+version: 0.1.4
 owner_role: Strategy Agent
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-23
 thread_id: T01
 issue_number: 4
 gate: 1
@@ -59,9 +59,32 @@ Authoritative external score: `95/100` (`10 + 18 + 15 + 12 + 15 + 10 + 10 + 5`).
 
 | Review ID | External finding / required correction | Cycle-3 resolution | Verification | Status |
 |---|---|---|---|---|
-| EXT2-T01-01 | IDs 011, 012, 014–016, and 018–020 have no direct problem evidence but remained in the qualified universe; create a two-tier result without adding an artifact. | Retained 12 evidence-backed or clearly adjacent candidates in the qualified report/index and moved all eight named IDs to the full Hypothesis Watchlist without renumbering or deletion. | MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md, EXCLUSIONS.md, and THREAD_SUMMARY.md show `12 qualified + 8 watchlist = 20`; the matrix records final status for all 20 IDs. | resolved internally; external verification pending |
-| C3-T01-01 | Cycle 3 must preserve every watchlist concept, evidence gap, constraint, reconsideration condition, and ownership while keeping all artifacts in review. | Added all required watchlist fields, retained the six-class coverage audit, versioned all nine artifacts to 0.1.3, and preserved `status: in-review`. | Nine-artifact lifecycle, count, ID, matrix, repository, unit-test, and diff checks. | correction complete; external re-review requested |
+| EXT2-T01-01 | IDs 011, 012, 014–016, and 018–020 have no direct problem evidence but remained in the qualified universe; create a two-tier result without adding an artifact. | Retained the then-current 12-candidate set and moved all eight named IDs to the full Hypothesis Watchlist without renumbering or deletion. | External Cycle-3 review verified the watchlist, audit history, lifecycle, and CI. | externally resolved |
+| C3-T01-01 | Cycle 3 must preserve every watchlist concept, evidence gap, constraint, reconsideration condition, and ownership while keeping all artifacts in review. | Added all required watchlist fields, retained the six-class coverage audit, versioned all nine artifacts to 0.1.3, and preserved `status: in-review`. | External Cycle-3 review confirmed the Cycle-2 completion finding and `EXT-GOV-01` resolved. | externally resolved |
 
 No source was added or removed in Cycle 3. No Opportunity Score was calculated or inflated.
 
-External Governance Cycle 3 re-review requested
+## Authoritative External Governance Review — Cycle 3
+
+Authoritative external score: `94/100` (`10 + 18 + 15 + 12 + 14 + 10 + 10 + 5`). The exact six-point loss was two source-quality points, three qualified/watchlist-integrity points, and one analytical-rigor point. `EXT-GOV-01` and `EXT2-T01-01` were externally confirmed resolved.
+
+| Dimension | Maximum | External award | Lost | Finding |
+|---|---:|---:|---:|---|
+| Scope compliance and exclusions | 10 | 10 | 0 | no loss |
+| Source quality and freshness | 20 | 18 | 2 | nine remaining qualified rows lacked direct or clearly adjacent workflow evidence |
+| Claim-level evidence and traceability | 15 | 15 | 0 | no loss |
+| Opportunity coverage and qualified/watchlist integrity | 15 | 12 | 3 | context/guidance-led IDs remained qualified despite empty direct-evidence cells |
+| Analytical rigor and uncertainty | 15 | 14 | 1 | the stated qualification rule was not consistently applied |
+| Legal, safety, privacy, and platform constraints | 10 | 10 | 0 | no loss |
+| Reproducibility and CI | 10 | 10 | 0 | no loss |
+| Clarity and repository governance | 5 | 5 | 0 | no loss |
+| **Total** | **100** | **94** | **6** | **external score is authoritative** |
+
+| Review ID | External finding / required correction | Final correction | Verification | Status |
+|---|---|---|---|---|
+| EXT-GOV-03-T01 | IDs 001–003, 007–010, 013, and 017 remained qualified even though the matrix contained no direct problem evidence and only household context, cadence guidance, or safety guidance. | Moved all nine IDs to the existing Hypothesis Watchlist; retained only 004–006, whose T01-S02/S03 behavioral evidence directly supports the bounded food-management workflow family. | All nine artifacts show `3 qualified + 17 watchlist = 20`; the matrix has three qualified and 17 watchlist statuses; EXCLUSIONS.md holds 17 complete contracts. | creator-resolved; final external verification pending |
+| FINAL-T01-01 | Issue #25 requires exact decisions, lost-point history, source changes, evidence ceiling, lifecycle bump, and frozen-thread integrity without source padding. | Strengthened IDs: none. Moved: 001–003, 007–010, 013, 017. Sources: 9 → 9 (+0/−0). Versioned all nine artifacts to 0.1.4 and retained `in-review`. | Repository validator passed (32/37, links/placeholders clean), unit tests passed 3/3, diff check passed, and artifact/lifecycle/range/ID/matrix/watchlist-contract audits passed; frozen, PR, and CI checks continue through publish. | creator-resolved; local validation passed; final external verification pending |
+
+No source was added, removed, or reclassified in the final correction. No Opportunity Score was calculated or inflated.
+
+Final External Governance re-review requested

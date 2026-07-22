@@ -1,8 +1,8 @@
 ---
 status: in-review
-version: 0.1.3
+version: 0.1.4
 owner_role: Strategy Agent
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-23
 thread_id: T01
 issue_number: 4
 gate: 1
@@ -12,18 +12,18 @@ gate: 1
 
 ## Executive Summary
 
-T01 now contains an unranked two-tier Gate 1 universe of 12 Qualified Gate 1 Candidates and eight Hypothesis Watchlist Candidates, preserving all 20 IDs `OPP-2026-001` through `OPP-2026-020`. Current official and primary sources support the recurrence of household work, food-management friction, and scheduled home-safety/upkeep tasks. Candidate-level demand remains mostly inferential and is labeled accordingly.
+T01 now contains an unranked two-tier Gate 1 universe of three Qualified Gate 1 Candidates (`004`–`006`) and 17 Hypothesis Watchlist Candidates, preserving all 20 IDs `OPP-2026-001` through `OPP-2026-020`. External Governance Cycle 3 scored the prior package `94/100`, losing source quality `−2`, qualified/watchlist integrity `−3`, and analytical rigor `−1`. Issue #25 added no source: it retained the three food-management candidates with observed behavioral support and moved nine remaining context/guidance-led IDs to the existing watchlist.
 
 ## Created Package
 
-- [MARKET_DISCOVERY_REPORT.md](MARKET_DISCOVERY_REPORT.md) — scope, method, material claims, 12-candidate qualified universe, eight-entry watchlist reference, constraints, and stop boundary.
+- [MARKET_DISCOVERY_REPORT.md](MARKET_DISCOVERY_REPORT.md) — scope, method, material claims, three-candidate qualified universe, 17-entry watchlist reference, constraints, and stop boundary.
 - [SOURCE_REGISTER.md](SOURCE_REGISTER.md) — nine sources with dates, access date, geography, limitations, and confidence.
 - [SEARCH_LOG.md](SEARCH_LOG.md) — exact current-source queries and selection decisions.
 - [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md) — candidate-level traceability, reachability hypotheses, and constraints.
-- [EXCLUSIONS.md](EXCLUSIONS.md) — unsafe, prohibited, and cross-thread spaces plus the full eight-entry Hypothesis Watchlist.
+- [EXCLUSIONS.md](EXCLUSIONS.md) — unsafe, prohibited, and cross-thread spaces plus the full 17-entry Hypothesis Watchlist.
 - [EVIDENCE_GAPS.md](EVIDENCE_GAPS.md) — demand, WTP, retention, distribution, safety, privacy, and geography ceilings.
-- [QUALITY_SCORE_HISTORY.md](QUALITY_SCORE_HISTORY.md) — Creator score `81 → 100 → 100 → 100`; authoritative external Governance history `92 → 95`; prior Codex 100 is preserved as an Internal Pre-review simulation.
-- [CORRECTION_LOG.md](CORRECTION_LOG.md) — original corrections plus authoritative Cycle-2 finding `EXT2-T01-01` and the Cycle-3 resolution.
+- [QUALITY_SCORE_HISTORY.md](QUALITY_SCORE_HISTORY.md) — Creator execution history through final `100/100`; authoritative external Governance `92 → 95 → 94`; prior Codex 100 is preserved as an Internal Pre-review simulation.
+- [CORRECTION_LOG.md](CORRECTION_LOG.md) — original corrections, externally resolved prior findings, exact Cycle-3 six-point loss, and creator resolution of `EXT-GOV-03-T01`.
 - `THREAD_SUMMARY.md` — this handoff.
 
 ## Assumptions
@@ -35,14 +35,14 @@ T01 now contains an unranked two-tier Gate 1 universe of 12 Qualified Gate 1 Can
 
 ## Blockers and Evidence Ceiling
 
-Creator Cycle-3 corrections are complete. The authoritative external Governance score is `95/100`; `EXT-GOV-01` is externally resolved. `EXT2-T01-01` is corrected locally and awaits external verification. No artifact-quality evidence-ceiling exception is requested. Candidate confidence remains capped by missing direct demand, willingness-to-pay, retention, channel evidence, and direct problem evidence for all eight watchlist candidates.
+The Issue #25 final Creator correction is complete at `100/100` execution quality only. The authoritative external Governance score remains `94/100`; `EXT-GOV-01` and `EXT2-T01-01` are externally resolved, while `EXT-GOV-03-T01` is creator-resolved and awaits final external verification. Strengthened IDs: none. Moved IDs: `001`–`003`, `007`–`010`, `013`, `017`. Sources: `9 → 9` (`+0/−0`). Candidate confidence remains capped by missing direct demand, willingness-to-pay, retention, channel evidence, and direct problem evidence for 17 watchlist candidates.
 
 ## Validation
 
-Repository validation passed (`32` required files; `37` governed Markdown files; internal links resolved; no empty placeholders). All `3` unit tests and `git diff --check` passed. Integrity audit passed: 9 artifacts, 9/9 in-review, 9/9 version 0.1.3, 12 qualified + 8 watchlist = 20 unique assigned IDs, zero range violations, and 20/20 final-status matrix rows. Sources are unchanged at nine; the prior endpoint check resolved all nine.
+Final local validation passed: repository validation (`32` required files; `37` governed Markdown files; internal links resolved; no empty placeholders), `3/3` unit tests, and `git diff --check`. Integrity audit passed: exactly 9 artifacts, 9/9 `in-review`, 9/9 version `0.1.4`, 3 qualified + 17 watchlist = 20 unique assigned IDs, zero range/reuse violations, 20/20 matrix rows, and 17 complete watchlist contracts. Sources remain unchanged at nine; frozen-thread, PR-state, and CI checks complete after publish.
 
 ## Requested Next Action
 
-Update the existing draft PR linked to Issue #4 and request external Cycle-3 re-review. Keep it draft and unmerged; do not rank candidates, select a winner, or begin Gate 2 without Founder authorization.
+Update existing draft PR #15, link Issue #25, and request final external Governance re-review. Keep it draft and unmerged; do not rank candidates, select a winner, or begin Gate 2 without Founder authorization.
 
-External Governance Cycle 3 re-review requested
+Final External Governance re-review requested

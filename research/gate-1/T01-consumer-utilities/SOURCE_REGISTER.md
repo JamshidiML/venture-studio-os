@@ -1,8 +1,8 @@
 ---
 status: in-review
-version: 0.1.3
+version: 0.1.4
 owner_role: Strategy Agent
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-23
 thread_id: T01
 issue_number: 4
 gate: 1
@@ -30,3 +30,9 @@ Access date for every source: `2026-07-22`. URLs were opened or returned through
 - WRAP is not a government agency but is a major evidence organization using disclosed survey fieldwork; its UK scope is not silently generalized to the U.S.
 - Search-result snippets, competitor marketing, app-store listings, and unsourced market-size pages were not entered as evidence.
 - No paywalled source was used. No personal data or licensed source content is stored here.
+
+## Issue #25 Source Disposition
+
+The source register is unchanged at nine entries (`+0/−0`). External Governance Cycle 3 assigned `94/100`, with two source-quality points among the exact six-point loss because nine qualified candidates lacked direct or clearly adjacent observed workflow evidence. No irrelevant source was added to preserve qualification. T01-S01, S05, and S06 remain context or guidance for the moved IDs; T01-S02/S03 continue to supply the observed behavioral basis for retained IDs `004`–`006`.
+
+Final External Governance re-review requested
