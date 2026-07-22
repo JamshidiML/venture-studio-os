@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -9,7 +9,7 @@ last_reviewed: 2026-07-22
 
 ## Executive summary
 
-This Gate 1 thread documents 15 retained, non-ranked opportunity inferences for families, co-parents, and shared households. Five candidates were removed during External Governance Correction Cycle 2 when direct-problem searches did not support them. Current public evidence establishes that household management and childcare consume recurring time; direct surveys and small qualitative studies additionally document unequal schedule/household responsibility, cognitive household labor, negotiation, and separated-family communication risks. The evidence does **not** establish willingness to pay, product-market fit, or a winning product.
+This Gate 1 thread documents 11 non-ranked Qualified Gate 1 Candidates for families, co-parents, and shared households. Five candidates were removed during External Governance Correction Cycle 2 when direct-problem searches did not support them; Cycle 3 moved four more concepts to the [Hypothesis Watchlist](EXCLUSIONS.md#hypothesis-watchlist) because their specific transport, temporary-care, media-consent, or pet-care failure was not observed. Current public evidence establishes that household management and childcare consume recurring time; direct surveys and small qualitative studies additionally document unequal schedule/household responsibility, cognitive household labor, negotiation, and separated-family communication risks. The evidence does **not** establish willingness to pay, product-market fit, or a winning product.
 
 Direct evidence is strongest for schedule management, division of household labor, household negotiation, and separated-family communication. It remains segment-limited and does not prove demand for any particular solution. Existing family calendars and supervision products demonstrate alternatives and permission complexity only; regulation and population statistics are not classified as direct pain.
 
@@ -19,7 +19,7 @@ Direct evidence is strongest for schedule management, division of household labo
 - Gate: 1 — market discovery only
 - Geography: United States and European/United Kingdom regulatory and usage evidence; candidate inferences require country-specific validation
 - Source cutoff and access date: 2026-07-22
-- Assigned ID range: `OPP-2026-801` through `OPP-2026-820`; retained IDs: 15, with 812, 814, 815, 819, and 820 retired and not reused
+- Assigned ID range: `OPP-2026-801` through `OPP-2026-820`; 11 qualified + 4 watchlist candidates preserve the 15-candidate Cycle-2 auditable universe; 812, 814, 815, 819, and 820 remain retired and not reused
 - Explicit exclusions: surveillance, covert monitoring, custody/legal advice, medical diagnosis, school administration, general finance, manipulative child engagement, and single-user utilities without a shared-household core
 
 ## Methodology
@@ -45,14 +45,16 @@ Searches, dates, and negative findings are reproducible in [SEARCH_LOG.md](SEARC
 
 ## Opportunity universe
 
-The 15 retained candidates are fully defined in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md). They span schedule handoffs, shared responsibilities, household knowledge, school/activity logistics, consent-aware sharing, and temporary-care coordination. No candidate is ranked.
+The 11 qualified candidates are fully defined in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md). Four complete watchlist records remain in [EXCLUSIONS.md](EXCLUSIONS.md#hypothesis-watchlist). Together they preserve the 15-candidate Cycle-2 auditable universe across schedule handoffs, shared responsibilities, household knowledge, school/activity logistics, consent-aware sharing, and temporary-care coordination. No candidate is ranked.
 
 | ID range | Cluster | Candidate count | Evidence posture |
 |---|---|---:|---|
-| OPP-2026-801..805 | schedule and handoff integrity | 5 | recurring-work evidence plus bounded inferences |
-| OPP-2026-806..810 | shared responsibilities and readiness | 5 | direct cognitive-labor/collaboration evidence plus bounded inferences |
-| OPP-2026-811, 813 | household knowledge and permissions | 2 | household-work context plus legal/platform constraints |
-| OPP-2026-816..818 | events and preparation | 3 | schedule/cognitive-labor evidence plus bounded inferences |
+| OPP-2026-801, 802, 804, 805 | schedule and handoff integrity | 4 qualified | direct/adjacent schedule, co-parent, or childcare-disruption workflow evidence |
+| OPP-2026-806..809 | shared responsibilities and readiness | 4 qualified | direct cognitive-labor/collaboration evidence plus bounded inferences |
+| OPP-2026-811 | household knowledge | 1 qualified | adjacent observed cognitive household work; exact maintenance behavior untested |
+| OPP-2026-816, 817 | events and preparation | 2 qualified | schedule/cognitive-labor evidence plus bounded inferences |
+
+Watchlist IDs 803, 810, 813, and 818 are not included in the 11 qualified count. Their full evidence, confidence, risk, consent, revocation, privacy, notification, setup, and reconsideration records remain auditable in EXCLUSIONS.
 
 ## Analytical observations
 
@@ -91,4 +93,6 @@ Confidence is **high** that family and household coordination is recurring and t
 
 ## Recommended next action
 
-External Governance re-review requested for corrected version 0.3.0. Do not advance any candidate to Gate 2, contact families, define an MVP, or implement software without separate Founder authorization.
+External Governance Cycle 2 assigned the authoritative 96/100 and resolved EXT-GOV-01. Cycle 3 resolves completion finding EXT2-T09-01 for the creator package by separating 11 qualified candidates from four watchlist candidates while preserving all conflict and harm controls. Do not advance any candidate to Gate 2, contact families, define an MVP, or implement software without separate Founder authorization.
+
+External Governance Cycle 3 re-review requested

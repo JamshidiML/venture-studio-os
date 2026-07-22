@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -95,7 +95,7 @@ Candidate attractiveness remains capped by G-01 through G-10. No Founder excepti
 
 ## Current verdict
 
-`CREATOR CORRECTION COMPLETE — GOVERNANCE 89/100 HISTORICAL — INDEPENDENT RE-REVIEW PENDING`
+`CREATOR CYCLE 5 COMPLETE — EXTERNAL GOVERNANCE 96/100 AUTHORITATIVE — CYCLE 3 RE-REVIEW PENDING`
 
 ## Internal Governance Simulation re-review — Cycle 2 (historical; not independent)
 
@@ -175,5 +175,35 @@ Critical blocker: `EXT-GOV-01` — authoritative external re-review has not yet 
 | 1–3 | 85 → 100 | not yet available | 20 | internal drafting and simulation history preserved above |
 | External Cycle 1 | 100 | 88 | 20 | external rework required; `EXT-GOV-01` opened |
 | External Correction Cycle 2 | 100 | pending re-review | 15 | targeted correction complete; no new independent score claimed |
+| External Governance Cycle 2 | — | 96 | 15 | `EXT-GOV-01` externally resolved; `EXT2-T09-01` opened |
+| External Correction Cycle 3 | 100 | 96 remains authoritative | 11 qualified + 4 watchlist | completion finding creator-resolved; external Cycle-3 confirmation requested |
 
-External Governance re-review requested.
+## Authoritative External Governance re-review — Cycle 2
+
+Review channel: GitHub PR #22 external ChatGPT Governance re-review
+
+Review date: 2026-07-22
+
+Artifact reviewed: T09 version 0.3.0
+
+| Dimension | Maximum | External score | Points lost |
+|---|---:|---:|---:|
+| Scope compliance and exclusions | 10 | 10 | 0 |
+| Source quality and freshness | 20 | 19 | 1 |
+| Claim-level evidence and traceability | 15 | 15 | 0 |
+| Opportunity coverage and diversity | 15 | 13 | 2 |
+| Analytical rigor and uncertainty | 15 | 14 | 1 |
+| Legal, safety, privacy, and platform constraints | 10 | 10 | 0 |
+| Reproducibility of search method | 10 | 10 | 0 |
+| Clarity and repository hygiene | 5 | 5 | 0 |
+| **External Governance total** | **100** | **96** | **4** |
+
+External Governance explicitly **resolved EXT-GOV-01**, verified the new parent/cognitive-labor/household-collaboration/separated-family evidence, the five Cycle-2 withdrawals, the conflict/non-participation analysis, and CI on the exact Cycle-2 SHA. It opened completion finding **EXT2-T09-01**: candidates 803, 810, 813, and 818 still lacked pain-specific evidence for transport handoff, temporary-care briefing, family-event media consent, or shared pet-care handoff.
+
+## Creator cycle 5 — External Correction Cycle 3
+
+The creator retained 11 Qualified Gate 1 Candidates: 801, 802, 804, 805, 806, 807, 808, 809, 811, 816, and 817. Candidates 803, 810, 813, and 818 moved to the Hypothesis Watchlist with their complete Issue #12 contracts, evidence searched, missing evidence, confidence, reconsideration conditions, T09 ownership, and all relevant conflict/harm controls preserved. Qualified 11 + watchlist 4 equals the 15-candidate Cycle-2 auditable universe; earlier retired IDs 812, 814, 815, 819, and 820 remain separate and were not reused. The coverage matrix retains all 15 auditable candidates and states each Cycle-3 status.
+
+The creator awards **100/100** for Cycle-3 execution and artifact quality only. The latest external Governance score remains **96/100**; this record does not claim an external score of 100, pass Gate 1, rank candidates, recruit families, or authorize Gate 2. EXT2-T09-01 is creator-resolved by the explicit qualified/watchlist split and awaits external confirmation.
+
+External Governance Cycle 3 re-review requested
