@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.1
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -26,6 +26,9 @@ Search date/cutoff: 2026-07-22. Queries were intentionally split between workflo
 | 13 | Chrome sidePanel storage downloads APIs current | Verify browser capability surfaces | C13–C14 | Least privilege and user gesture still required |
 | 14 | creator software market size downloads revenue | Test commercial estimates | none | Opaque forecasts and estimated downloads rejected |
 | 15 | social media creator complaints workflow | Test qualitative friction | none | Anecdotes not representative enough for material claims |
+| 16 | ILO creative workers digital platforms working conditions creator IP control | Add independent creator-labor context beyond Census/vendor research | C15 | Synthesis retained as context, not candidate demand |
+| 17 | ACM creative practitioners evolving workflows interviews videos survey 2024 | Add direct multi-stage practitioner evidence | C16 | Microsoft affiliation and GenAI-project focus recorded; no preflight demand inference |
+| 18 | creators sensory impairment Kenya video creation journey interviews | Add direct accessibility/creator workflow evidence | C17 | Small geography- and disability-specific sample not generalized |
 
 ## Reproducibility notes
 

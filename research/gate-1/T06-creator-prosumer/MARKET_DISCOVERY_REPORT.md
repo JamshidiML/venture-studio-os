@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.1
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -10,7 +10,7 @@ last_reviewed: 2026-07-22
 ## Executive Summary
 
 - **Twenty unranked candidates cover creator research, rights, accessibility, editorial preflight, feedback and provenance.** They serve individuals and freelancers across writing, video, podcasting, newsletters and visual production without becoming an enterprise suite or platform companion.
-- **The strongest signals are workflow scale and compliance complexity, not demand for a specific product.** U.S. Census data show a large independent-creator proprietor category, and a disclosed Patreon vendor survey shows multi-format, multi-platform work. Neither establishes WTP or candidate retention.
+- **Independent and direct workflow evidence now supplements population/vendor context.** ILO documents platform-shaped creative work; ACM practitioner research observes multi-stage workflows; interviews with disabled Kenyan video creators expose accessibility and collaboration barriers. These sources still do not establish demand for a particular preflight, capture tool or browser extension.
 - **Rights, permissions and human review are hard constraints.** Copyright, FTC endorsement guidance, W3C accessibility requirements, Chrome extension policy, YouTube authorization/quota rules and C2PA limitations materially narrow feasible concepts.
 - **No platform access was invented.** Browser APIs were verified in current first-party documentation; store approval, host access, OAuth scopes, quota extensions and cross-browser parity remain unresolved until later authorization.
 
@@ -26,7 +26,7 @@ last_reviewed: 2026-07-22
 
 ## Methodology
 
-Research first established creator context, then verified legal, accessibility, extension and API constraints with primary or first-party sources. A candidate required a repeatable individual workflow, a traceable evidence basis, an existing alternative, explicit WTP uncertainty and a viable no-scraping/no-private-API posture. Platform capabilities were recorded only when the current documentation supported them.
+Research first established creator context, then sought direct practitioner evidence and verified legal, accessibility, extension and API constraints. Direct problem/workflow evidence was separated from creator population, vendor survey, technical feasibility and legal/platform constraints. A candidate required a repeatable individual workflow, a traceable evidence basis, an existing alternative, explicit WTP uncertainty and a viable no-scraping/no-private-API posture. Platform capabilities were recorded only when current documentation supported them and were never counted as creator pain.
 
 See [SOURCE_REGISTER.md](SOURCE_REGISTER.md), [SEARCH_LOG.md](SEARCH_LOG.md), [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md), [EXCLUSIONS.md](EXCLUSIONS.md) and [EVIDENCE_GAPS.md](EVIDENCE_GAPS.md) for the audit trail.
 
@@ -34,7 +34,11 @@ See [SOURCE_REGISTER.md](SOURCE_REGISTER.md), [SEARCH_LOG.md](SEARCH_LOG.md), [O
 
 ### A real creator segment exists, but tool demand is not quantified
 
-The U.S. Census Bureau identifies 1,043,306 individual proprietorships in independent artists, writers and performers in 2023 among the gig-related industries it highlighted (C01). Patreon’s 2025 vendor survey covers 1,007 creators across short/long video, photography, writing, visual art, podcasts and more (C02). **Inference:** multi-format individual workflows are a valid discovery scope. **Limitation:** neither source measures pain frequency or WTP for these candidates.
+The U.S. Census Bureau identifies 1,043,306 individual proprietorships in independent artists, writers and performers in 2023 among the gig-related industries it highlighted (C01). Patreon’s 2025 vendor survey covers 1,007 creators across multiple formats (C02). ILO independently describes how platform control, instability and IP/fair-compensation concerns shape creative work (C15). **Inference:** multi-format individual workflows are a valid discovery scope. **Limitation:** none measures pain frequency or WTP for these candidates.
+
+### Direct practitioner evidence confirms multi-stage and accessibility work, not candidate demand
+
+An ACM study directly captured interviews, project videos and survey responses from creative practitioners working across GenAI project stages (C16). Interviews with 20 Kenyan video creators with sensory impairments found staged and collaborative creation shaped by accessibility and infrastructure barriers (C17). These sources strengthen the existence of creator-controlled multi-stage and accessibility work. They do not independently validate browser capture (500–503), rights ledgers, composite release preflights or paid demand.
 
 ### Rights and disclosure checks recur across creator workflows
 
@@ -42,7 +46,7 @@ Copyright grants owners exclusive reproduction, distribution and derivative-work
 
 ### Accessibility is a production task, not a one-click claim
 
-W3C guidance distinguishes captions, transcripts and description of visual information and notes that automatic captions need editing (C09). Candidate tools therefore organize QA and human review. They do not certify WCAG conformance.
+W3C guidance distinguishes captions, transcripts and description of visual information and notes that automatic captions need editing (C09). C17 adds direct creator evidence that accessibility work is staged and collaborative. Candidates 507, 509 and 510 therefore organize human review, but none certifies WCAG conformance or assumes a platform API.
 
 ### Browser extensions can support capture workflows only under least privilege
 
@@ -67,6 +71,7 @@ The full 20-candidate, unranked universe is in [OPPORTUNITY_INDEX.md](OPPORTUNIT
 3. **Unknown:** candidate-specific WTP; creator population and direct-fan interest are not payment evidence for software.
 4. **Risk:** an extension can lose trust or approval if it over-requests access or handles browsing data beyond a single purpose.
 5. **Risk:** rights, disclosure and accessibility helpers can create false assurance unless their output is explicitly user-reviewed.
+6. **Evidence ceiling:** direct candidate-level pain remains absent for browser capture 500–503, most rights/compliance primitives and composite preflights 505–515; the coverage matrix marks these as category-, constraint- or feasibility-supported only.
 
 ## Confidence assessment
 
@@ -74,4 +79,4 @@ Confidence is **high for the cited legal, policy, standards and API constraints*
 
 ## Recommended next action
 
-Request independent Governance review of the Gate 1 package. Do not rank candidates, begin due diligence or validation, write a PRD, build an extension or implement software.
+Request external Governance re-review of the Gate 1 package. Do not rank candidates, begin due diligence or validation, write a PRD, build an extension or implement software.
