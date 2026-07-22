@@ -1,8 +1,8 @@
 ---
 status: in-review
-version: 0.1.3
+version: 0.1.4
 owner_role: Strategy Agent
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-23
 thread_id: T03
 issue_number: 6
 gate: 1
@@ -59,9 +59,32 @@ Authoritative external score: `95/100` (`10 + 19 + 15 + 12 + 14 + 10 + 10 + 5`).
 
 | Review ID | External finding / required correction | Cycle-3 resolution | Verification | Status |
 |---|---|---|---|---|
-| EXT2-T03-01 | IDs 205, 211, 215, and 218 remained unsupported hypotheses inside a report describing all 20 concepts as qualified; move them to a watchlist and keep legal guidance separate from direct pain. | Retained 16 evidence-backed or clearly adjacent workflows in the qualified report/index and moved all four named IDs to the full Hypothesis Watchlist without deletion or renumbering. | MARKET_DISCOVERY_REPORT.md and OPPORTUNITY_INDEX.md contain 16 qualified rows; EXCLUSIONS.md preserves four complete watchlist entries; the 20-row matrix records final status. | resolved internally; external verification pending |
-| C3-T03-01 | Cycle 3 must preserve candidate 219's dedicated FTC source and narrow rule treatment while creating the two-tier universe. | Kept T03-S13, limited covered locations, exclusions, midnight-of-third-business-day deadline, jurisdiction/state-law caveat, no-advice/no-submission boundary, and legal-guidance classification intact; versioned all nine artifacts to 0.1.3 and retained `status: in-review`. | Source, candidate, matrix, lifecycle, count, range, uniqueness, repository, unit-test, and diff checks. | correction complete; external re-review requested |
+| EXT2-T03-01 | IDs 205, 211, 215, and 218 remained unsupported hypotheses inside a report describing all 20 concepts as qualified; move them to a watchlist and keep legal guidance separate from direct pain. | Retained the then-current 16-candidate set and moved all four named IDs to the full Hypothesis Watchlist without deletion or renumbering. | External Cycle-3 review verified the watchlist, full universe, Cooling-Off Rule record, lifecycle, and CI. | externally resolved |
+| C3-T03-01 | Cycle 3 must preserve candidate 219's dedicated FTC source and narrow rule treatment while creating the two-tier universe. | Kept T03-S13, limited covered locations, exclusions, midnight-of-third-business-day deadline, jurisdiction/state-law caveat, no-advice/no-submission boundary, and legal-guidance classification intact; versioned all nine artifacts to 0.1.3 and retained `status: in-review`. | External Cycle-3 review confirmed the Cycle-2 completion finding and prior blockers resolved. | externally resolved |
 
 No source was added or removed in Cycle 3. No Opportunity Score was created or inflated.
 
-External Governance Cycle 3 re-review requested
+## Authoritative External Governance Review — Cycle 3
+
+Authoritative external score: `94/100` (`10 + 19 + 15 + 11 + 14 + 10 + 10 + 5`). The exact six-point loss was one source-quality point, four qualified/watchlist-integrity points, and one analytical-rigor point. `EXT-GOV-01` and `EXT2-T03-01` were externally confirmed resolved; `T03-EXT-B02` remains resolved.
+
+| Dimension | Maximum | External award | Lost | Finding |
+|---|---:|---:|---:|---|
+| Scope compliance and exclusions | 10 | 10 | 0 | no loss |
+| Source quality and freshness | 20 | 19 | 1 | multiple remaining qualified rows lacked direct or clearly adjacent workflow evidence |
+| Claim-level evidence and traceability | 15 | 15 | 0 | no loss |
+| Opportunity coverage and qualified/watchlist integrity | 15 | 11 | 4 | regulation, guidance, standards, context, feasibility, or asserted alternatives were treated as qualification |
+| Analytical rigor and uncertainty | 15 | 14 | 1 | the stated qualification rule was not consistently applied |
+| Legal, safety, privacy, and platform constraints | 10 | 10 | 0 | no loss; Cooling-Off Rule boundary remained correct |
+| Reproducibility and CI | 10 | 10 | 0 | no loss |
+| Clarity and repository governance | 5 | 5 | 0 | no loss |
+| **Total** | **100** | **94** | **6** | **external score is authoritative** |
+
+| Review ID | External finding / required correction | Final correction | Verification | Status |
+|---|---|---|---|---|
+| EXT-GOV-03-T03 | IDs 203, 206–210, 212–214, 216–217, and 219 remained qualified despite only regulatory/guidance, general-cost, standards, feasibility, or asserted-alternative support. | Moved all 12 IDs to the existing Hypothesis Watchlist; retained only 200–202 and 204, whose complaint/bill-difficulty evidence directly or clearly adjacently supports the bounded workflows. | All nine artifacts show `4 qualified + 16 watchlist = 20`; the matrix has four qualified and 16 watchlist statuses; EXCLUSIONS.md holds 16 complete contracts and preserves candidate 219's legal record. | creator-resolved; final external verification pending |
+| FINAL-T03-01 | Issue #25 requires exact decisions, lost-point history, source changes, evidence ceiling, lifecycle bump, and frozen-thread integrity while preserving T03-S13. | Strengthened IDs: none. Moved: 203, 206–210, 212–214, 216–217, 219. Sources: 13 → 13 (+0/−0). Versioned all nine artifacts to 0.1.4 and retained `in-review`. | Repository validator passed (32/37, links/placeholders clean), unit tests passed 3/3, diff check passed, artifact/lifecycle/range/ID/matrix/watchlist-contract audits passed, and T03-S13/legal-boundary text remains complete; frozen, PR, and CI checks continue through publish. | creator-resolved; local validation passed; final external verification pending |
+
+No source was added, removed, or reclassified in the final correction. Candidate 219 retains T03-S13, covered locations, exclusions, the midnight-of-third-business-day deadline, jurisdiction/state-law caveat, and no-advice/no-submission constraints. No Opportunity Score was created or inflated.
+
+Final External Governance re-review requested

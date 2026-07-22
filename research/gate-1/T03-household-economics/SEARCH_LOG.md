@@ -1,8 +1,8 @@
 ---
 status: in-review
-version: 0.1.3
+version: 0.1.4
 owner_role: Strategy Agent
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-23
 thread_id: T03
 issue_number: 6
 gate: 1
@@ -41,4 +41,8 @@ gate: 1
 
 ## Cycle 3 Evidence Decision
 
-Cycle 3 added no search and no source. It accepted the external finding that IDs 205, 211, 215, and 218 have only contextual or no problem evidence and moved them to the Hypothesis Watchlist. The dedicated T03-S13 Cooling-Off Rule correction remains unchanged and externally verified; regulation and guidance remain classified as alternatives or constraints, never direct pain.
+Cycle 3 added no search and no source. It accepted the external finding that IDs 205, 211, 215, and 218 have only contextual or no problem evidence and moved them to the Hypothesis Watchlist. The dedicated T03-S13 Cooling-Off Rule correction remained unchanged and externally verified; regulation and guidance remained alternatives or constraints, never direct pain.
+
+Issue #25 applies the same rule to the 12 remaining disputed rows. The External Cycle-3 matrix showed no direct problem evidence for `203`, `206`–`210`, `212`–`214`, `216`–`217`, or `219`; only regulation, consumer guidance, standards, general cost/energy context, feasibility, or asserted alternatives were present. No source was added merely to preserve candidate count. Those 12 IDs moved to the existing watchlist, while `200`–`202` and `204` remain qualified on complaint evidence or clearly adjacent observed bill difficulty. Strengthened IDs: none. Source changes: `13 → 13` (`+0/−0`). T03-S13 and the full candidate-219 legal boundary remain preserved.
+
+Final External Governance re-review requested

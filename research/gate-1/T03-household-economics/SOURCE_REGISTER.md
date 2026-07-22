@@ -1,8 +1,8 @@
 ---
 status: in-review
-version: 0.1.3
+version: 0.1.4
 owner_role: Strategy Agent
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-23
 thread_id: T03
 issue_number: 6
 gate: 1
@@ -35,3 +35,9 @@ Access date for every source: `2026-07-22`. Geography is United States unless st
 - EPA's national food-waste estimate is not assigned to an individual and is not a claimed saving.
 - FCC and NIST materials require current provider/jurisdiction verification before any user-facing conclusion.
 - T03-S13, not the general returns page, is the dedicated authority for `OPP-2026-219`. T03-S12 remains relevant only to ordinary seller return/refund records.
+
+## Issue #25 Source Disposition
+
+The source register is unchanged at 13 entries (`+0/−0`). External Governance Cycle 3 assigned `94/100`, with one source-quality point among the exact six-point loss because multiple qualified candidates lacked direct or clearly adjacent observed workflow evidence. No irrelevant source was added to preserve qualification. T03-S04–S13 continue to support context, alternatives, feasibility, constraints, and legal records for moved IDs, but do not independently qualify user pain. T03-S13 remains the complete dedicated authority for watchlist-only candidate 219, including covered locations, exclusions, midnight of the third business day, September 2025 publication, jurisdiction/state-law caveat, and no-advice/no-submission boundary.
+
+Final External Governance re-review requested

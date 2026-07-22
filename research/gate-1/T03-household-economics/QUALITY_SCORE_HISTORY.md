@@ -1,8 +1,8 @@
 ---
 status: in-review
-version: 0.1.3
+version: 0.1.4
 owner_role: Strategy Agent
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-23
 thread_id: T03
 issue_number: 6
 gate: 1
@@ -10,7 +10,7 @@ gate: 1
 
 # T03 Artifact Quality Score History
 
-Scoring contract: `templates/THREAD_QUALITY_SCORECARD.md` from `origin/main` as of 2026-07-22. External Governance Cycle 2 is authoritative at `95/100`; Cycle-3 re-review is pending.
+Scoring contract: `templates/THREAD_QUALITY_SCORECARD.md` from `origin/main` as of 2026-07-22. External Governance Cycle 3 is authoritative at `94/100`; final external re-review is pending.
 
 ## Cycle 1 — Complete First Draft
 
@@ -57,7 +57,8 @@ Critical blockers: `1` — T03-B01, stale legal premise: the 2024 expanded FTC r
 | 3 | 0.1.1 | 100 | not scored | 1 | Internal Pre-review simulation recorded 100; not independent | f5f3873 |
 | 4 | 0.1.1 | 100 | 92 | 2 (`EXT-GOV-01`, `T03-EXT-B02`) | authoritative external rework decision | f5f3873 |
 | 5 | 0.1.2 | 100 | re-review pending | 2 pending external verification | targeted correction complete | uncommitted correction |
-| 6 | 0.1.3 | 100 | 95 | 0 critical blockers; 1 completion finding | Cycle 3 separates 16 qualified candidates from four preserved watchlist concepts | uncommitted correction |
+| 6 | 0.1.3 | 100 | 95 | 0 critical blockers; 1 completion finding | Cycle 3 separates 16 qualified candidates from four preserved watchlist concepts | 8c7ac8f |
+| 7 | 0.1.4 | 100 | 94 | 0 creator blockers; 1 external finding creator-resolved | Issue #25 retains 200–202/204 and moves 12 context/guidance-led IDs, yielding 4 qualified + 16 watchlist | uncommitted final correction |
 
 ## Cycle 5 — Creator Reassessment After External Findings
 
@@ -89,7 +90,7 @@ Critical blockers: `1` — T03-B01, stale legal premise: the 2024 expanded FTC r
 
 ## Current Verdict
 
-`CREATOR CYCLE 3 CORRECTION COMPLETE 100/100 — AUTHORITATIVE EXTERNAL CYCLE 2 SCORE 95/100 — EXT-GOV-01 AND T03-EXT-B02 EXTERNALLY RESOLVED — EXT2-T03-01 CORRECTED PENDING RE-REVIEW`
+`FINAL CREATOR CORRECTION COMPLETE 100/100 — AUTHORITATIVE EXTERNAL CYCLE 3 SCORE 94/100 — EXT-GOV-01, T03-EXT-B02, AND EXT2-T03-01 EXTERNALLY RESOLVED — EXT-GOV-03-T03 CREATOR-RESOLVED PENDING FINAL RE-REVIEW`
 
 ## Internal Pre-review Simulation — 2026-07-22 (not independent)
 
@@ -147,7 +148,41 @@ Critical blockers: `EXT-GOV-01` and `T03-EXT-B02`. T03-S13 and the source matrix
 | `python3 -m unittest discover -s tests -p 'test_*.py'` | passed: 3 tests |
 | `git diff --check` | passed: no whitespace errors |
 | `find research/gate-1 -type f -name '*.md'` | exactly 9 thread Markdown artifacts |
-| lifecycle / ID / coverage audit | passed: 9/9 `status: in-review`, 9/9 version `0.1.3`, 16 qualified + 4 watchlist = 20 unique assigned IDs, 0 range violations, 20/20 final-status coverage rows |
+| lifecycle / ID / coverage audit | passed: 9/9 `status: in-review`, 9/9 version `0.1.4`, 4 qualified + 16 watchlist = 20 unique assigned IDs, 0 range violations, 20/20 final-status coverage rows, 16 complete watchlist contracts |
 | registered source URL request check | 13/13 hosts resolved and returned HTTP responses: seven 200; six bot-protected 403 |
 
-External Governance Cycle 3 re-review requested
+## Authoritative External Governance Review — Cycle 3
+
+| Dimension | Maximum | External award | Lost |
+|---|---:|---:|---:|
+| Scope compliance and exclusions | 10 | 10 | 0 |
+| Source quality and freshness | 20 | 19 | 1 |
+| Claim-level evidence and traceability | 15 | 15 | 0 |
+| Opportunity coverage and qualified/watchlist integrity | 15 | 11 | 4 |
+| Analytical rigor and uncertainty | 15 | 14 | 1 |
+| Legal, safety, privacy, and platform constraints | 10 | 10 | 0 |
+| Reproducibility and CI | 10 | 10 | 0 |
+| Clarity and repository governance | 5 | 5 | 0 |
+| **Total** | **100** | **94** | **6** |
+
+Exact lost points: source quality `−1`, qualified/watchlist integrity `−4`, and analytical rigor `−1`. External review confirmed `EXT-GOV-01` and `EXT2-T03-01` resolved; `T03-EXT-B02` remains resolved. It opened `EXT-GOV-03-T03`: IDs `203`, `206`–`210`, `212`–`214`, `216`–`217`, and `219` remained qualified without direct or clearly adjacent observed workflow evidence.
+
+## Cycle 7 — Issue #25 Final Creator Correction
+
+| Dimension | Maximum | Creator awarded | Final correction evidence |
+|---|---:|---:|---|
+| Scope compliance and exclusions | 10 | 10 | Only T03 artifacts changed; the 20-ID universe remains unranked, with no Gate 2 or product action. |
+| Source quality and freshness | 20 | 20 | Thirteen sources remain unchanged, including dedicated FTC authority T03-S13; no adjacent source was added to preserve qualification. |
+| Claim-level evidence and traceability | 15 | 15 | All 20 matrix rows retain evidence classes and final status; 16 complete watchlist contracts preserve searched/missing evidence. |
+| Opportunity coverage and diversity | 15 | 15 | `200`–`202` and `204` are the only retained qualified IDs; 12 disputed IDs moved, and no ID was deleted, renumbered, revived, or reused. |
+| Analytical rigor and uncertainty | 15 | 15 | Regulation, guidance, standards, context, feasibility, and logical utility are no longer treated as qualifying pain evidence. |
+| Legal, safety, privacy, and platform constraints | 10 | 10 | T03-S13 and candidate 219's covered locations, exclusions, third-business-day deadline, jurisdiction, and no-advice/no-submission boundaries remain complete in the watchlist. |
+| Reproducibility of search method | 10 | 10 | The decision is traceable to the existing matrix and external review; strengthened IDs: none; sources added/removed: none. |
+| Clarity and repository hygiene | 5 | 5 | All nine artifacts are `in-review` at `0.1.4`, with consistent `4 + 16 = 20` counts and final review request. |
+| **Total** | **100** | **100** | **Creator execution quality only; external score remains 94/100 pending final re-review.** |
+
+## Final Evidence Ceiling
+
+Final disposition: retained qualified IDs `200`–`202` and `204`; moved IDs `203`, `206`–`210`, `212`–`214`, `216`–`217`, and `219`; strengthened IDs `none`; sources `13 → 13` (`+0/−0`). Remaining ceiling: direct pain for 16 watchlist concepts; demand, WTP, manual-entry completion, retention, distribution, realized savings, security/privacy acceptance, and current jurisdictional treatment. T03-S13 remains legal authority and a constraint, not evidence of candidate demand.
+
+Final External Governance re-review requested
