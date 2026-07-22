@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.2
+version: 0.1.3
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T03

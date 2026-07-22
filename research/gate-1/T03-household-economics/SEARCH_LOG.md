@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.2
+version: 0.1.3
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T03
@@ -38,3 +38,7 @@ gate: 1
 - No bank aggregation/API search was used to qualify a candidate because Issue #6 requires feasibility, consent, jurisdiction, and API evidence before reliance; all candidates have manual input.
 - No competitor pricing, download, revenue, user-count, app-store, or review data was used.
 - No tax, credit, debt, investment, insurance, or lending research was performed beyond confirming those boundaries.
+
+## Cycle 3 Evidence Decision
+
+Cycle 3 added no search and no source. It accepted the external finding that IDs 205, 211, 215, and 218 have only contextual or no problem evidence and moved them to the Hypothesis Watchlist. The dedicated T03-S13 Cooling-Off Rule correction remains unchanged and externally verified; regulation and guidance remain classified as alternatives or constraints, never direct pain.

@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.2
+version: 0.1.3
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T03
@@ -47,10 +47,21 @@ Authoritative external score: `92/100`. Critical blockers: `EXT-GOV-01` and `T03
 
 | Review ID | External finding / required correction | Applied correction | Verification | Status |
 |---|---|---|---|---|
-| EXT-GOV-01 | Prior Codex review was not independent. | Relabeled all surviving references as Internal Pre-review/Simulation while preserving history. | QUALITY_SCORE_HISTORY.md, CORRECTION_LOG.md, THREAD_SUMMARY.md | correction applied; external verification pending |
-| T03-EXT-B02 | Candidate 219 cited a general returns page instead of dedicated current Cooling-Off Rule authority. | Added T03-S13, the FTC September 2025 article, and made it the exclusive candidate-219 rule source. | SOURCE_REGISTER.md, SEARCH_LOG.md, MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md | correction applied; external verification pending |
+| EXT-GOV-01 | Prior Codex review was not independent. | Relabeled all surviving references as Internal Pre-review/Simulation while preserving history. | External Cycle-2 review explicitly marked this blocker resolved. | externally resolved |
+| T03-EXT-B02 | Candidate 219 cited a general returns page instead of dedicated current Cooling-Off Rule authority. | Added T03-S13, the FTC September 2025 article, and made it the exclusive candidate-219 rule source. | External Cycle-2 review verified the dedicated source, locations, exclusions, third-business-day deadline, jurisdiction limits, and no-advice boundary. | externally resolved |
 | T03-EXT-C01 | Record limited covered locations, exclusions, three-business-day deadline, and September 2025 publication. | T03-S13 and candidate 219 now state all four; matrix separates legal authority from checklist adoption. | SOURCE_REGISTER.md, OPPORTUNITY_INDEX.md | resolved internally |
 | T03-EXT-C02 | Strengthen, downgrade, or remove 205, 211, 215, and 218. | Downgraded all four to `very low` and named their absent direct evidence. | MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md, EVIDENCE_GAPS.md | resolved internally |
 | T03-EXT-C03 | Add candidate-to-source matrix and log exact eight-point loss. | Added 20/20 source coverage and the dimension-level register above. | OPPORTUNITY_INDEX.md, QUALITY_SCORE_HISTORY.md | resolved internally |
 
-External Governance re-review requested.
+## Authoritative External Governance Re-review — Cycle 2
+
+Authoritative external score: `95/100` (`10 + 19 + 15 + 12 + 14 + 10 + 10 + 5`). `EXT-GOV-01` and `T03-EXT-B02` were externally resolved. The remaining five-point loss comprised one source-quality point, three opportunity-coverage points, and one analytical-rigor point because four explicitly unsupported workflows remained in the qualified universe.
+
+| Review ID | External finding / required correction | Cycle-3 resolution | Verification | Status |
+|---|---|---|---|---|
+| EXT2-T03-01 | IDs 205, 211, 215, and 218 remained unsupported hypotheses inside a report describing all 20 concepts as qualified; move them to a watchlist and keep legal guidance separate from direct pain. | Retained 16 evidence-backed or clearly adjacent workflows in the qualified report/index and moved all four named IDs to the full Hypothesis Watchlist without deletion or renumbering. | MARKET_DISCOVERY_REPORT.md and OPPORTUNITY_INDEX.md contain 16 qualified rows; EXCLUSIONS.md preserves four complete watchlist entries; the 20-row matrix records final status. | resolved internally; external verification pending |
+| C3-T03-01 | Cycle 3 must preserve candidate 219's dedicated FTC source and narrow rule treatment while creating the two-tier universe. | Kept T03-S13, limited covered locations, exclusions, midnight-of-third-business-day deadline, jurisdiction/state-law caveat, no-advice/no-submission boundary, and legal-guidance classification intact; versioned all nine artifacts to 0.1.3 and retained `status: in-review`. | Source, candidate, matrix, lifecycle, count, range, uniqueness, repository, unit-test, and diff checks. | correction complete; external re-review requested |
+
+No source was added or removed in Cycle 3. No Opportunity Score was created or inflated.
+
+External Governance Cycle 3 re-review requested

@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.2
+version: 0.1.3
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T03
@@ -10,7 +10,7 @@ gate: 1
 
 # T03 Artifact Quality Score History
 
-Scoring contract: `templates/THREAD_QUALITY_SCORECARD.md` from `origin/main` as of 2026-07-22. External Governance Cycle 1 is authoritative; re-review is pending.
+Scoring contract: `templates/THREAD_QUALITY_SCORECARD.md` from `origin/main` as of 2026-07-22. External Governance Cycle 2 is authoritative at `95/100`; Cycle-3 re-review is pending.
 
 ## Cycle 1 — Complete First Draft
 
@@ -19,7 +19,7 @@ Scoring contract: `templates/THREAD_QUALITY_SCORECARD.md` from `origin/main` as 
 | Scope compliance and exclusions | 10 | 9 | Data-integration and legal-advice boundaries needed more explicit exclusions. |
 | Source quality and freshness | 20 | 15 | First draft relied on the 2024 FTC rule announcement without checking its current status; some guidance dates/underlying data were incomplete. |
 | Claim-level evidence and traceability | 15 | 11 | Candidate rows needed consistent source IDs and claim-type language. |
-| Opportunity coverage and diversity | 15 | 15 | Exactly 20 candidates across six distinct families. |
+| Opportunity coverage and diversity | 15 | 15 | The first-draft 20-ID universe spanned six distinct families. |
 | Analytical rigor and uncertainty | 15 | 11 | National cost/stress evidence needed stronger separation from product savings and demand. |
 | Legal, safety, privacy, and platform constraints | 10 | 6 | Jurisdiction, custody/execution, security, APIs, advice, and current-law treatment were incomplete. |
 | Reproducibility of search method | 10 | 7 | Current-law follow-up and no-bank/API rule were not fully logged. |
@@ -34,8 +34,8 @@ Critical blockers: `1` — T03-B01, stale legal premise: the 2024 expanded FTC r
 |---|---:|---:|---|
 | Scope compliance and exclusions | 10 | 10 | [EXCLUSIONS.md](EXCLUSIONS.md) covers regulated finance, custody, advice, integrations, affiliates, and cross-thread boundaries. |
 | Source quality and freshness | 20 | 20 | March 2026 FTC source establishes current rulemaking/vacatur; all 12 sources have dates, access, scope, limitations, and confidence. |
-| Claim-level evidence and traceability | 15 | 15 | Material claims and 20/20 candidates cite source IDs and distinguish evidence from inference/assumption/hypothesis. |
-| Opportunity coverage and diversity | 15 | 15 | 20 unranked candidates span six workflow families with no reused ID. |
+| Claim-level evidence and traceability | 15 | 15 | At that cycle, all 20 draft rows cited source IDs and distinguished evidence from inference/assumption/hypothesis. |
+| Opportunity coverage and diversity | 15 | 15 | The then-current 20-ID draft spanned six workflow families with no reused ID. |
 | Analytical rigor and uncertainty | 15 | 15 | National evidence is never converted into product demand, market size, WTP, or realized savings. |
 | Legal, safety, privacy, and platform constraints | 10 | 10 | Current-law, jurisdiction, manual fallback, no custody/execution, no advice, security, and trust controls are explicit. |
 | Reproducibility of search method | 10 | 10 | Exact queries include current-law verification and searches not used; no bank/API research is claimed. |
@@ -57,6 +57,7 @@ Critical blockers: `1` — T03-B01, stale legal premise: the 2024 expanded FTC r
 | 3 | 0.1.1 | 100 | not scored | 1 | Internal Pre-review simulation recorded 100; not independent | f5f3873 |
 | 4 | 0.1.1 | 100 | 92 | 2 (`EXT-GOV-01`, `T03-EXT-B02`) | authoritative external rework decision | f5f3873 |
 | 5 | 0.1.2 | 100 | re-review pending | 2 pending external verification | targeted correction complete | uncommitted correction |
+| 6 | 0.1.3 | 100 | 95 | 0 critical blockers; 1 completion finding | Cycle 3 separates 16 qualified candidates from four preserved watchlist concepts | uncommitted correction |
 
 ## Cycle 5 — Creator Reassessment After External Findings
 
@@ -72,18 +73,32 @@ Critical blockers: `1` — T03-B01, stale legal premise: the 2024 expanded FTC r
 | Clarity and repository hygiene | 5 | 5 | Internal review relabeled; all nine artifacts use version 0.1.2 and remain in-review. |
 | **Total** | **100** | **100** | **Creator execution quality only; external re-review required.** |
 
+## Cycle 6 — Creator Correction for Qualified Universe vs. Hypothesis Watchlist
+
+| Dimension | Maximum | Creator awarded | Correction evidence |
+|---|---:|---:|---|
+| Scope compliance and exclusions | 10 | 10 | The 20-ID audit universe is explicitly split into 16 qualified and four watchlist concepts; no ranking, product selection, or Gate 2 work occurred. |
+| Source quality and freshness | 20 | 20 | Thirteen sources remain unchanged, including dedicated September 2025 FTC authority T03-S13; no source padding occurred. |
+| Claim-level evidence and traceability | 15 | 15 | The 20-row matrix retains all six evidence classes, final status, and the distinction between legal guidance and direct pain. |
+| Opportunity coverage and diversity | 15 | 15 | Every original ID remains auditable; only the 16 evidence-backed or clearly adjacent workflows remain qualified. |
+| Analytical rigor and uncertainty | 15 | 15 | Each watchlist entry preserves rationale, confidence, searched and missing evidence, constraints, reconsideration conditions, and ownership. |
+| Legal, safety, privacy, and platform constraints | 10 | 10 | Candidate 219 retains its narrow locations, exclusions, third-business-day deadline, jurisdiction/state-law caveat, and no-advice/no-submission boundary; finance, custody, and integration limits remain intact. |
+| Reproducibility of search method | 10 | 10 | Cycle 3 records its no-new-source decision and traces status to the existing source audit. |
+| Clarity and repository hygiene | 5 | 5 | All nine artifacts remain `in-review` at version 0.1.3 with consistent 16/4/20 counts. |
+| **Total** | **100** | **100** | **Creator execution quality only; no external score of 100 is claimed.** |
+
 ## Current Verdict
 
-`CREATOR CORRECTION COMPLETE 100/100 — EXTERNAL GOVERNANCE 92/100 — BLOCKER CLOSURE AWAITING EXTERNAL VERIFICATION`
+`CREATOR CYCLE 3 CORRECTION COMPLETE 100/100 — AUTHORITATIVE EXTERNAL CYCLE 2 SCORE 95/100 — EXT-GOV-01 AND T03-EXT-B02 EXTERNALLY RESOLVED — EXT2-T03-01 CORRECTED PENDING RE-REVIEW`
 
 ## Internal Pre-review Simulation — 2026-07-22 (not independent)
 
 | Dimension | Maximum | Internal simulation awarded | Review evidence |
 |---|---:|---:|---|
-| Scope compliance and exclusions | 10 | 10 | Twenty candidates stay inside low-regulatory household economics, remain unranked, and exclude regulated finance, custody, execution, and adjacent threads. |
+| Scope compliance and exclusions | 10 | 10 | The historical 20-ID draft stayed inside low-regulatory household economics, remained unranked, and excluded regulated finance, custody, execution, and adjacent threads. |
 | Source quality and freshness | 20 | 20 | Twelve official sources include dates, access, scope, limitations, and confidence; the vacated 2024 FTC rule is corrected using current 2026 regulator evidence. |
 | Claim-level evidence and traceability | 15 | 15 | Material claims and all candidate rows resolve to source IDs and are labeled as evidence, inference, assumption, or hypothesis. |
-| Opportunity coverage and diversity | 15 | 15 | Exactly 20 unique IDs cover six household-economic workflow families without cross-thread ID reuse. |
+| Opportunity coverage and diversity | 15 | 15 | The historical simulation found 20 unique draft IDs across six household-economic workflow families without cross-thread reuse. |
 | Analytical rigor and uncertainty | 15 | 15 | National stress/cost evidence is not converted into demand, market size, WTP, revenue, or realized savings. |
 | Legal, safety, privacy, and platform constraints | 10 | 10 | Current-law, jurisdiction, advice, custody, calculation, security, API, and manual-fallback controls are explicit. |
 | Reproducibility of search method | 10 | 10 | Exact queries include the legal-currency follow-up, selection rules, non-search decisions, and source outcomes. |
@@ -108,7 +123,21 @@ This same-process Codex review is preserved for audit history and was superseded
 
 Critical blockers: `EXT-GOV-01` and `T03-EXT-B02`. T03-S13 and the source matrix apply the requested corrections; no new independent Governance score or blocker closure is claimed.
 
-External Governance re-review requested.
+## Authoritative External Governance Re-review — Cycle 2
+
+| Dimension | Maximum | External award | Lost |
+|---|---:|---:|---:|
+| Scope compliance and exclusions | 10 | 10 | 0 |
+| Source quality and freshness | 20 | 19 | 1 |
+| Claim-level evidence and traceability | 15 | 15 | 0 |
+| Opportunity coverage and diversity | 15 | 12 | 3 |
+| Analytical rigor and uncertainty | 15 | 14 | 1 |
+| Legal, safety, privacy, and platform constraints | 10 | 10 | 0 |
+| Reproducibility of search method | 10 | 10 | 0 |
+| Clarity and repository hygiene | 5 | 5 | 0 |
+| **Total** | **100** | **95** | **5** |
+
+`EXT-GOV-01` and `T03-EXT-B02` were externally resolved. Completion finding `EXT2-T03-01` required IDs 205, 211, 215, and 218 to leave the qualified set unless direct workflow evidence was added. Cycle 3 implements that correction without changing T03-S13 or claiming a new external score.
 
 ## Validation Evidence
 
@@ -118,5 +147,7 @@ External Governance re-review requested.
 | `python3 -m unittest discover -s tests -p 'test_*.py'` | passed: 3 tests |
 | `git diff --check` | passed: no whitespace errors |
 | `find research/gate-1 -type f -name '*.md'` | exactly 9 thread Markdown artifacts |
-| lifecycle / ID / coverage audit | passed: 9/9 `status: in-review`, 9/9 version `0.1.2`, 20 unique assigned IDs, 0 range violations, 20/20 coverage rows |
+| lifecycle / ID / coverage audit | passed: 9/9 `status: in-review`, 9/9 version `0.1.3`, 16 qualified + 4 watchlist = 20 unique assigned IDs, 0 range violations, 20/20 final-status coverage rows |
 | registered source URL request check | 13/13 hosts resolved and returned HTTP responses: seven 200; six bot-protected 403 |
+
+External Governance Cycle 3 re-review requested

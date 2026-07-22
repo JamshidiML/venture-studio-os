@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.2
+version: 0.1.3
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T03
@@ -12,7 +12,7 @@ gate: 1
 
 ## Executive Summary
 
-- **Twenty low-regulatory, manual-first candidates were documented and left unranked.** The universe covers recurring subscriptions and bills, price/unit comparison, grocery and food-waste organization, appliance/energy information, broadband-label comparison, quotes, receipts, warranties, returns, store credit, and cooling-off records.
+- **The auditable universe contains 20 low-regulatory, manual-first concepts: 16 Qualified Gate 1 Candidates and 4 Hypothesis Watchlist Candidates.** Neither tier is ranked. The qualified set covers recurring subscriptions and bills, price/unit comparison, grocery and food-waste organization, appliance/energy information, broadband-label comparison, receipts, warranties, returns, and the narrowly bounded cooling-off record.
 - **Current official evidence supports recurring household financial friction without proving product demand.** Federal Reserve and CFPB surveys show constrained financial resilience and bill difficulty; FTC sources document continuing negative-option complaints; NIST identifies inconsistent unit-pricing regulation; EPA models material food-waste cost ([T03-S01](SOURCE_REGISTER.md), [T03-S02](SOURCE_REGISTER.md), [T03-S03](SOURCE_REGISTER.md), [T03-S05](SOURCE_REGISTER.md), [T03-S07](SOURCE_REGISTER.md)).
 - **The design boundary avoids regulated finance.** No lending, investing, securities, crypto, insurance underwriting, tax, debt collection, credit scoring, custody, or personalized financial advice is proposed. No bank-data, email, retailer, or paid API access is assumed.
 - **Jurisdiction and data handling remain decisive constraints.** Consumer rights, cooling-off periods, gift-card rules, utility/broadband terms, and privacy obligations vary. Candidates organize user-provided facts and source links; they do not decide legal rights or guarantee savings.
@@ -25,7 +25,7 @@ gate: 1
 | Geography | Initial evidence scan: United States; jurisdiction is explicit and no global generalization is made |
 | Segment | Consumers organizing household spending, bills, prices, receipts, and recurring costs |
 | Source cutoff | 2026-07-22 |
-| Candidate count | Exactly 20 |
+| Candidate count | 16 qualified + 4 watchlist = 20 auditable IDs |
 | Reserved IDs | `OPP-2026-200` through `OPP-2026-299`; this artifact uses `200` through `219` only |
 | Explicit exclusions | Lending, investing, securities, crypto, insurance underwriting, tax filing, debt collection, regulated advice, credit scoring, gambling, custody of funds, general utilities, health, education, aging/accessibility, creator, SMB, and platform companion workflows |
 
@@ -33,9 +33,9 @@ gate: 1
 
 The search prioritized current U.S. regulator, official survey, standards, energy, telecommunications, and environmental sources. The first complete draft defined 20 candidate workflows and broad evidence. The correction pass added source dates/access dates/geographies/limitations, current negative-option rule status, candidate-level claim types and constraints, jurisdiction flags, manual fallback, exact query logs, evidence ceilings, and a boundary between information organization and regulated advice.
 
-External Governance Correction Cycle 2 separately resolved the Cooling-Off Rule blocker with the FTC's dedicated September 2025 article. It also audited every candidate's source classification. Candidates `205`, `211`, `215`, and `218` remain only as `very low` hypotheses because broad cost, energy, or legal context does not directly measure their named workflow pain.
+External Governance Correction Cycle 2 resolved the Cooling-Off Rule blocker with the FTC's dedicated September 2025 article and audited every candidate's source classification. External re-review verified both `EXT-GOV-01` and `T03-EXT-B02` as resolved. Cycle 3 moved candidates `205`, `211`, `215`, and `218` to the [Hypothesis Watchlist](EXCLUSIONS.md#hypothesis-watchlist) because broad cost, energy, or legal context does not directly measure their named workflow pain.
 
-Qualification required: a recurring household-economic workflow authorized by Issue #6; at least one traceable official source; no handling or movement of funds; no credit/insurance/tax/investment decision; no assumed bank or inbox access; user-verifiable inputs; an explicit jurisdiction or source-date warning where relevant; and no guaranteed savings claim.
+Qualification requires direct observed problem evidence or clearly adjacent observed workflow evidence for a household-economic workflow authorized by Issue #6; no handling or movement of funds; no credit/insurance/tax/investment decision; no assumed bank or inbox access; user-verifiable inputs; an explicit jurisdiction or source-date warning where relevant; and no guaranteed savings claim. Regulation and consumer guidance establish constraints or current alternatives, not direct pain.
 
 ## Evidence-Backed Problem Landscape
 
@@ -50,9 +50,9 @@ Qualification required: a recurring household-economic workflow authorized by Is
 | Manual-first input will be acceptable enough to avoid bank, inbox, or retailer integration. | assumption | No direct source; owner: Strategy Agent | low | Privacy-preserving feasibility assumption; later testing must compare completion and accuracy without requiring regulated data access. |
 | Kill a candidate if users cannot verify all monetary inputs and source dates before seeing any calculation. | hypothesis | Not tested | low | Future safety threshold; prevents opaque “AI savings” claims. |
 
-## Opportunity Universe
+## Qualified Gate 1 Candidate Universe
 
-The detailed index is in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md).
+The 16 qualified candidates are below and in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md). Four other IDs remain auditable in the [Hypothesis Watchlist](EXCLUSIONS.md#hypothesis-watchlist); they are not qualified candidates.
 
 | Opportunity ID | Bounded workflow | Evidence status | Confidence | Primary constraint |
 |---|---|---|---|---|
@@ -61,20 +61,16 @@ The detailed index is in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md).
 | OPP-2026-202 | Cancellation evidence pack | inference from T03-S03/S04 | medium | records only; no legal conclusion |
 | OPP-2026-203 | Free-trial deadline calendar | inference from T03-S04 | medium | user-entered terms; no guarantee |
 | OPP-2026-204 | Household bill calendar | inference from T03-S01/S02 | medium | no payment execution or bank access |
-| OPP-2026-205 | Manual bill-variance explainer | unsupported workflow hypothesis; T03-S02/S10 are context only | very low | arithmetic only; no advice or cause claim |
 | OPP-2026-206 | Grocery unit-price calculator | inference from T03-S05/S06 | high | consistent units and user verification |
 | OPP-2026-207 | Personal price book | inference from T03-S05/S06 | medium | local/time-specific observations only |
 | OPP-2026-208 | Package-size history | inference from T03-S06 | medium | barcode/product matching accuracy |
 | OPP-2026-209 | Grocery basket scenario comparer | inference from T03-S05/S06 | medium | no price guarantee; taxes/availability vary |
 | OPP-2026-210 | Food-waste cost diary | inference from T03-S07 | medium | personal measurements, no inherited national savings |
-| OPP-2026-211 | Repair-versus-replace worksheet | unsupported workflow hypothesis; T03-S01/S08 are context only | very low | scenario tool, not financial/safety advice |
 | OPP-2026-212 | Appliance operating-cost calculator | inference from T03-S08 | medium | user tariff and usage inputs; dated assumptions |
 | OPP-2026-213 | Energy-bill usage annotation | inference from T03-S08/T03-S10 | medium | no causal or tariff-switch advice |
 | OPP-2026-214 | Broadband-label plan comparer | inference from T03-S09 | high | labels/current offers user-verified |
-| OPP-2026-215 | Home-service quote normalizer | unsupported workflow hypothesis; T03-S01/S02 are context only | very low | does not recommend provider or assess safety |
 | OPP-2026-216 | Receipt and warranty record vault | inference from T03-S11 | medium | sensitive data minimization and retention |
 | OPP-2026-217 | Return/refund deadline tracker | inference from T03-S12 | medium | retailer/jurisdiction terms control |
-| OPP-2026-218 | Gift-card/store-credit expiry record | unsupported workflow hypothesis; no direct source | very low | jurisdiction/issuer rules not researched |
 | OPP-2026-219 | Purchase cooling-off checklist | direct rule/deadline evidence T03-S13; utility remains inference | medium | narrow FTC rule coverage; legal disclaimer |
 
 ## Legal, Privacy, Security, and Trust Controls
@@ -88,7 +84,7 @@ The detailed index is in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md).
 
 ## Exclusions, Risks, and Unknowns
 
-Detailed decisions are in [EXCLUSIONS.md](EXCLUSIONS.md) and evidence limits in [EVIDENCE_GAPS.md](EVIDENCE_GAPS.md). No direct willingness-to-pay, retention, switching-success, channel-cost, or realized-savings evidence was found. Candidate values therefore remain hypotheses.
+Detailed decisions and the four-entry Hypothesis Watchlist are in [EXCLUSIONS.md](EXCLUSIONS.md); evidence limits are in [EVIDENCE_GAPS.md](EVIDENCE_GAPS.md). No direct willingness-to-pay, retention, switching-success, channel-cost, or realized-savings evidence was found. Candidate values therefore remain hypotheses.
 
 ## Confidence Assessment
 
@@ -96,4 +92,6 @@ Overall confidence is `high` that household cost organization, recurring-charge,
 
 ## Recommended Next Action
 
-External Governance re-review requested, including verification of T03-S13, source classification, explicit downgrades, current-law treatment, jurisdiction labels, manual fallback, security, and the absence of regulated advice. Do not select a winner or begin Gate 2.
+Review the 16-qualified/four-watchlist split, dedicated T03-S13 Cooling-Off Rule source, candidate 219's narrow locations/exclusions/deadline/no-advice treatment, source classification, jurisdiction labels, manual fallback, security, and absence of regulated advice. Do not select a winner or begin Gate 2.
+
+External Governance Cycle 3 re-review requested
