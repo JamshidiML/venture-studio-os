@@ -25,4 +25,3 @@ last_reviewed: 2026-07-22
 There is no critical blocker to the completeness of this Gate 1 artifact: every missing item is visible and confidence is downgraded. There is an evidence ceiling on opportunity attractiveness. None of the candidates can honestly be advanced, ranked, priced, or selected from this research alone.
 
 Founder review request: none at creator stage. Independent Governance review is the next authorized action.
-

@@ -25,4 +25,3 @@ last_reviewed: 2026-07-22
 | Unauthorized scraping, credential collection, or private APIs | Security and platform-risk boundary. | Evidence rules and Issue #10 |
 
 Rejected concepts remain excluded even if they appear commercially attractive. Nothing here authorizes Gate 2.
-

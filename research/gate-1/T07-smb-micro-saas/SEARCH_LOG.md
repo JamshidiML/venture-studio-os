@@ -34,4 +34,3 @@ last_reviewed: 2026-07-22
 ## Reproducibility notes
 
 The source register preserves clean canonical URLs and access dates. Search-result snippets were used only to locate the underlying primary page. Material facts were recorded only when visible on the source page/result and are quoted minimally or paraphrased. “Date unavailable” was used rather than inferring a day. A future reviewer should re-open dynamic vendor, regulatory, and guidance pages before relying on them.
-

@@ -33,4 +33,3 @@ Access date for every external source: 2026-07-22. “Date unavailable” means 
 - S07-10 through S07-12 are vendor sources. They support category existence and a weak WTP proxy only; they cannot establish a market gap.
 - Dynamic legal and regulatory pages S07-05 through S07-08 require re-check before any future product or customer-facing claim.
 - No downloads, revenue, conversion, market-size, or customer-demand values were inferred.
-
