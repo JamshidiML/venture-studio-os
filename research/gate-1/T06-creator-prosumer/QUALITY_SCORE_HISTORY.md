@@ -1,6 +1,6 @@
 ---
-status: draft
-version: 0.2.0
+status: in-review
+version: 0.2.1
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -12,6 +12,7 @@ last_reviewed: 2026-07-22
 | 1 | Creator | 9/10 | 16/20 | 11/15 | 12/15 | 12/15 | 7/10 | 8/10 | 5/5 | 80/100 | 2 | rework |
 | 2 | Creator | 10/10 | 20/20 | 15/15 | 15/15 | 15/15 | 10/10 | 10/10 | 5/5 | 100/100 | 0 | creator-complete; Governance pending |
 | 3 | Creator correction | 10/10 | 20/20 | 15/15 | 15/15 | 15/15 | 10/10 | 10/10 | 5/5 | 100/100 | 0 | GOV-T06-B001 correction applied; re-review requested |
+| 4 | Creator lifecycle alignment | 10/10 | 20/20 | 15/15 | 15/15 | 15/15 | 10/10 | 10/10 | 5/5 | 100/100 | 0 | all nine artifacts set to in-review v0.2.1; lifecycle re-verification requested |
 
 ## Cycle 1 point-loss register
 
@@ -90,3 +91,18 @@ Review date: `2026-07-22`. Reviewer role: `Governance Agent`. Re-read scope: all
 Blocker disposition: `GOV-T06-B001 RESOLVED`. Open Governance critical blockers: `0`.
 
 Governance verdict: `COMPLETE 100/100 — NO CRITICAL BLOCKER`.
+
+## Creator Lifecycle Alignment — Cycle 4
+
+After the Governance content pass, all nine artifacts were moved from `draft` to `in-review` and patch-bumped consistently from `0.2.0` to `0.2.1`, as required by `docs/ARTIFACT_LIFECYCLE.md` for a completed review candidate. This metadata-only correction changes no research claim, source, candidate, confidence, evidence ceiling, Opportunity Score, platform constraint, or gate authority. Independent lifecycle re-verification is requested.
+
+## Independent Governance Lifecycle Re-verification — G3
+
+Review date: `2026-07-22`. Reviewer role: `Governance Agent`.
+
+- Verified all nine T06 Markdown artifacts declare `status: in-review`, `version: 0.2.1`, `owner_role: Strategy Agent`, and `last_reviewed: 2026-07-22`.
+- Verified Creator Cycle 4 and correction `3→4` preserve the earlier content score and blocker history.
+- Rechecked the research invariants: 14 retained sources, exactly 20 candidates (`OPP-2026-500` through `OPP-2026-519`), unchanged evidence ceiling and platform constraints, no Opportunity Score, no ranking, and no later-gate authority.
+- Lifecycle disposition: the `draft → in-review` transition is appropriate for the completed review candidate; patch version `0.2.1` consistently records the metadata-only correction.
+
+Governance score remains `100/100`. Open critical blockers: `0`. Governance lifecycle verdict: `VERIFIED — IN-REVIEW v0.2.1 — NO RESEARCH-MEANING CHANGE`.

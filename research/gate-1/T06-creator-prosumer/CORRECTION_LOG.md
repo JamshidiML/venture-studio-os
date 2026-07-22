@@ -1,6 +1,6 @@
 ---
-status: draft
-version: 0.2.0
+status: in-review
+version: 0.2.1
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -16,6 +16,7 @@ last_reviewed: 2026-07-22
 | 1→2 | Demand and WTP could be inferred from population/context | Marked WTP unknown and recorded direct-demand gaps | Index, EVIDENCE_GAPS.md | Unsupported inference removed |
 | 1→2 | Search process omitted rejected commercial sources | Added ordered search and rejection log | SEARCH_LOG.md | Reproducibility restored |
 | 2→3 | GOV-T06-B001 found incomplete treatment of repeat-use/workflow statements labeled as hypotheses | Relabeled live repeat-use claims as assumptions; named Strategy Agent as owner; recorded impact if wrong and separately authorized Gate 5 review/test; made the rights-workflow statement an inference; preserved unknowns and Opportunity Scores | MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md, EVIDENCE_GAPS.md, QUALITY_SCORE_HISTORY.md | Creator correction complete; independent re-review requested |
+| 3→4 | Completed review candidate still declared the incomplete `draft` lifecycle state | Set all nine artifacts to `status: in-review` and version `0.2.1`; recorded the lifecycle-only correction | All nine T06 artifacts | Lifecycle metadata aligned; independent re-verification requested |
 
 No correction modified another thread, reused IDs, ranked candidates, selected a product, began Gate 2, created a PRD or implemented software.
 
@@ -34,3 +35,11 @@ Governance did not apply the correction or modify any source claim.
 | G2 | GOV-T06-B001 resolved: live repeat-use claims, candidates 516/518, and the rights-workflow type now conform to the evidence rules. | Re-read all nine artifacts; `hypothesis` scan found no incomplete live claim; validator, 3 tests, whitespace, nine-file, and 20-candidate checks passed. | 100/100 | closed |
 
 Governance made no source-content correction during re-review.
+
+## Independent Governance Lifecycle Re-verification — G3
+
+| Review | Lifecycle correction verified | Research invariants | Score / blockers | Status |
+|---|---|---|---|---|
+| G3 | All nine artifacts are consistently `in-review` at `v0.2.1`; Creator Cycle 4 and correction `3→4` are recorded. | 14 sources, 20 assigned candidates, confidence, evidence ceiling, platform constraints, Opportunity Scores, and gate authority unchanged. | 100/100; 0 open | closed |
+
+Governance appended audit evidence only and made no research-content edit.
