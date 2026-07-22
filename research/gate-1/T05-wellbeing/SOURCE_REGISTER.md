@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -32,3 +32,7 @@ All web sources were accessed 2026-07-22. Health and wellness context is not tre
 ## Selection rule
 
 Current public-health agencies, regulators, official platform policies and transparent participant research were prioritized. W13–W15 contain direct reported behavior or lived experience; W16 is alternative/context evidence and W17 is only an adjacent clinical workflow. Disease-treatment marketing, app-store rankings, testimonials, opaque market-size estimates and unverified health claims were excluded. The retained evidence does not establish clinical benefit, WTP or candidate-level demand.
+
+## Cycle 3 source disposition
+
+No source was added, removed or reclassified to pad qualification. The same 17 sources support 4 qualified candidates and contextualize 16 watchlist records. Public-health prevalence/guidance and legal/platform rules remain context or constraints; W16–W17 do not qualify consumer candidate 419.

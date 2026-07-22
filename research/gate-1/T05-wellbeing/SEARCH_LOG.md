@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -33,3 +33,7 @@ Search date and cutoff: 2026-07-22. Geography was recorded per source rather tha
 ## Reproducibility constraints
 
 Search was English-language and public-web only. No private health data, patient communities, account-gated datasets, clinical records, app telemetry or interviews were accessed. Candidate-source mappings are in OPPORTUNITY_INDEX.md and unresolved data needs are in EVIDENCE_GAPS.md.
+
+## Cycle 3 search disposition
+
+No new search was used to rescue unsupported concepts. Cycle 3 reapplied the qualification rule to the existing evidence: 4 candidates qualified and 16 moved to the Hypothesis Watchlist. The original 20-ID universe and all safety constraints remain auditable.

@@ -1,78 +1,65 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
 
 # T05 Opportunity Index
 
-Exactly 20 unranked Gate 1 candidates are listed. All are general-wellness workflow candidates; none diagnoses, treats, prevents disease, advises medication or claims a health outcome. Each stated repeat-use mechanism is an **assumption** owned by the Strategy Agent. Impact if wrong: it cannot support candidate advancement, retention, or a health/behavior claim. Planned review/test: only after a separately authorized Gate 5 issue, define a consented workflow study for the relevant cadence; no measure or threshold is authorized at Gate 1.
+The original 20-ID universe is preserved as **4 Qualified Gate 1 Candidates** and **16 Hypothesis Watchlist Candidates**. Qualification requires direct observed problem evidence or a clearly adjacent observed workflow. Public-health prevalence, wellness guidance, regulation and platform policy do not independently qualify a concept. Watchlist contracts are in [EXCLUSIONS.md](EXCLUSIONS.md); no ID is deleted, reused or renumbered.
 
-| ID | Recurring problem / candidate workflow | Segment and frequency | Current alternatives | Evidence basis; claim type; confidence | WTP status | Repeat-use mechanism assumption | Safety, privacy or platform constraint |
+All rows retain absolute boundaries: **no diagnosis, interpretation, risk scoring, triage, treatment, medical advice or crisis-intervention claim**. WTP and health/behavior effects are unknown. Repeat use is an assumption owned by the Strategy Agent and cannot support advancement.
+
+## Qualified Gate 1 Candidates
+
+| ID | Bounded workflow | Segment / cadence | Current alternatives | Qualification evidence; confidence | WTP / effect | Repeat-use assumption | Absolute safety boundary |
 |---|---|---|---|---|---|---|---|
-| OPP-2026-400 | Bedtime and wake-time consistency planner | Adults seeking routine consistency; daily | Alarms, calendars, sleep apps | W01; inference from sleep difficulties; medium | Unknown | Daily plan and morning reflection | No insomnia diagnosis or treatment claim; local-first data |
-| OPP-2026-401 | User-defined wind-down sequence builder | Adults with inconsistent evenings; daily | Checklists, timers, meditation apps | W01, W06; inference; medium | Unknown | Reusable evening sequence | Do not claim improved sleep; escalate persistent impairment to professional help |
-| OPP-2026-402 | Sleep-environment self-check journal | Adults tracking bedroom/routine context; occasional then weekly | Notes, sleep trackers | W01; assumption; low | Unknown | Compare self-observed context over time | No causal interpretation; sensitive journal export/delete |
-| OPP-2026-403 | Travel or shift routine reset checklist | Travelers and shift workers; episodic | Calendars, generic sleep advice | W01; assumption; low | Unknown | Event-triggered use | No circadian-disorder or fatigue-safety advice |
-| OPP-2026-404 | Morning routine and daylight reminder log | Adults building a morning routine; daily | Habit apps, alarms | W01, W06; assumption; low | Unknown | Daily cue and completion log | No treatment or biological-effect claim |
-| OPP-2026-405 | Desk movement-break timer | Sedentary knowledge workers; multiple times daily | OS timers, wearables | W03–W04; inference; high for context, low for product demand | Unknown | Frequent workday cue | Accessibility and user-controlled intensity; not exercise prescription |
-| OPP-2026-406 | Walking-habit planner | Insufficiently active adults; daily/weekly | Pedometers, fitness apps, paper plans | W03–W04; inference; medium | Unknown | Route-free goal and weekly reflection | No calorie, disease or weight-loss promise |
-| OPP-2026-407 | Strength-session consistency log | Adults already choosing safe exercises; twice weekly | Workout logs, spreadsheets | W04; inference; medium | Unknown | Recurring weekly sessions | Does not prescribe exercise, load or rehabilitation |
-| OPP-2026-408 | Personal mobility-routine card organizer | Adults with self-chosen low-risk routines; several times weekly | Notes, video bookmarks | W03–W04; assumption; low | Unknown | Saved routine cards | No injury, pain or rehabilitation guidance; content rights |
-| OPP-2026-409 | Time-and-equipment movement prompt deck | Adults seeking short activity options; daily | Search, fitness videos, cards | W03–W04; inference; medium | Unknown | Contextual prompt rotation | User chooses safe activity; accessibility and contraindication disclaimer |
-| OPP-2026-410 | Meal-prep cadence planner | Adults organizing routine meals; weekly | Calendars, meal planners | W05; inference; medium | Unknown | Weekly plan/shop/prep cycle | General food organization only; no medical diets |
-| OPP-2026-411 | Pantry-to-balanced-meal organizer | Adults reducing meal decision friction; several times weekly | Recipe sites, notes | W05; assumption; low | Unknown | Repeated pantry updates and meal choices | No nutrient optimization or allergy safety guarantees |
-| OPP-2026-412 | Produce rotation and use-first reminder | Household food planners; weekly | Fridge notes, grocery apps | W05; assumption; low | Unknown | Grocery-cycle reset | Food-safety dates must not be guessed; avoid waste claims without measurement |
-| OPP-2026-413 | User-set hydration habit log | Adults tracking a self-set routine; daily | Bottles, alarms, fitness apps | W13; direct behavior context, product inference; medium | Unknown | Daily cue and log | No universal intake target; overconsumption and medical-condition warning |
-| OPP-2026-414 | Stress-event and coping-context journal | Adults reflecting on everyday stress; event-triggered | Journals, notes, mood apps | W06, W15; direct stress context, journal inference; medium | Unknown | Event entries and weekly review | Non-diagnostic; crisis handling out of scope; sensitive data minimization |
-| OPP-2026-415 | Paced breathing and grounding timer | Adults choosing a relaxation routine; episodic/daily | Timer, meditation apps | W06; inference; medium | Unknown | Short repeat sessions | No anxiety treatment claim; clear exit and help-seeking notice |
-| OPP-2026-416 | Work-recovery boundary planner | Knowledge workers; workdays | Calendar blocks, focus apps | W06; assumption; low | Unknown | End-of-work ritual | No burnout diagnosis; avoid employer surveillance |
-| OPP-2026-417 | User-controlled digital-break cadence coach | Adult internet users already setting boundaries; daily | OS screen-time tools, do-not-disturb, timers | W14; direct existing behavior/alternative, coach inference; medium | Unknown | Workday and evening cues | No addiction claim; no punitive lockouts or manipulative streaks |
-| OPP-2026-418 | Mood-and-energy context journal | Adults tracking subjective wellbeing; daily | Paper journals, mood trackers | W12, W15; broad context only, unsupported workflow assumption; low | Unknown | Daily check-in and pattern review | No screening/diagnosis or generated interpretation; local storage, deletion and clear crisis boundary |
-| OPP-2026-419 | Neutral symptom-observation log and user-controlled export | Adults preparing factual notes for themselves or a clinician; event-triggered | Notes, patient portals, symptom apps | W16–W17; adjacent workflow/current alternative, consumer-need assumption; low | Unknown | Entries around recurring observations | Plain user-entered facts only; no interpretation, risk scoring, triage, diagnosis or treatment; explicit consent and user-controlled export |
+| OPP-2026-400 | User-defined sleep-routine consistency planner | Adults reporting sleep difficulty; daily | Alarms, calendars, sleep apps | W01 directly observes falling/staying-asleep difficulties; one routine-planning workflow is a bounded adjacent inference; low | Unknown / untested | User-chosen bedtime, wake and wind-down review may recur | No diagnosis, causal interpretation, biological effect, fatigue advice, medication or treatment |
+| OPP-2026-413 | User-set hydration habit log | Adults tracking a self-set routine; daily | Bottles, alarms, fitness apps | W13 directly observes situation-dependent drinking behavior; logging preference remains inferred; medium | Unknown / untested | Self-set cue/log may recur | No universal target, medical advice or overconsumption encouragement |
+| OPP-2026-414 | Stress-event and coping-context journal | Adults reflecting on everyday stress; event-triggered | Journals, notes, mood apps | W15 directly observes stress and planning difficulty; journal is an adjacent inference; medium | Unknown / untested | Event entries may recur | No diagnosis, interpretation, risk score, triage, treatment, crisis intervention or medical advice |
+| OPP-2026-417 | User-controlled digital-break cadence coach | Adults already setting digital boundaries; daily | OS screen-time, do-not-disturb, timers | W14 directly observes offline-time/notification/bedtime boundary workflows; separate coach remains inferred; medium | Unknown / untested | User-chosen cues may recur | No addiction claim, punitive lockout, shame or manipulative streak |
+
+## Consolidation decisions
+
+| Original family | Cycle 3 resolution | ID treatment |
+|---|---|---|
+| Sleep 400–404 | Reduced to one bounded, user-defined routine-consistency workflow (400). Environment causality, shift/travel reset and daylight/biological-effect variants are not retained | 400 qualified; 401–404 preserved as consolidated watchlist records and remain non-reusable |
+| Movement 405–409 | Reduced to one canonical hypothesis family (405), but WHO prevalence and CDC guidance do not independently qualify a movement tool | 405 is the canonical watchlist family; 406–409 are consolidated watchlist records and remain non-reusable |
 
 ## Coverage and integrity check
 
-- Domains: sleep routine, movement habits, meal organization, stress self-management, digital boundaries and neutral journaling.
-- Frequencies: multiple-times-daily, daily, several-times-weekly, weekly and event-triggered.
-- Clinical boundary: every candidate is organizational or reflective; none claims diagnosis, prevention, cure, mitigation or treatment.
-- WTP: unknown for every candidate. Public-health prevalence and existing paid categories are not treated as payment evidence.
-- Repeat use: all mechanisms are assumptions under the owner/impact/planned-review treatment above and must avoid punitive, shame-based or compulsive engagement.
+- Qualified IDs: 400, 413, 414 and 417.
+- Watchlist IDs: 401–412, 415, 416, 418 and 419.
+- Qualified `4` + watchlist `16` = original universe `20`; all IDs stay within 400–419.
+- Candidate 419 remains watchlisted, but its complete jurisdiction/data-classification matrix is preserved below as a safety record.
 
-## Adjacent-candidate boundary check
+## Candidate-to-source coverage and status matrix
 
-| Cluster | Distinction retained after external review | Consolidation trigger |
-|---|---|---|
-| 400–404 sleep | 400 schedules time; 401 stores a user-defined sequence; 402 records environment; 403 is travel/shift event-triggered; 404 records a morning cue | Consolidate 400/401/404 if direct observation does not distinguish schedule, sequence and cue; remove 402/403 absent direct demand |
-| 405–409 movement | 405 is a sedentary-work timer; 406 is a walking plan; 407 logs self-chosen strength sessions; 408 organizes user-owned routine cards; 409 filters prompts by time/equipment | Consolidate 408/409 if users do not maintain cards separately from prompts; no exercise prescription is allowed |
+`None` identifies an evidence gap. Guidance, regulation and platform policy are never direct pain.
 
-## Candidate-to-source coverage matrix
-
-`None` identifies an evidence gap. Guidance, regulation and platform policy are never counted as direct problem evidence.
-
-| Candidate | Direct problem evidence | Contextual / population evidence | Current-alternative evidence | Technical feasibility | Legal / privacy / safety / platform | Unsupported assumption or hypothesis |
+| ID | Cycle 3 status | Direct / adjacent qualifying evidence | Context / alternatives | Feasibility | Legal / privacy / safety | Unsupported assumption |
 |---|---|---|---|---|---|---|
-| 400 | None | W01 | Alarms, calendars, sleep apps | Not researched | W07–W11; no treatment | Planner need, cadence, effect |
-| 401 | None | W01, W06 | Checklists, timers, meditation apps | Not researched | W07–W11; help-seeking boundary | Sequence-builder need/effect |
-| 402 | None | W01 | Notes, sleep trackers | Not researched | W08–W11; no causal interpretation | Environment-journal need |
-| 403 | None | W01 | Calendars, generic advice | Not researched | Fatigue-safety boundary | Reset-checklist need |
-| 404 | None | W01, W06 | Habit apps, alarms | Not researched | W07–W11; no biological claim | Morning-cue need/effect |
-| 405 | None | W03–W04 | OS timers, wearables | Timer feasibility untested | Accessibility; no prescription | Movement-timer demand/effect |
-| 406 | None | W03–W04 | Pedometers, fitness apps, paper | Not researched | No calorie/disease claim | Walking-planner demand/effect |
-| 407 | None | W04 | Workout logs, sheets | Not researched | No load/rehabilitation advice | Strength-log need |
-| 408 | None | W03–W04 | Notes, video bookmarks | Not researched | Content rights; no rehab | Card-organizer need |
-| 409 | None | W03–W04 | Search, videos, cards | Not researched | Accessibility/contraindication boundary | Prompt-deck need |
-| 410 | None | W05 | Calendars, meal planners | Not researched | No medical diet | Cadence-planner demand |
-| 411 | None | W05 | Recipe sites, notes | Not researched | No nutrient/allergy guarantee | Pantry-decision pain |
-| 412 | None | W05 | Fridge notes, grocery apps | Not researched | No guessed safety dates | Produce-rotation pain/waste effect |
-| 413 | W13 situation-dependent behavior | None | Bottles, alarms, fitness apps | Not researched | W07–W11; no target; overconsumption warning | Logging/reminder preference and effect |
-| 414 | W15 stress/planning difficulty | W06, W12 | Journals, notes, mood apps | Not researched | W07–W11; crisis/diagnosis boundary | Journal preference/effect |
-| 415 | None | W06 | Timers, meditation apps | Timer feasibility untested | No anxiety treatment; safe exit | Grounding-timer demand/effect |
-| 416 | None | W06, W15 | Calendars, focus apps | Not researched | No employer surveillance/burnout claim | Work-recovery ritual pain |
-| 417 | W14 boundary strategies | None | W14 do-not-disturb/offline time; timers | OS behavior unverified | W09–W11; no addiction/punitive lockout | Need for separate coach/effect |
-| 418 | None | W12, W15 | Journals, mood trackers | Not researched | W07–W11; sensitive data/no screening | Mood-energy journal pain and pattern value |
-| 419 | None | W16 | W16 patient portals; notes, symptom apps | W17 adjacent patient-entered clinical workflow only; consumer export/interop unverified | W07–W11; jurisdiction matrix below | Consumer pain, frequency and preference |
+| 400 | Qualified — canonical sleep family | W01 observed sleep difficulty; adjacent user-defined routine planner | Alarms/calendars/apps | Not researched | W07–W11; absolute non-clinical boundary | Planner preference, cadence and effect |
+| 401 | Watchlist — consolidated into 400 | None | W01, W06; checklists/timers | Not researched | Help-seeking; no effect claim | Separate sequence-builder need |
+| 402 | Watchlist — consolidated into 400 | None | W01; notes/trackers | Not researched | No causal interpretation; export/delete | Separate environment-journal need |
+| 403 | Watchlist — consolidated into 400 | None | W01; calendars/advice | Not researched | No circadian/fatigue advice | Separate reset-checklist need |
+| 404 | Watchlist — consolidated into 400 | None | W01, W06; habit apps/alarms | Not researched | No biological/treatment claim | Separate morning-cue need |
+| 405 | Watchlist — canonical movement family | None | W03 prevalence, W04 guidance; timers/wearables | Timer untested | Accessibility; no prescription | Movement-cue demand/effect |
+| 406 | Watchlist — consolidated into 405 | None | W03–W04; pedometers/apps | Not researched | No calorie/disease claim | Separate walking-planner need |
+| 407 | Watchlist — consolidated into 405 | None | W04; workout logs/sheets | Not researched | No load/rehabilitation advice | Separate strength-log need |
+| 408 | Watchlist — consolidated into 405 | None | W03–W04; notes/videos | Not researched | Content rights; no rehabilitation | Separate card-organizer need |
+| 409 | Watchlist — consolidated into 405 | None | W03–W04; search/videos | Not researched | Accessibility/contraindication boundary | Separate prompt-deck need |
+| 410 | Watchlist | None | W05 guidance; calendars/planners | Not researched | No medical diet | Meal-cadence pain/demand |
+| 411 | Watchlist | None | W05 guidance; recipes/notes | Not researched | No nutrient/allergy guarantee | Pantry-decision pain |
+| 412 | Watchlist | None | W05 guidance; notes/apps | Not researched | No guessed safety dates | Produce-rotation pain/effect |
+| 413 | Qualified | W13 situation-dependent behavior; adjacent self-set log | Bottles/alarms/apps | Not researched | W07–W11; no target/medical advice | Logging preference/effect |
+| 414 | Qualified | W15 stress/planning difficulty; adjacent journal | W06, W12; journals/apps | Not researched | W07–W11; absolute non-clinical/crisis boundary | Journal preference/effect |
+| 415 | Watchlist | None | W06 guidance; timers/apps | Timer untested | Safe exit; no anxiety treatment | Grounding-timer demand/effect |
+| 416 | Watchlist | None | W06, W15 broad context; calendars/apps | Not researched | No surveillance/burnout diagnosis | Work-recovery ritual pain |
+| 417 | Qualified | W14 observed boundary strategies; adjacent coach | W14 OS tools/timers | OS behavior unverified | W09–W11; no addiction/punitive lockout | Separate coach preference/effect |
+| 418 | Watchlist | None | W12, W15 broad context; journals/trackers | Not researched | Sensitive data; no interpretation/screening | Mood-energy journal pain/value |
+| 419 | Watchlist | W17 adjacent clinical workflow does not establish consumer pain | W16 portals; notes/apps | Consumer export/interop unverified | W07–W11; full matrix below; absolute prohibitions | Consumer pain, frequency and preference |
 
 ## Candidate 419 jurisdiction and data-classification matrix
 
