@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.0
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -21,6 +21,7 @@ last_reviewed: 2026-07-22
 | General single-user chores, reminders, lists, or calendars | Belongs to T01 unless the core job requires multi-person household coordination. | Issues #4 and #12 |
 | Elder-care monitoring or accessibility support as the primary job | Belongs to T02; T09 can include household coordination only when aging is incidental. | Issues #5 and #12 |
 | Automated decisions about parental fitness, child risk, or household conflict | High-stakes inference, bias, and due-process risk; prohibited. | Issue #12; T09-S11 |
+| Retired Cycle-2 candidates: new-household onboarding (812), guest-access pack (814), quiet-hours router (815), shared-item ledger (819), and generic low-stakes decision record (820) | Candidate-specific direct problem evidence was not located; contextual population, regulation, and platform sources were insufficient. IDs remain retired and are not reused. | External Governance PR #22; SEARCH_LOG negative findings |
 
 ## Boundary rule used
 

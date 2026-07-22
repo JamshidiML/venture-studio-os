@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.0
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -35,33 +35,33 @@ Critical blockers: none; corrections required before Governance review.
 | Legal, safety, privacy, and platform constraints | 10 | 10 | COPPA/GDPR/DSA triggers, consent, retention, conflict, and platform risks are explicit. |
 | Reproducibility of search method | 10 | 10 | Query log, source-class rules, negative results, and cutoff recorded. |
 | Clarity and repository hygiene | 5 | 5 | Exactly nine artifacts, valid front matter, internal links, and assigned IDs only. |
-| **Creator total** | **100** | **100** | **Creator considers artifact ready for independent Governance scoring.** |
+| **Creator total** | **100** | **100** | **Creator considered the artifact ready for review; later Codex scoring was only an internal simulation.** |
 
 ## Correction-loop history
 
-| Cycle | Creator score | Governance score | Critical blockers | Outcome | Commit |
+| Cycle | Creator score | Internal simulation score (historical) | Simulated blockers | Outcome | Commit |
 |---:|---:|---:|---:|---|---|
 | 1 | 85 | pending | 0 | creator rework | uncommitted working draft |
-| 2 | 100 | 89 | 2 | independent Governance rework required | uncommitted working draft |
+| 2 | 100 | 89 internal simulation | 2 simulated | internal Governance simulation rework | uncommitted working draft |
 | 3 | 100 | pending re-review | 0 creator-open | creator applied Governance corrections; re-review required | uncommitted review candidate |
 
 ## Creator cycle 3 — Governance-targeted correction
 
 | Governance finding | Creator correction | Verification state |
 |---|---|---|
-| G09-01 / B09-001 — incomplete Issue #12 candidate fields | Expanded all 20 index records with household composition, primary user, shared-user dynamics, trust/consent, frequency, workaround, WTP evidence, retention risk, claim basis, and confidence. | creator verified 20 of 20 rows; independent closure pending |
-| G09-02 — incomplete hypothesis contracts | Relabeled candidate propositions as evidence-linked `inference` claims and removed the unsupported WTP hypothesis; no threshold or demand evidence was invented. | creator claim-type audit passed; independent closure pending |
-| G09-03 / B09-002 — draft lifecycle conflict | Moved all nine artifacts to `in-review` at version `0.2.0` after substantive correction. | creator state/version check passed; independent closure pending |
+| G09-01 / B09-001 — incomplete Issue #12 candidate fields | Expanded all 20 index records with household composition, primary user, shared-user dynamics, trust/consent, frequency, workaround, WTP evidence, retention risk, claim basis, and confidence. | creator verified 20 of 20 rows; internal simulation closure followed |
+| G09-02 — incomplete hypothesis contracts | Relabeled candidate propositions as evidence-linked `inference` claims and removed the unsupported WTP hypothesis; no threshold or demand evidence was invented. | creator claim-type audit passed; internal simulation closure followed |
+| G09-03 / B09-002 — draft lifecycle conflict | Moved all nine artifacts to `in-review` at version `0.2.0` after substantive correction. | creator state/version check passed; internal simulation closure followed |
 
 Creator score remains `100/100` for the corrected review candidate. This is not a Governance rescore and does not change candidate attractiveness.
 
-## Independent Governance review
+## Internal Governance Simulation review (historical; not independent)
 
-Reviewer role: independent Governance Agent
+Reviewer role: Codex internal Governance simulation
 Review date: 2026-07-22
 Artifact reviewed: all nine T09 files at version 0.1.0
 
-| Dimension | Maximum | Awarded | Independent rationale |
+| Dimension | Maximum | Awarded | Internal simulation rationale |
 |---|---:|---:|---|
 | Scope compliance and exclusions | 10 | 10 | The 20 candidates are household-multi-user workflows and prohibited child-surveillance, custody/legal, medical, finance, school-admin, manipulation, and neighboring-thread spaces are explicit. |
 | Source quality and freshness | 20 | 20 | Twelve authoritative/current sources cover recurrence, household diversity, child safety/privacy, and existing alternatives with dates, geography, limitations, and confidence. |
@@ -78,7 +78,7 @@ Artifact reviewed: all nine T09 files at version 0.1.0
 | ID | Finding | Required correction | Owner | Status |
 |---|---|---|---|---|
 | B09-001 | The candidate index does not uniformly satisfy Issue #12's per-candidate field contract. | Add explicit household composition, primary user, shared-user dynamics, trust/consent, frequency, current workaround, candidate-specific WTP evidence or none, and retention risk to every one of the 20 rows. | Strategy Agent | open |
-| B09-002 | The package is still draft while claiming it is complete for independent review. | After substantive corrections, move all nine artifacts to in-review and increment the version consistently. | Strategy Agent | open |
+| B09-002 | The package was still draft while claiming it was complete for review. | After substantive corrections, move all nine artifacts to in-review and increment the version consistently. | Strategy Agent | open in historical internal simulation |
 
 ### Governance point-loss register
 
@@ -97,13 +97,13 @@ Candidate attractiveness remains capped by G-01 through G-10. No Founder excepti
 
 `CREATOR CORRECTION COMPLETE — GOVERNANCE 89/100 HISTORICAL — INDEPENDENT RE-REVIEW PENDING`
 
-## Independent Governance re-review — Cycle 2
+## Internal Governance Simulation re-review — Cycle 2 (historical; not independent)
 
-Reviewer role: independent Governance Agent
+Reviewer role: Codex internal Governance simulation
 Review date: 2026-07-22
 Artifact reviewed: all nine T09 files at version 0.2.0
 
-| Dimension | Maximum | Awarded | Independent rationale |
+| Dimension | Maximum | Awarded | Internal simulation rationale |
 |---|---:|---:|---|
 | Scope compliance and exclusions | 10 | 10 | Exactly 20 multi-user family and household workflows remain within Issue #12; neighboring-thread and prohibited child-safety spaces are explicit. |
 | Source quality and freshness | 20 | 20 | Twelve authoritative/current sources retain publication or update dates, access date, geography, limitations, and confidence. |
@@ -122,4 +122,58 @@ Artifact reviewed: all nine T09 files at version 0.2.0
 | B09-001 | All 20 candidate rows contain the complete Issue #12 per-candidate field contract and a valid evidence-linked inference treatment. | resolved |
 | B09-002 | All nine corrected artifacts use consistent in-review status and version 0.2.0. | resolved |
 
-Independent checks passed: repository validator (32 required files; 37 governed Markdown files), three unit tests, `git diff --check`, exactly nine artifacts, nine of nine in-review/version 0.2.0 lifecycle records, and exactly 20 candidate rows. Governance verdict: **COMPLETE — 100/100 — ZERO CRITICAL BLOCKERS**. Candidate attractiveness remains bounded by the documented evidence ceiling; this does not pass Gate 1, select a product, or authorize Gate 2.
+Internal checks passed at that historical revision: repository validator (32 required files; 37 governed Markdown files), three unit tests, `git diff --check`, exactly nine artifacts, nine of nine in-review/version 0.2.0 lifecycle records, and exactly 20 candidate rows. The former `100/100` verdict was an internal simulation, not an external Governance score. Candidate attractiveness remained bounded by the documented evidence ceiling.
+
+## Authoritative External Governance review — Cycle 1
+
+Review channel: GitHub PR #22 external ChatGPT Governance review
+Review date: 2026-07-22
+Artifact reviewed: T09 version 0.2.0
+
+| Dimension | Maximum | External score | Points lost |
+|---|---:|---:|---:|
+| Scope compliance and exclusions | 10 | 10 | 0 |
+| Source quality and freshness | 20 | 16 | 4 |
+| Claim-level evidence and traceability | 15 | 13 | 2 |
+| Opportunity coverage and diversity | 15 | 12 | 3 |
+| Analytical rigor and uncertainty | 15 | 13 | 2 |
+| Legal, safety, privacy, and platform constraints | 10 | 10 | 0 |
+| Reproducibility of search method | 10 | 10 | 0 |
+| Clarity and repository hygiene | 5 | 4 | 1 |
+| **External Governance total** | **100** | **88** | **12** |
+
+### External point-loss register
+
+| ID | Dimension / loss | Authoritative finding | Required correction | Creator disposition |
+|---|---|---|---|---|
+| EXT09-PL01 | Source quality / 4 | Direct family, co-parent, and shared-household coordination evidence was insufficient. | Add direct independent workflow/lived-experience evidence without misclassifying context. | Added T09-S13–S17; external verification pending. |
+| EXT09-PL02 | Traceability / 2 | Candidate-to-source classification did not distinguish evidence types. | Add complete coverage matrix. | Added six-axis matrix for 15 retained candidates; external verification pending. |
+| EXT09-PL03 | Coverage / 3 | Guest access, quiet hours, shared-item, decision, and onboarding concepts were weakly supported. | Strengthen, replace, downgrade, consolidate, or remove honestly. | Removed 812, 814, 815, 819, 820; IDs retired. |
+| EXT09-PL04 | Rigor / 2 | Conflict harm and non-participation were underdeveloped. | Make those risks explicit for co-parent, role rotation, missed-task, and shared-decision work. | Added direct conflict evidence and explicit risks; removed unsupported 820. |
+| EXT09-PL05 | Hygiene / 1 | Codex review was presented as independent and current external state was absent. | Relabel prior reviews, preserve history, bump version, request external re-review. | Completed at version 0.3.0; `EXT-GOV-01` awaits external closure. |
+
+Critical blocker: `EXT-GOV-01` — authoritative external re-review has not yet verified this creator correction.
+
+## Creator cycle 4 — external-review correction candidate
+
+| Dimension | Maximum | Creator score | Verification basis |
+|---|---:|---:|---|
+| Scope compliance and exclusions | 10 | 10 | Fifteen retained candidates remain inside T09; five unsupported candidates were retired without ID reuse. |
+| Source quality and freshness | 20 | 20 | Seventeen sources now include direct parent, household-work, participatory, and separated-family evidence with explicit limits. |
+| Claim-level evidence and traceability | 15 | 15 | Six-axis coverage matrix separates direct evidence, context, alternatives, feasibility, constraints, and unsupported assumptions. |
+| Opportunity coverage and diversity | 15 | 15 | Candidate count was allowed to fall 20 → 15 rather than preserve weak breadth; retained clusters and assigned range remain clear. |
+| Analytical rigor and uncertainty | 15 | 15 | Conflict, non-participation, retention, WTP, and candidate-specific support ceilings are explicit. |
+| Legal, safety, privacy, and platform constraints | 10 | 10 | Child-data, consent, coercion, false-reassurance, access, and platform risks remain candidate-specific. |
+| Reproducibility of search method | 10 | 10 | Four new query paths and negative support findings are logged. |
+| Clarity and repository hygiene | 5 | 5 | Nine in-review artifacts use version 0.3.0; prior Codex scores are clearly internal simulations. |
+| **Creator total** | **100** | **100** | **Execution/artifact quality only; not a new Governance score.** |
+
+## Updated correction-loop history
+
+| Cycle | Creator score | Authoritative external Governance score | Candidate count | Outcome |
+|---:|---:|---:|---:|---|
+| 1–3 | 85 → 100 | not yet available | 20 | internal drafting and simulation history preserved above |
+| External Cycle 1 | 100 | 88 | 20 | external rework required; `EXT-GOV-01` opened |
+| External Correction Cycle 2 | 100 | pending re-review | 15 | targeted correction complete; no new independent score claimed |
+
+External Governance re-review requested.

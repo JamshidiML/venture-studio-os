@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.0
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -23,6 +23,11 @@ All sources were accessed on 2026-07-22. `Current at access` means the page had 
 | T09-S10 | [Get started with Family Link](https://support.google.com/families/answer/7101025?hl=en) | Google Help; current at access | Supported countries/devices | Shows existing child-account supervision, screen-time, app, and location controls and platform limits. | Platform-specific; surveillance features are excluded from candidate set. | high |
 | T09-S11 | [Protecting children online](https://commission.europa.eu/topics/digital-economy-and-society/protecting-children-online_en) | European Commission; updated 2026-06-17 | EU online services | Summarizes privacy, safety, age-appropriate design, dark-pattern, and advertising constraints. | Policy overview, not candidate demand evidence. | high |
 | T09-S12 | [Parenting for the digital age](https://www.unicef.org/media/174611/file/Parenting%20for%20the%20digital%20age_Final%20report.pdf.pdf) | UNICEF; 2025-09 | Multi-country program review | Digital parenting support must consider safety, access, and caregiver context. | Program-level evidence; not a consumer product market study. | medium |
+| T09-S13 | [How working parents divide family responsibilities](https://www.pewresearch.org/social-trends/2026/06/16/how-working-parents-divide-family-responsibilities/) | Pew Research Center; 2026-06-16 | US survey of 2,242 working parents; couple analyses are mainly different-sex couples | Direct reports of how parents divide chores and daily parenting, satisfaction with that division, and decisions during unexpected childcare disruption. | Self-report; subgroup coverage is limited; does not test products or willingness to pay. | high |
+| T09-S14 | [Parenting in America Today](https://www.pewresearch.org/social-trends/2023/01/24/gender-and-parenting/) | Pew Research Center; 2023-01-24 | US survey of parents with children under 18 | Direct reports on managing children’s schedules/activities and differing parental perceptions of responsibility. | Different-sex married/cohabiting subgroup; older than the cutoff-year sources; no product-demand measure. | medium-high |
+| T09-S15 | [Cognitive household labor: gender disparities and consequences for maternal mental health and wellbeing](https://link.springer.com/article/10.1007/s00737-024-01490-w) | Archives of Women’s Mental Health; published online 2024-07-27 | Survey of 322 US mothers of young children | Directly measures cognitive labor across 30 household tasks—anticipating, planning, delegating, and monitoring—and associations with stress, burnout, and relationship functioning. | Cross-sectional, well-educated/high-income convenience sample, mother-only self-report, unvalidated task measure; not causal or demand evidence. | medium |
+| T09-S16 | [Exploring Design Spaces to Facilitate Household Collaboration for Cohabiting Couples](https://pure.kaist.ac.kr/en/publications/exploring-design-spaces-to-facilitate-household-collaboration-for/) | ACM CHI / KAIST; 2025-04-26 | Ten-day probe study with six cohabiting couples in South Korea | Direct qualitative evidence that household collaboration involves recognition, negotiation, relationship dynamics, and limits of efficiency-only tools. | Very small culturally specific sample; exploratory design evidence, not prevalence or commercial demand. | medium-low |
+| T09-S17 | [Children and young people in separated families: family-law-system experiences and needs](https://aifs.gov.au/all-research/research-reports/children-and-young-people-separated-families-family-law-system) | Australian Institute of Family Studies; 2018-06-18 | Interviews with 61 Australian children and young people from 47 separated families | Direct lived-experience evidence on ongoing communication, flexibility, children caught in parental conflict, and coordination across separated households. | Older, small purposive sample in family-law contexts; does not establish tool demand and should not be generalized to all co-parents. | medium |
 
 ## Evidence-use rules
 
@@ -30,3 +35,4 @@ All sources were accessed on 2026-07-22. `Current at access` means the page had 
 - Platform feature documentation is used to describe existing alternatives and constraints only.
 - Legal sources identify review triggers; they are not treated as legal advice or universal requirements.
 - Quantitative values appear only when the source, period, geography, and denominator are stated in the report.
+- Direct-problem classification is reserved for observed or surveyed workflow experience (T09-S13–S17); population, policy, regulation, and vendor documentation remain separately classified.
