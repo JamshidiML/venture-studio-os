@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -9,8 +9,8 @@ last_reviewed: 2026-07-22
 
 Thread: T07
 Issue: #10
-Artifact version: 0.3.0
-Authoritative external reviewer: ChatGPT Governance review on PR #18, 2026-07-22
+Artifact version: 0.4.0
+Authoritative external reviewer: ChatGPT Governance Cycle 2 re-review on PR #18, 2026-07-22
 
 Historical Codex review cycles below are Internal Governance Simulations, not independent Governance. Their scores and findings are preserved for audit history but are superseded by the external score.
 
@@ -26,6 +26,8 @@ Historical Codex review cycles below are Internal Governance Simulations, not in
 | 6 — Internal Governance Simulation lifecycle check | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | — | 100 internal | 0 | in-review v0.2.1 internally verified |
 | 7 — External Governance Cycle 1 | 10 | 17 | 14 | 13 | 14 | 10 | 10 | 4 | — | **92 external** | **1: EXT-GOV-01** | authoritative rework required |
 | 8 — External Correction Cycle 2 creator rescore | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | **100** | pending external re-review | **1: EXT-GOV-01** | creator execution complete; external re-review requested |
+| 9 — External Governance Cycle 2 re-review | 10 | 19 | 15 | 13 | 13 | 10 | 10 | 5 | — | **95 external** | **0; EXT-GOV-01 resolved** | rework required for EXT2-T07-01 |
+| 10 — External Correction Cycle 3 creator rescore | 10 | 20 | 15 | 15 | 15 | 10 | 10 | 5 | **100** | **95 external remains authoritative** | 0 critical blockers | qualified/watchlist split complete; re-review requested |
 
 ## Cycle 1 point-loss register
 
@@ -92,3 +94,15 @@ External Governance assigned **92/100** with dimension scores **10, 17, 14, 13, 
 The creator awards 100/100 for correction execution quality, not opportunity attractiveness. Six concepts without sufficient problem evidence were withdrawn (20 → 14). Five verifiable independent/direct sources were added with freshness limits; no source was removed or replaced. Every retained candidate now has a matrix separating direct problem, context/population, current alternative, technical feasibility, legal/privacy/safety/platform, and unsupported assumptions. All external findings and eight lost points are logged, prior internal review history is correctly labeled, and lifecycle/version metadata is consistent.
 
 EXT-GOV-01 remains open because only the external reviewer can assign a new Governance score. **External Governance re-review requested.**
+
+## External Governance Cycle 2 re-review — authoritative
+
+External Governance assigned **95/100** with dimension scores **10, 19, 15, 13, 13, 10, 10, 5**. It externally **resolved EXT-GOV-01**, verified the six Cycle-2 withdrawals, the new direct/user/editorial sources, and CI on the exact Cycle-2 SHA. It opened completion finding **EXT2-T07-01**: the seven then-retained candidates 609, 612–614, and 617–619 were still guidance/category-led because regulations, standards, and vendor features did not establish the proposed SMB pain at candidate granularity.
+
+## External Correction Cycle 3 creator rationale
+
+The seven directly observed or clearly adjacent-workflow-supported candidates 600, 601, 602, 604, 605, 606, and 608 remain Qualified Gate 1 Candidates. Candidates 609, 612, 613, 614, 617, 618, and 619 moved to the Hypothesis Watchlist with their complete Issue #10 contracts, evidence searched, missing evidence, current confidence, security/legal/safety controls, sales-route assumptions, reconsideration conditions, and T07 ownership preserved. The coverage matrix retains the entire 14-candidate auditable universe and states each Cycle-3 status. The six earlier withdrawals remain separately preserved and no ID was reused.
+
+The creator awards **100/100** for Cycle-3 execution and artifact quality only. The latest external Governance score remains **95/100**; this record does not claim an external score of 100, pass Gate 1, rank candidates, or authorize Gate 2. EXT2-T07-01 is creator-resolved by the explicit qualified/watchlist split and awaits external confirmation.
+
+External Governance Cycle 3 re-review requested

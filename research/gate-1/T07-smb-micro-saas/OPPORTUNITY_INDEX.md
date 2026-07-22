@@ -1,13 +1,13 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
 
 # T07 Opportunity Index
 
-This is an unranked Gate 1 universe of 14 retained candidates. External Governance Correction Cycle 2 withdrew six unsupported concepts rather than preserve an arbitrary count. “WTP evidence” records only direct evidence found or an explicitly weak proxy. No Opportunity Score, disposition, winner, or Gate 2 recommendation is present.
+This is the unranked set of seven Qualified Gate 1 Candidates. External Governance Correction Cycle 2 withdrew six unsupported concepts; Cycle 3 moved seven guidance/category-led concepts to the [Hypothesis Watchlist](EXCLUSIONS.md#hypothesis-watchlist). “WTP evidence” records only direct evidence found or an explicitly weak proxy. No Opportunity Score, rank, winner, or Gate 2 recommendation is present.
 
 | ID | Wedge; buyer / user; problem claim type | Workflow frequency and workaround | Evidence basis | Integration reality and fallback | Sales route and WTP evidence | Legal / security reality | Confidence |
 |---|---|---|---|---|---|---|---|
@@ -18,17 +18,10 @@ This is an unranked Gate 1 universe of 14 retained candidates. External Governan
 | OPP-2026-605 | Schedule/route reshuffle board; owner / scheduler; problem type: inference | Daily as schedules change; field-service calendar and manual adjustment | S07-17 directly reports scheduling/route friction; cancellation recovery was narrowed out | Calendar CSV/manual slots; no auto-booking required; fallback call sheet | Vertical field-service communities; direct candidate WTP absent | Messaging consent, opt-out, time-zone controls; no dark patterns | medium-low |
 | OPP-2026-606 | Recurring-visit evidence packet; operations owner / mobile worker; problem type: inference | Per recurring visit; field-service job forms/photos plus folders | S07-17/S07-19 observe job-form/photo workflows; S07-10 to S07-12 are current alternatives | Mobile checklist and export; optional calendar import; fallback PDF packet | Cleaning/maintenance consultants; paid adjacent categories only | Site sensitivity, image consent, least privilege, configurable retention | low-medium |
 | OPP-2026-608 | Supplier lead-time exception board; owner / purchasing coordinator; problem type: inference | Weekly/daily for active orders; inbox plus spreadsheet | S07-15 directly reports supplier delays; late discovery remains inferred | CSV and forwarded confirmations; optional vendor portal/API later; fallback exception export | Small-manufacturer networks; no direct WTP evidence | Supplier confidentiality, access control, no automatic commitment changes | medium |
-| OPP-2026-609 | Low-stock reorder review packet; owner / stock coordinator; problem type: inference | Frequency unverified; whiteboard or spreadsheet | S07-16 directly reports supply/inventory cost pressure, not approval-trail pain | Read-only inventory CSV; human approval; fallback reorder worksheet | Wholesaler/maker communities; candidate WTP untested | No autonomous purchase, payment, or forecasting claim; audit approvals | low |
-| OPP-2026-612 | Training/credential evidence calendar; owner / admin and worker; problem type: inference | Monthly plus expiry events; calendar and folders | S07-07, S07-08 recurring employer duties; S07-11 category | Manual/CSV dates and document links; fallback reminder export | Employer advisers/trade bodies; paid training category S07-11, candidate WTP untested | Reminder/evidence only; no employment, eligibility, leave, payroll, or pension decision | medium |
-| OPP-2026-613 | Nonconformance follow-up queue; quality owner / action owner; problem type: inference | Per defect/audit finding; spreadsheet and email | S07-09, S07-11, S07-12 | CSV/manual record; optional QMS export later; fallback action log | MEP/quality consultants; paid inspection category S07-11 | Human quality approval; tamper-evident history; sensitive customer data controls | medium-high |
-| OPP-2026-614 | Audit/inspection evidence binder; quality owner / admin; problem type: inference | Per audit/customer request; folders and PDFs | S07-09, S07-11, S07-12 | Selected-file links and exports; no certificate generation; fallback indexed ZIP/PDF | Quality consultants and supplier networks; paid category proxy S07-11 | No certification guarantee; access, redaction, retention, provenance | medium |
-| OPP-2026-617 | Data-rights request tracker; owner/privacy lead / admin; problem type: inference | Event-driven with deadlines; inbox and checklist | S07-05, S07-06 direct UK SMB guidance | Manual intake and evidence links; no broad data scanning; fallback regulator checklist | MSPs/privacy advisers; no direct WTP evidence | Legal review required; identity verification, least privilege, audit log, deletion | medium-high |
-| OPP-2026-618 | Vendor-security evidence reuse library; owner/security lead / proposal admin; problem type: inference | Per questionnaire/renewal; spreadsheets and folders | S07-03, S07-04, S07-06; procurement need is inference | Curated evidence snippets/files; no automatic attestations; fallback export bundle | MSPs/quality consultants; no direct WTP evidence | Never assert unsupported compliance; strict access, expiry, provenance | medium |
-| OPP-2026-619 | Access-review and offboarding checklist; owner/IT lead / manager; problem type: inference | Per joiner/leaver plus periodic review; manual list | S07-03, S07-04, S07-06 | Manual system register first; verified admin APIs only later; fallback signed checklist | MSP channel; adjacent security spend only, WTP untested | Never collect passwords; least privilege, MFA, audit history, human revocation | medium-high |
 
 ## Coverage check
 
-- The 14 retained IDs are unique and confined to OPP-2026-600 through OPP-2026-619. Withdrawn IDs 603, 607, 610, 611, 615, and 616 remain documented in [EXCLUSIONS.md](EXCLUSIONS.md).
-- Each record includes buyer, user, frequency, workaround, evidence, integration/fallback, sales/WTP, legal/security, and confidence.
+- The seven qualified IDs and seven watchlist IDs are unique and confined to OPP-2026-600 through OPP-2026-619; together they equal the 14-candidate Cycle-2 auditable universe. Earlier withdrawn IDs 603, 607, 610, 611, 615, and 616 remain separately documented in [EXCLUSIONS.md](EXCLUSIONS.md).
+- Each qualified and watchlist record preserves buyer, user, frequency, workaround, evidence, integration/fallback, sales/WTP, legal/security, and confidence.
 - No candidate depends on another Gate 1 thread.
 - Weak WTP or workflow evidence is carried into [EVIDENCE_GAPS.md](EVIDENCE_GAPS.md), not concealed.

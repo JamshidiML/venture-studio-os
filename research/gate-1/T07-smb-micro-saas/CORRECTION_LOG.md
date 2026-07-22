@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -75,4 +75,17 @@ External review submitted on PR #18 on 2026-07-22 assigned **92/100**. This scor
 | C-07-017 | Prior Codex “Independent Governance” labels were invalid. | Relabeled prior sections as Internal Governance Simulation/Internal Pre-review without deleting scores or findings. | CORRECTION_LOG.md, QUALITY_SCORE_HISTORY.md, THREAD_SUMMARY.md | Audit history remains present and non-authoritative. | resolved |
 | C-07-018 | Lifecycle/version/external status needed consistent correction. | Bumped all nine artifacts to version 0.3.0, retained `status: in-review`, and added EXT-GOV-01. | All nine artifacts | 9/9 lifecycle headers match. | resolved |
 
-External Governance re-review requested.
+## External Governance Cycle 2 re-review and Correction Cycle 3
+
+External Governance re-reviewed PR #18 on 2026-07-22 and assigned **95/100** with dimensions **10, 19, 15, 13, 13, 10, 10, 5**. It externally resolved **EXT-GOV-01** and verified the Cycle-2 source, withdrawal, matrix, and CI corrections. The remaining completion finding was **EXT2-T07-01**: candidates 609, 612–614, and 617–619 were still guidance/category-led rather than supported by direct or clearly adjacent observed SMB workflows.
+
+| Correction ID | Cycle-2 external finding | Targeted Cycle-3 correction | Files changed | Verification | Status |
+|---|---|---|---|---|---|
+| C-07-019 | EXT-GOV-01 required external disposition. | Recorded the external 95/100 re-review and its explicit closure of EXT-GOV-01. | QUALITY_SCORE_HISTORY.md, CORRECTION_LOG.md, EVIDENCE_GAPS.md, THREAD_SUMMARY.md | No internal score is presented as external; 95/100 remains authoritative. | externally resolved |
+| C-07-020 | EXT2-T07-01 found seven guidance/category-led candidates in the retained set. | Kept 600, 601, 602, 604, 605, 606, and 608 qualified; moved 609, 612–614, and 617–619 to the Hypothesis Watchlist. | MARKET_DISCOVERY_REPORT.md, OPPORTUNITY_INDEX.md, EXCLUSIONS.md, EVIDENCE_GAPS.md | Qualified 7 + watchlist 7 = prior auditable universe 14; prior withdrawals remain separate. | creator-resolved; external Cycle-3 confirmation pending |
+| C-07-021 | Watchlist movement must not erase candidate contracts or safety/sales analysis. | Preserved each watchlist ID, concept, buyer/user, frequency/workaround, evidence, integration/fallback, sales route/WTP, legal/security/safety constraints, confidence, evidence gap, reconsideration conditions, and T07 ownership. | EXCLUSIONS.md | Seven complete Issue #10 contract rows and seven qualification-gap rows are present. | resolved for creator cycle |
+| C-07-022 | Coverage and lifecycle must match the final split. | Added Cycle-3 status to all 14 matrix rows; updated all counts; advanced all nine artifacts to in-review version 0.4.0. | All nine artifacts | Matrix, lifecycle, assigned-range, uniqueness, validator, tests, and diff checks prepared for final verification. | resolved for creator cycle |
+
+No source was added, removed, or replaced in Cycle 3. No Opportunity Score was created or altered.
+
+External Governance Cycle 3 re-review requested
