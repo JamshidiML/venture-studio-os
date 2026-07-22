@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -9,11 +9,11 @@ last_reviewed: 2026-07-22
 
 ## Executive summary
 
-This thread identifies 20 non-ranked AI-native workflow inferences for researchers, public-interest teams, technical knowledge stewards, archives, and other small expert groups. The candidates focus on high-context transformations that were costly to perform manually: document-to-structure conversion, evidence provenance, cross-document consistency, uncertainty marking, and human-review queues.
+This thread now distinguishes **10 Qualified Gate 1 Candidates** from **10 AI Hypothesis Watchlist Candidates** across the previous auditable 20-ID universe. Qualified candidates have direct or clearly adjacent observed old-workflow-family evidence; watchlist concepts remain preserved where only capability, context, regulation, risk, or logical design supports the proposed job.
 
 Current evidence supports four bounded conclusions. First, generative AI exposure is task-level and job transformation is more likely than whole-job replacement. Second, contemporary systems can process long, multimodal documents, but capability remains jagged and evaluation-sensitive. Third, direct non-provider evidence documents real backlogs or resource constraints in archives, evidence synthesis, public records, museum collections, research-data stewardship, and technical-information use. Fourth, those old-workflow problems do not prove that any proposed AI response is wanted, economical, lawful, or reliable.
 
-Every candidate therefore specifies a concrete user and old workflow, a proposed lawful data path, human authority, a complete measurable quality hypothesis, a unit-cost risk, a candidate-specific privacy/security treatment, a complete defensibility hypothesis, and a non-AI fallback. No generic chatbot, autonomous high-stakes decision, or candidate belonging primarily to T01–T09 is included.
+Every qualified and watchlist candidate still specifies a concrete user and old workflow, a proposed lawful data path, human authority, a complete measurable quality hypothesis, a unit-cost risk, a candidate-specific privacy/security treatment, a complete defensibility hypothesis, and a non-AI fallback. No generic chatbot, autonomous high-stakes decision, or candidate belonging primarily to T01–T09 is included.
 
 ## Objective and scope
 
@@ -26,7 +26,7 @@ Every candidate therefore specifies a concrete user and old workflow, a proposed
 
 ## Methodology
 
-Research combined official labor/task studies, direct practitioner surveys and case studies, workflow-focused academic synthesis, model-provider capability documentation, independent evaluation, US risk guidance, and EU regulation. The coverage matrix separately records direct workflow evidence, context/alternatives, technical feasibility, risk/evaluation, reachability, and unsupported assumptions. Candidate generation applied five filters:
+Research combined official labor/task studies, direct practitioner surveys and case studies, workflow-focused academic synthesis, model-provider capability documentation, independent evaluation, US risk guidance, and EU regulation. The coverage matrix separately records Cycle 3 disposition, direct workflow evidence, context/alternatives, technical feasibility, risk/evaluation, reachability, and unsupported assumptions. A candidate qualifies only when direct or clearly adjacent observed workflow-family evidence supports investigation of the bounded problem. Capability, regulation, standards, population context, vendor features, and logical invention alone place an ID on the watchlist.
 
 1. a concrete existing job with a recognizable input and output;
 2. an enabling capability that changed recently (multimodal documents, structured extraction, longer context, tool use, or iterative synthesis);
@@ -53,16 +53,19 @@ Source details are in [SOURCE_REGISTER.md](SOURCE_REGISTER.md); queries and nega
 | Research-data professionals report resource, knowledge, infrastructure, and tooling gaps across RDM/FAIR work. | evidence | T10-S19 | 156 German research-centre respondents; 2024 survey published 2025 | medium-high | Broad task family; not proof for datasheet or schema candidates. |
 | Maintenance practitioners report barriers around OEM recommendations and adequate technical information. | evidence | T10-S20 | 105 respondents in three Nigerian industrial sectors; 2024 | medium | Regional/sector-specific; not procedure-authoring demand. |
 
-## Opportunity universe
+## Qualified universe and AI Hypothesis Watchlist
 
-[OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md) defines 20 candidates across four capability clusters. None is ranked or recommended as a winner.
+[OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md) contains the 10 qualified candidates. [EVIDENCE_GAPS.md](EVIDENCE_GAPS.md#ai-hypothesis-watchlist) preserves the other 10 IDs and their complete evaluation/risk contracts. Qualified plus watchlist equals the prior 20-ID universe; no ID was deleted, reused, or renumbered. None is ranked or recommended.
 
-| ID range | Cluster | Candidates | Common enabling capability |
-|---|---|---:|---|
-| OPP-2026-900..904 | evidence and provenance | 5 | long-document extraction, citation mapping, structured output |
-| OPP-2026-905..909 | research and public knowledge | 5 | multilingual/multimodal synthesis with audit trails |
-| OPP-2026-910..914 | data and technical stewardship | 5 | schema inference, consistency checking, document vision |
-| OPP-2026-915..919 | review queues and traceable transformations | 5 | cross-document comparison, uncertainty scoring, human escalation |
+| ID range | Cluster | Qualified | Watchlist | Common enabling capability |
+|---|---|---:|---:|---|
+| OPP-2026-900..904 | evidence and provenance | 3 | 2 | long-document extraction, citation mapping, structured output |
+| OPP-2026-905..909 | research and public knowledge | 1 | 4 | multilingual/multimodal synthesis with audit trails |
+| OPP-2026-910..914 | data and technical stewardship | 4 | 1 | schema inference, consistency checking, document vision |
+| OPP-2026-915..919 | review queues and traceable transformations | 2 | 3 | cross-document comparison, uncertainty scoring, human escalation |
+| **Total** | — | **10** | **10** | — |
+
+Qualified IDs are `901`, `903`, `904`, `908`, `910`, `911`, `913`, `914`, `917`, and `918`. For `901`, `903`, `908`, `910`, `911`, `913`, `914`, and `918`, the observed evidence supports the broader workflow family but does not independently isolate the proposed subtask; confidence therefore remains low or medium-low. Watchlist IDs are `900`, `902`, `905`, `906`, `907`, `909`, `912`, `915`, `916`, and `919`.
 
 ## Analytical observations
 
@@ -104,4 +107,4 @@ Confidence is **high** that model capability and adoption are advancing unevenly
 
 ## Recommended next action
 
-External Governance re-review requested for corrected version 0.3.0. Do not rank a winner, benchmark or build models, conduct due diligence, define an MVP, or implement software without separate Founder authorization.
+External Governance Cycle 3 re-review requested

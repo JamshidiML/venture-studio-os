@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -25,3 +25,9 @@ last_reviewed: 2026-07-22
 ## Edge-case rule
 
 A workflow can remain in T10 only when the newly viable core is high-context AI transformation with explicit evaluation and provenance. If its primary user value is ordinary administration or a domain workflow assigned elsewhere, it is excluded regardless of AI use.
+
+## Cycle 3 disposition boundary
+
+The [AI Hypothesis Watchlist](EVIDENCE_GAPS.md#ai-hypothesis-watchlist) is not a deletion or permanent exclusion. Its 10 IDs remain T10-owned, preserve their full evaluation and safety contracts, and cannot be reused. They may return to the qualified set only after direct or clearly adjacent observed old-workflow evidence supports the bounded problem.
+
+External Governance Cycle 3 re-review requested

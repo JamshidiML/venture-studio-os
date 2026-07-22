@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -39,3 +39,6 @@ All sources were accessed on 2026-07-22. Provider sources are used for documente
 - No market-size, revenue, user-count, price, or customer-demand figure is used.
 - Candidate confidence remains low where evidence is only cross-workflow inference.
 - `T10-S13–S20` are classified by use: direct old-workflow/problem evidence where they observe practitioners or workflow backlogs; T10-S17 remains contextual volume only. None is capability evidence or proof of willingness to pay.
+- Cycle 3 added or removed no source. Classification changed only candidate disposition: direct or clearly adjacent observed workflow-family evidence can qualify investigation, while capability, context, regulation, standards, and logical invention alone cannot.
+
+External Governance Cycle 3 re-review requested

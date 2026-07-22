@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -48,3 +48,9 @@ Searches were executed on 2026-07-22. Primary technical documentation, original 
 ## Reproducibility ceiling
 
 This is a broad Gate 1 search, not a systematic review. Search indexes and model/API documentation change. Later work must snapshot exact model versions, inputs, evaluation sets, and costs under separate authorization.
+
+## Cycle 3 evidence-disposition audit
+
+No new search was needed or performed merely to preserve candidate count. The existing coverage matrix was audited against the external rule that capability, regulation, standards, population context, vendor features, and logical invention do not independently establish user pain. Ten no-direct-pain concepts moved to the AI Hypothesis Watchlist; ten direct or clearly adjacent workflow-family concepts remain qualified, with subtask limitations explicit.
+
+External Governance Cycle 3 re-review requested

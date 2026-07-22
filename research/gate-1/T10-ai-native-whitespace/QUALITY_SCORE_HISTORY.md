@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -178,3 +178,59 @@ Critical blocker: `EXT-GOV-01` — authoritative external re-review has not yet 
 | External Correction Cycle 2 | 100 | pending re-review | 20 | targeted correction complete; no new independent score claimed |
 
 External Governance re-review requested.
+
+## Authoritative External Governance re-review — Cycle 2
+
+Review channel: GitHub PR #24 external ChatGPT Governance review.
+Review date: 2026-07-22.
+Artifact reviewed: T10 version 0.3.0 at `cb036edf9d49bbdac85618191e9f2568fb4ea4ca`
+
+| Dimension | Maximum | External score | Points lost |
+|---|---:|---:|---:|
+| Scope compliance and exclusions | 10 | 10 | 0 |
+| Source quality and freshness | 20 | 19 | 1 |
+| Claim-level evidence and traceability | 15 | 15 | 0 |
+| Opportunity coverage and diversity | 15 | 12 | 3 |
+| Analytical rigor and uncertainty | 15 | 15 | 0 |
+| Legal, safety, privacy, and platform constraints | 10 | 10 | 0 |
+| Reproducibility of search method | 10 | 10 | 0 |
+| Clarity and repository hygiene | 5 | 5 | 0 |
+| **External Governance total** | **100** | **96** | **4** |
+
+### Cycle 2 blocker and finding disposition
+
+| ID | Authoritative external finding | External disposition / required correction |
+|---|---|---|
+| EXT-GOV-01 | Prior Codex review was not independent Governance. | **Externally resolved.** Internal simulations were correctly relabeled, authoritative history and lifecycle were current, and CI passed on the reviewed SHA. |
+| EXT2-T10-01 | Ten concepts—900, 902, 905–907, 909, 912, 915–916, and 919—had no candidate-specific problem evidence but remained in the qualified universe. | Rework required: move them to a preserved AI Hypothesis Watchlist; retain evaluation, authority, cost, data, risk, defensibility, and fallback contracts; keep broadly adjacent retained subtasks low confidence. |
+
+The authoritative score remains **96/100** until another external review. It is not replaced by the Creator score below.
+
+## Creator cycle 5 — Qualified Universe vs. AI Hypothesis Watchlist
+
+| Dimension | Maximum | Creator score | Cycle 3 verification basis |
+|---|---:|---:|---|
+| Scope compliance and exclusions | 10 | 10 | Ten qualified IDs and ten watchlist IDs preserve the complete prior 900–919 universe without ranking or Gate 2 expansion. |
+| Source quality and freshness | 20 | 20 | The same 20 bounded sources remain; no irrelevant source was added or removed to affect classification. |
+| Claim-level evidence and traceability | 15 | 15 | The coverage matrix now records Cycle 3 disposition and keeps workflow evidence separate from capability, risk, and reachability. |
+| Opportunity coverage and diversity | 15 | 15 | Only direct or clearly adjacent observed workflow-family candidates remain qualified; ten unsupported concepts retain full watchlist records. |
+| Analytical rigor and uncertainty | 15 | 15 | Broadly supported but subtask-unisolated qualified candidates explicitly remain low confidence; no demand/WTP inference was added. |
+| Legal, safety, privacy, and platform constraints | 10 | 10 | Every watchlist candidate retains quality, kill, authority, cost, lawful-data, privacy/security/rights, defensibility, and fallback contracts. |
+| Reproducibility of search method | 10 | 10 | Evidence searched and missing evidence are recorded per watchlist ID; reconsideration rules are explicit. |
+| Clarity and repository hygiene | 5 | 5 | Nine artifacts are in-review at 0.4.0; qualified/watchlist counts reconcile to 20 and links/status labels are explicit. |
+| **Creator total** | **100** | **100** | **Execution quality only; not an external Governance score.** |
+
+### Cycle 3 completion finding
+
+| ID | Completion finding | Resolution | Status |
+|---|---|---|---|
+| C3-T10-01 | The auditable universe needed a final qualified-versus-watchlist disposition without deleting IDs or evaluation contracts. | Qualified 10 evidence-backed/adjacent IDs in OPPORTUNITY_INDEX; moved 10 capability-led/no-direct-pain IDs to the AI Hypothesis Watchlist in EVIDENCE_GAPS; retained all 20 matrix rows and contracts. | creator-resolved; external re-review required |
+
+## Cycle 3 correction-loop update
+
+| Cycle | Creator score | Authoritative external Governance score | Qualified | Watchlist | Outcome |
+|---|---:|---:|---:|---:|---|
+| External Cycle 2 review | 100 historical creator | 96 | 20 then described as qualified | 0 | external rework required; EXT-GOV-01 externally resolved; EXT2-T10-01 opened |
+| External Correction Cycle 3 | 100 | 96 remains authoritative | 10 | 10 | creator correction complete; no new independent score claimed |
+
+External Governance Cycle 3 re-review requested

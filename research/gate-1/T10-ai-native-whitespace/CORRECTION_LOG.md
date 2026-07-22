@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -53,3 +53,24 @@ Authoritative external review: PR #24, submitted 2026-07-22. Previous external s
 | EXT10-04 | Hygiene lost 3 and `EXT-GOV-01`: Codex reviews were mislabeled independent; external score/findings and lifecycle state were not current. | Relabeled every prior Codex review as internal simulation, preserved audit history, recorded the external result, and moved all nine artifacts consistently to version 0.3.0 with `in-review` status. | all nine artifacts | Lifecycle, labels, history, and external review request checked locally. | creator-corrected; external re-review pending |
 
 External Governance re-review requested.
+
+## Authoritative External Governance Re-review — Cycle 2
+
+PR #24 external review of version 0.3.0 assigned **96/100** with dimension scores **10, 19, 15, 12, 15, 10, 10, 5**. The review externally resolved `EXT-GOV-01`, verified the non-provider evidence/evidence-axis/overlap corrections, and opened completion finding `EXT2-T10-01`.
+
+| ID | Cycle 2 finding | Cycle 3 required correction | Resolution evidence | Status |
+|---|---|---|---|---|
+| EXT-GOV-01 | Codex-authored review history was not independent. | None further; preserve the corrected labels and authoritative history. | External reviewer verified internal-simulation labels, lifecycle, authoritative score, and CI on the exact SHA. | **externally resolved** |
+| EXT2-T10-01 | 900, 902, 905–907, 909, 912, 915–916, and 919 had no candidate-specific problem evidence but remained qualified. | Move all ten to an AI Hypothesis Watchlist; preserve IDs and every evaluation/risk contract; retain adjacent-workflow candidates only at low confidence. | OPPORTUNITY_INDEX contains 10 qualified IDs and a 20-row status matrix; EVIDENCE_GAPS contains 10 complete watchlist records and preserved contracts. | creator-resolved; external re-review required |
+
+## External Governance Correction Cycle 3
+
+| ID | Cycle 3 completion finding | Targeted resolution | Files changed | Verification | Status |
+|---|---|---|---|---|---|
+| C3-T10-01 | Qualified Gate 1 Candidates and AI Hypothesis Watchlist Candidates were not yet separated. | Qualified 901, 903, 904, 908, 910, 911, 913, 914, 917, and 918; moved 900, 902, 905–907, 909, 912, 915–916, and 919 to the watchlist without deletion or renumbering. | REPORT, OPPORTUNITY_INDEX, EVIDENCE_GAPS, EXCLUSIONS, SCORE HISTORY, SUMMARY | 10 qualified + 10 watchlist = prior 20-ID universe; matrix disposition and full contracts preserved. | creator-resolved; external re-review required |
+| C3-T10-02 | Broad workflow-family evidence could be mistaken for direct proof of the proposed subtask. | Marked eight retained adjacent-workflow candidates as subtask-unisolated and kept confidence low/medium-low. | REPORT, OPPORTUNITY_INDEX, EVIDENCE_GAPS | No capability, regulation, or context source is counted as candidate-specific pain. | resolved |
+| C3-T10-03 | Cycle 2 score, blocker disposition, counts, and lifecycle needed current audit state. | Recorded external 96/100, marked EXT-GOV-01 externally resolved, bumped all nine artifacts to in-review 0.4.0, and requested Cycle 3 re-review. | all nine artifacts | Repository validator, three unit tests, diff check, lifecycle, ID, matrix, link, and contract checks passed locally; PR/CI re-check follows push. | creator-resolved; local validation passed |
+
+No source was added, removed, or replaced in Cycle 3. No model benchmark, prototype, outreach, ranking, or Gate 2 work occurred.
+
+External Governance Cycle 3 re-review requested
