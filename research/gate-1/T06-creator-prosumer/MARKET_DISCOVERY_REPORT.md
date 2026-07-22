@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -9,7 +9,7 @@ last_reviewed: 2026-07-22
 
 ## Executive Summary
 
-- **Twenty unranked candidates cover creator research, rights, accessibility, editorial preflight, feedback and provenance.** They serve individuals and freelancers across writing, video, podcasting, newsletters and visual production without becoming an enterprise suite or platform companion.
+- **The original 20-ID universe is now separated without selecting a product.** Two accessibility workflows qualify for Gate 1 investigation; eighteen unsupported or consolidated concepts remain fully preserved in the Hypothesis Watchlist.
 - **Independent and direct workflow evidence now supplements population/vendor context.** ILO documents platform-shaped creative work; ACM practitioner research observes multi-stage workflows; interviews with disabled Kenyan video creators expose accessibility and collaboration barriers. These sources still do not establish demand for a particular preflight, capture tool or browser extension.
 - **Rights, permissions and human review are hard constraints.** Copyright, FTC endorsement guidance, W3C accessibility requirements, Chrome extension policy, YouTube authorization/quota rules and C2PA limitations materially narrow feasible concepts.
 - **No platform access was invented.** Browser APIs were verified in current first-party documentation; store approval, host access, OAuth scopes, quota extensions and cross-browser parity remain unresolved until later authorization.
@@ -26,7 +26,7 @@ last_reviewed: 2026-07-22
 
 ## Methodology
 
-Research first established creator context, then sought direct practitioner evidence and verified legal, accessibility, extension and API constraints. Direct problem/workflow evidence was separated from creator population, vendor survey, technical feasibility and legal/platform constraints. A candidate required a repeatable individual workflow, a traceable evidence basis, an existing alternative, explicit WTP uncertainty and a viable no-scraping/no-private-API posture. Platform capabilities were recorded only when current documentation supported them and were never counted as creator pain.
+Research first established creator context, then sought direct practitioner evidence and verified legal, accessibility, extension and API constraints. Cycle 3 qualifies only direct observed problem evidence or clearly adjacent observed workflow evidence. Creator population, broad multi-stage context, rights rules, standards, API documentation and platform feasibility do not independently qualify a tool. Unsupported ideas remain auditable in the Hypothesis Watchlist; no extension or integration is authorized.
 
 See [SOURCE_REGISTER.md](SOURCE_REGISTER.md), [SEARCH_LOG.md](SEARCH_LOG.md), [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md), [EXCLUSIONS.md](EXCLUSIONS.md) and [EVIDENCE_GAPS.md](EVIDENCE_GAPS.md) for the audit trail.
 
@@ -46,7 +46,7 @@ Copyright grants owners exclusive reproduction, distribution and derivative-work
 
 ### Accessibility is a production task, not a one-click claim
 
-W3C guidance distinguishes captions, transcripts and description of visual information and notes that automatic captions need editing (C09). C17 adds direct creator evidence that accessibility work is staged and collaborative. Candidates 507, 509 and 510 therefore organize human review, but none certifies WCAG conformance or assumes a platform API.
+W3C guidance distinguishes captions, transcripts and description of visual information and notes that automatic captions need editing (C09). C17 adds direct creator evidence that accessibility work is staged and collaborative. Cycle 3 consolidated 509 into 507. Qualified 507 covers time-based media caption/transcript QA; qualified 510 remains distinct because its event, input and output concern contextual image alt text. Both require human review, certify no conformance and assume no platform API.
 
 ### Browser extensions can support capture workflows only under least privilege
 
@@ -62,7 +62,7 @@ C2PA 2.2 defines Content Credentials structures (C12). Candidate 519 may inspect
 
 ## Opportunity universe
 
-The full 20-candidate, unranked universe is in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md). No weighted opportunity scoring, comparative disposition, winner selection or Gate 2 action was performed.
+The original universe contains **2 Qualified Gate 1 Candidates** and **18 Hypothesis Watchlist Candidates**. [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md) contains the qualified set, distinctness test, T06/T08 boundary and full status matrix; [EXCLUSIONS.md](EXCLUSIONS.md) preserves every watchlist contract. No ranking, winner selection or Gate 2 action occurred.
 
 ## Risks, assumptions and unknowns
 
@@ -71,7 +71,7 @@ The full 20-candidate, unranked universe is in [OPPORTUNITY_INDEX.md](OPPORTUNIT
 3. **Unknown:** candidate-specific WTP; creator population and direct-fan interest are not payment evidence for software.
 4. **Risk:** an extension can lose trust or approval if it over-requests access or handles browsing data beyond a single purpose.
 5. **Risk:** rights, disclosure and accessibility helpers can create false assurance unless their output is explicitly user-reviewed.
-6. **Evidence ceiling:** direct candidate-level pain remains absent for browser capture 500–503, most rights/compliance primitives and composite preflights 505–515; the coverage matrix marks these as category-, constraint- or feasibility-supported only.
+6. **Evidence ceiling:** only 507 and 510 qualify, and only for investigation. The other 18 IDs remain watchlisted; qualified rows still lack representative demand, WTP, retention and effect evidence.
 
 ## Confidence assessment
 
@@ -79,4 +79,6 @@ Confidence is **high for the cited legal, policy, standards and API constraints*
 
 ## Recommended next action
 
-Request external Governance re-review of the Gate 1 package. Do not rank candidates, begin due diligence or validation, write a PRD, build an extension or implement software.
+Request external Governance Cycle 3 re-review of the qualified/watchlist distinction and accessibility consolidation. Do not rank candidates, begin due diligence or validation, write a PRD, build an extension or implement software.
+
+External Governance Cycle 3 re-review requested

@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -21,6 +21,8 @@ last_reviewed: 2026-07-22
 | 4→5 | Browser/API documentation and legal/accessibility constraints were misreadable as pain evidence | Added a complete six-class candidate matrix and explicit `None` direct-evidence cells | OPPORTUNITY_INDEX.md, EVIDENCE_GAPS.md | Evidence classification independently auditable |
 | 4→5 | T06/T08 boundary and preflight overlap needed correction | Added boundary table for 500–503, 507 and 515; differentiated 505–515 and recorded consolidation/replacement triggers | OPPORTUNITY_INDEX.md | Scope/coverage finding remediated |
 | 4→5 | Prior Codex review was mislabeled independent | Relabeled preserved G1–G3 material Internal Pre-review / Internal Governance Simulation; added external score and 12-point register | CORRECTION_LOG.md, QUALITY_SCORE_HISTORY.md, THREAD_SUMMARY.md | EXT-GOV-01 remediation applied; external disposition pending |
+| 5→6 | Cycle 2 External Governance scored 90/100 and found only accessibility production had direct workflow evidence | Separated 2 qualified from 18 watchlist IDs; consolidated 509 into 507; retained 510 only after documenting distinct event/input/reviewer/output | All nine T06 artifacts | Creator Cycle 3 correction complete; external re-review requested |
+| 5→6 | EXT-GOV-01 was externally verified; unsupported concepts still needed durable T06/T08, evaluation and safety treatment | Marked EXT-GOV-01 externally resolved; preserved all original concepts, IDs, boundaries and future evidence/evaluation conditions in complete watchlist records | QUALITY_SCORE_HISTORY.md, CORRECTION_LOG.md, OPPORTUNITY_INDEX.md, EXCLUSIONS.md, THREAD_SUMMARY.md | Attribution resolved; audit universe preserved |
 
 No correction modified another thread, reused IDs, ranked candidates, selected a product, began Gate 2, created a PRD or implemented software.
 
@@ -64,3 +66,19 @@ Authoritative review: PR #23 external review submitted 2026-07-22. Latest extern
 | Twelve lost points needed durable accounting | Added authoritative dimension table and external point-loss register | applied |
 
 External Governance re-review requested.
+
+## External Governance Correction Cycle 3
+
+Authoritative Cycle 2 review: PR #23, 2026-07-22. Latest external Artifact Quality Score: **90/100**.
+
+| Finding | Resolution | Status |
+|---|---|---|
+| `EXT-GOV-01` internal/independent attribution | Cycle 2 external review verified the earlier relabeling | **externally resolved** |
+| `EXT-GOV-C3-T06-01` only accessibility family had direct evidence | Qualified only 507 and 510; moved 18 IDs to complete Hypothesis Watchlist records | creator correction complete; external re-review pending |
+| Accessibility 507/509/510 overlap | 509 consolidated into 507; 510 retained because event, input, reviewer and output are image-specific and distinct | resolved in artifact; external verification pending |
+| Browser, rights, repurposing, preflight, feedback, approval and provenance ideas remained overbroad | All moved to watchlist; full T06/T08, manual-first, rights, human-review, permission, privacy and evaluation conditions preserved | resolved in artifact; external verification pending |
+| Counts and status matrix needed alignment | Report, index, summary, quality history and correction log state 2 qualified + 18 watchlist = 20; matrix covers every ID once | resolved in artifact; external verification pending |
+
+No source was added or removed. No extension, platform integration, ranking, product selection or later-gate work began.
+
+External Governance Cycle 3 re-review requested

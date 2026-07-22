@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -14,6 +14,7 @@ last_reviewed: 2026-07-22
 | 3 | Creator correction | 10/10 | 20/20 | 15/15 | 15/15 | 15/15 | 10/10 | 10/10 | 5/5 | 100/100 | 0 | GOV-T06-B001 correction applied; re-review requested |
 | 4 | Creator lifecycle alignment | 10/10 | 20/20 | 15/15 | 15/15 | 15/15 | 10/10 | 10/10 | 5/5 | 100/100 | 0 | all nine artifacts set to in-review v0.2.1; lifecycle re-verification requested |
 | 5 | Creator external-correction cycle | 10/10 | 20/20 | 15/15 | 15/15 | 15/15 | 10/10 | 10/10 | 5/5 | 100/100 | 0 creator-open; EXT-GOV-01 pending external disposition | external findings remediated; re-review requested |
+| 6 | Creator external-correction Cycle 3 | 10/10 | 20/20 | 15/15 | 15/15 | 15/15 | 10/10 | 10/10 | 5/5 | 100/100 | 0 creator-open; Cycle 3 external re-review pending | 2 qualified + 18 watchlist; 509 consolidated into 507 |
 
 ## Cycle 1 point-loss register
 
@@ -112,7 +113,7 @@ Internal simulation score remained `100/100`. Internal simulation critical block
 
 ## Authoritative External Governance Review — Cycle 1
 
-Review date: `2026-07-22`. External Artifact Quality Score: **88/100**. This is the latest and only independent Governance score.
+Review date: `2026-07-22`. External Artifact Quality Score: **88/100**. This was the first independent Governance score and is superseded by Cycle 2 below.
 
 | Dimension | Maximum | External awarded | Points lost |
 |---|---:|---:|---:|
@@ -148,3 +149,18 @@ Review date: `2026-07-22`. External Artifact Quality Score: **88/100**. This is 
 The Creator score is **100/100 for execution quality**: all external findings and 12 lost points are recorded, every candidate is audited across six evidence classes, weak support is downgraded, boundary/consolidation rules are explicit, and all nine artifacts are consistently `in-review` v0.3.0. This is not an Opportunity Score or a new independent Governance score. The authoritative external score remains **88/100** until external re-review.
 
 External Governance re-review requested.
+
+## Authoritative External Governance Review — Cycle 2
+
+Review date: `2026-07-22`. External Artifact Quality Score: **90/100**. This is the latest independent Governance score; no external score of 100 is claimed.
+
+| Finding ID | Authoritative finding | Cycle 3 required correction | Status |
+|---|---|---|---|
+| EXT-GOV-01 | External Governance verified that historical Codex reviews are correctly labeled internal | Preserve audit labels/history | **externally resolved in Cycle 2** |
+| EXT-GOV-C3-T06-01 | Only accessibility production had direct workflow evidence; the 20-row set remained overbroad and 507/509/510 still overlapped | Retain genuinely distinct accessibility jobs, consolidate duplicates, move all unsupported ideas to watchlist and preserve T06/T08/evaluation/safety boundaries | Creator correction complete; external Cycle 3 re-review pending |
+
+## Creator External Correction Cycle 6
+
+Artifact execution remains **100/100**: 2 qualified + 18 watchlist = all 20 original IDs; 509 is consolidated into 507; 507 and 510 have distinct user event, input, reviewer and output; all watchlist contracts preserve evaluation/safety and T06/T08 boundaries; all nine artifacts are `in-review` v0.4.0. This is a Creator quality score only. The authoritative external score remains **90/100** until external Cycle 3 re-review.
+
+External Governance Cycle 3 re-review requested

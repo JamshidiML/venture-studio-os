@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -32,3 +32,7 @@ All web sources were accessed 2026-07-22. Official rules and technical documenta
 ## Source-selection rule
 
 Official statistics, regulators, standards bodies, copyright authorities, independent labor research, transparent practitioner studies and first-party platform documentation were prioritized. C15 is independent creative-work context; C16–C17 contain direct practitioner/creator observations. Patreon research was retained only as a clearly labeled vendor survey. Scraped creator-income estimates, app download/revenue sites, SEO market-size pages, social-media anecdotes and unauthorized API examples were rejected.
+
+## Cycle 3 source disposition
+
+No source was added, removed or reclassified to pad qualification. The same 17 sources support 2 qualified accessibility workflows and contextualize 18 watchlist records. C17 supplies the only direct creator-accessibility workflow evidence; API, policy, copyright and standards sources remain feasibility or constraints.

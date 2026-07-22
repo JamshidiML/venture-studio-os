@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.3.0
+version: 0.4.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -33,3 +33,7 @@ Search date/cutoff: 2026-07-22. Queries were intentionally split between workflo
 ## Reproducibility notes
 
 Public English-language web research only; no account-gated analytics, private creator data, unpublished platform APIs, scraped content or creator interviews were used. Candidate mappings appear in OPPORTUNITY_INDEX.md and missing evidence is logged in EVIDENCE_GAPS.md.
+
+## Cycle 3 search disposition
+
+No new search was used to rescue unsupported concepts. Cycle 3 reapplied the qualification rule to existing evidence: 507 and 510 qualified, 509 consolidated into 507, and 18 IDs moved to the Hypothesis Watchlist. The original 20-ID universe and T06/T08 boundary remain auditable.
