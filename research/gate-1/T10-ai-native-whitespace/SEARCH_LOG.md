@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.0
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -23,6 +23,13 @@ Searches were executed on 2026-07-22. Primary technical documentation, original 
 | 8 | `site:developers.openai.com models vision multilingual tools official` | Current model/tool availability | Retained official models catalog without relying on prices. |
 | 9 | `site:digital-strategy.ec.europa.eu AI Act general purpose AI obligations` | Current EU requirements | Retained official obligations and dates. |
 | 10 | Cross-domain candidate queries for archives, research evidence, records, schemas, standards, and provenance | Concrete jobs outside T01–T09 | Used only to generate hypotheses; no weak blog or vendor list was admitted as demand evidence. |
+| 11 | `A*CENSUS II archives administrators staffing backlog collection processing` | Independent archive workflow evidence | Retained national administrator survey and a 2025 practitioner case; direct operational constraints, not transcription demand. |
+| 12 | `2024 automation systematic reviews workload screening data extraction real-world adoption` | Independent evidence-synthesis workflow evidence | Retained a peer-reviewed scoping review; found uneven stage coverage and uncertain end-to-end benefit. |
+| 13 | `site:gao.gov FOIA backlog complex requests staffing records processing` and current DOJ FY2025 summary | Primary public-record workflow and current context | Retained GAO officer-grounded backlog evidence; retained DOJ volume only as context. |
+| 14 | `2026 museum collections documentation backlog survey inventory cataloguing` | Independent/commissioned museum practitioner evidence | Retained UK survey plus interviews; supports documentation backlog, not AI demand. |
+| 15 | `HMC Data Professionals Survey 2024 RDM tasks gaps needs` | Direct data-steward workflow evidence | Retained 156-response cross-centre survey; resource/knowledge/infrastructure limits recorded. |
+| 16 | `maintenance personnel OEM recommendation technical information barriers 2024 survey` | Direct technical-document use evidence | Retained peer-reviewed practitioner survey; regional/sector limits recorded. |
+| 17 | Candidate-pair audit: `900 904`, `901 917`, `903 914 916`, `907 908 918` | Cross-candidate overlap control | No new source used. Boundaries clarified by input, user, decision, failure cost, and output in the coverage matrix. |
 
 ## Rejected evidence classes
 
@@ -36,6 +43,7 @@ Searches were executed on 2026-07-22. Primary technical documentation, original 
 - No current primary source in this pass establishes willingness to pay for any listed candidate.
 - No candidate-specific production benchmark, error distribution, latency, or unit cost was located or executed.
 - No defensibility claim is supported beyond a hypothesis about workflow-specific data, evaluation, and correction history.
+- No direct old-workflow source was located for each individual candidate. The coverage matrix therefore uses explicit `none` values rather than treating API/model papers, regulation, or professional population counts as problem evidence.
 
 ## Reproducibility ceiling
 

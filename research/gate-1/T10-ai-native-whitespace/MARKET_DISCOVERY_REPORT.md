@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.0
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -11,7 +11,7 @@ last_reviewed: 2026-07-22
 
 This thread identifies 20 non-ranked AI-native workflow inferences for researchers, public-interest teams, technical knowledge stewards, archives, and other small expert groups. The candidates focus on high-context transformations that were costly to perform manually: document-to-structure conversion, evidence provenance, cross-document consistency, uncertainty marking, and human-review queues.
 
-Current primary evidence supports three bounded conclusions. First, generative AI exposure is task-level and job transformation is more likely than whole-job replacement. Second, contemporary systems can process long, multimodal documents and produce complex work artifacts, but capability remains jagged and evaluation-sensitive. Third, hallucination, transparency, privacy, copyright, and agent reliability require human oversight and measurable task-specific quality bars. None of this proves candidate demand, willingness to pay, unit economics, or defensibility.
+Current evidence supports four bounded conclusions. First, generative AI exposure is task-level and job transformation is more likely than whole-job replacement. Second, contemporary systems can process long, multimodal documents, but capability remains jagged and evaluation-sensitive. Third, direct non-provider evidence documents real backlogs or resource constraints in archives, evidence synthesis, public records, museum collections, research-data stewardship, and technical-information use. Fourth, those old-workflow problems do not prove that any proposed AI response is wanted, economical, lawful, or reliable.
 
 Every candidate therefore specifies a concrete user and old workflow, a proposed lawful data path, human authority, a complete measurable quality hypothesis, a unit-cost risk, a candidate-specific privacy/security treatment, a complete defensibility hypothesis, and a non-AI fallback. No generic chatbot, autonomous high-stakes decision, or candidate belonging primarily to T01–T09 is included.
 
@@ -26,7 +26,7 @@ Every candidate therefore specifies a concrete user and old workflow, a proposed
 
 ## Methodology
 
-Research combined official labor/task studies, model-provider evaluation and capability documentation, academic benchmark synthesis, independent agent evaluation, US risk-management guidance, and EU regulatory guidance. Source selection favored current primary evidence and explicit limitations. Candidate generation applied five filters:
+Research combined official labor/task studies, direct practitioner surveys and case studies, workflow-focused academic synthesis, model-provider capability documentation, independent evaluation, US risk guidance, and EU regulation. The coverage matrix separately records direct workflow evidence, context/alternatives, technical feasibility, risk/evaluation, reachability, and unsupported assumptions. Candidate generation applied five filters:
 
 1. a concrete existing job with a recognizable input and output;
 2. an enabling capability that changed recently (multimodal documents, structured extraction, longer context, tool use, or iterative synthesis);
@@ -46,6 +46,12 @@ Source details are in [SOURCE_REGISTER.md](SOURCE_REGISTER.md); queries and nega
 | GenAI deployment should include risk identification, measurement, governance, and evaluation. | evidence | T10-S07, T10-S12 | NIST cross-sector guidance, 2024 updated 2026 | high | Voluntary framework; implementation is context-dependent. |
 | EU AI rules create documentation, transparency, copyright, and risk obligations for relevant providers/deployers. | evidence | T10-S10 | EU, obligations applying 2025–2026 | high | Candidate applicability depends on role and design; not legal advice. |
 | Provenance-first, human-reviewed document workflows are safer investigation targets than autonomous decisions. | inference | T10-S04–S12 | cross-source inference | medium | User value, costs, and workflow adoption are untested. |
+| Archives report staffing constraints, processing backlogs, and legacy-description work. | evidence | T10-S13–S14 | US survey/case; 2022–2025 | medium-high | Broad operations and one case do not prove transcription-product demand. |
+| Systematic-review automation remains concentrated in individual stages, with variable performance and uncertain end-to-end benefit. | evidence | T10-S15 | biomedical evidence synthesis; 2024 | high | Domain-skewed secondary synthesis; buying intent is unmeasured. |
+| Public-record programs have persistent backlogs, and FOIA officers cite staffing and request complexity among contributing factors. | evidence | T10-S16; volume context T10-S17 | US federal; 2024–2026 | high | Does not isolate chronology or redaction as the causal bottleneck. |
+| UK museums report inventory/cataloguing backlogs that limit access and collection management. | evidence | T10-S18 | 218 museums plus 15 interviews; 2026 | high | Commissioned UK research; no AI or procurement evidence. |
+| Research-data professionals report resource, knowledge, infrastructure, and tooling gaps across RDM/FAIR work. | evidence | T10-S19 | 156 German research-centre respondents; 2024 survey published 2025 | medium-high | Broad task family; not proof for datasheet or schema candidates. |
+| Maintenance practitioners report barriers around OEM recommendations and adequate technical information. | evidence | T10-S20 | 105 respondents in three Nigerian industrial sectors; 2024 | medium | Regional/sector-specific; not procedure-authoring demand. |
 
 ## Opportunity universe
 
@@ -65,6 +71,7 @@ Source details are in [SOURCE_REGISTER.md](SOURCE_REGISTER.md); queries and nega
 3. **Document understanding is enabling but not sufficient.** Official APIs describe PDF and multimodal processing; candidate viability still depends on data rights, layout variance, cost, privacy, and domain-specific error tolerance.
 4. **Human oversight must be operational.** “Human in the loop” means named decision authority, surfaced uncertainty, source access, editable structured output, and a non-AI workflow.
 5. **Defensibility remains a hypothesis.** Each candidate names a specific approved workflow asset and uses the shared measure, success threshold, kill threshold, and six-week time box in the D-contract in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md). None was tested here.
+6. **Adjacent concepts remain separate only where their decisions differ.** The index distinguishes claim mapping from cross-paper contradiction, transcription from museum-record reconciliation, scientific extraction from procedure authoring and specification conflict, and consultation themes from chronology and redaction. These are boundary decisions, not market validation.
 
 ## Legal, safety, privacy, and platform constraints
 
@@ -97,4 +104,4 @@ Confidence is **high** that model capability and adoption are advancing unevenly
 
 ## Recommended next action
 
-Request independent Governance re-review of corrected version 0.2.0. Do not rank a winner, benchmark or build models, conduct due diligence, define an MVP, or implement software without separate Founder authorization.
+External Governance re-review requested for corrected version 0.3.0. Do not rank a winner, benchmark or build models, conduct due diligence, define an MVP, or implement software without separate Founder authorization.

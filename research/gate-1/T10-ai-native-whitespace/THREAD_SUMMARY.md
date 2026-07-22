@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.0
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -12,14 +12,15 @@ last_reviewed: 2026-07-22
 - Branch: `gate1/t10-ai-native-whitespace`
 - Output: `research/gate-1/T10-ai-native-whitespace/`
 - Candidate count: 20 (`OPP-2026-900` through `OPP-2026-919`)
-- Creator quality history: `82 → 100`
-- Governance score history: `83 → 100`; independent re-review complete
-- Critical blockers: `B10-001` and `B10-002` resolved; none open
-- Evidence ceiling: direct user pain, demand, willingness to pay, representative task evaluation, production error/cost, data rights, and defensibility remain unvalidated
+- Creator quality history: `82 → 100 → 100`
+- Authoritative external Governance score: `94/100` on version 0.2.0; re-review pending
+- Historical Codex internal simulation: `83 → 100`; not independent and not authoritative
+- Critical blocker: `EXT-GOV-01` pending external re-review; historical internal blockers `B10-001` and `B10-002` were creator-resolved
+- Evidence ceiling: domain-level old-workflow pain is now supported in six named areas, but candidate-specific demand, willingness to pay, representative task evaluation, production error/cost, acquisition, data rights, and defensibility remain unvalidated
 
 ## What was created
 
-The thread created a non-ranked universe of provenance, archival, research, public-knowledge, data-stewardship, technical-document, collection-stewardship, and records-review workflows. It records 12 current/authoritative sources, ten reproducible search paths, 12 exclusions, 12 evidence gaps, and a full creator correction cycle. Every candidate now includes the complete Issue #13 field and hard-boundary contract, plus falsifiable quality and defensibility hypotheses that remain untested.
+The corrected thread retains a non-ranked universe of provenance, archival, research, public-knowledge, data-stewardship, technical-document, collection-stewardship, and records-review workflows. It records 20 sources, 17 reproducible search/audit paths, a six-axis candidate-to-source matrix, 12 exclusions, 12 evidence gaps, and the complete internal/external audit trail. Every candidate retains the Issue #13 contract; named overlap groups now have explicit boundaries.
 
 ## Integrity statement
 
@@ -27,4 +28,4 @@ No source, demand signal, benchmark, price, API permission, market size, user co
 
 ## Next authorized action
 
-Open and retain the child-Issue-linked pull request as draft and unmerged. Independent Governance awarded 100/100 to corrected version 0.2.0; only the Founder may accept an evidence ceiling or authorize later screening.
+Keep PR #24 draft and unmerged. External Governance re-review requested for version 0.3.0. No new independent Governance score is claimed; only the Founder may accept an evidence ceiling or authorize later screening.

@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.2.0
+version: 0.3.0
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 ---
@@ -9,7 +9,7 @@ last_reviewed: 2026-07-22
 
 | ID | Missing evidence | Affected candidates | Risk / honest ceiling | Later authorized test and owner |
 |---|---|---|---|---|
-| G-01 | Direct user pain, frequency, and current cost | all | Candidate severity remains low confidence. | Workflow interviews and artifact walk-throughs / Strategy |
+| G-01 | Candidate-specific user pain, frequency, and current cost | all | T10-S13–S20 support domain-level backlogs or workflow constraints for some candidates, but no source establishes candidate-level severity or buying intent; confidence remains low. | Workflow interviews and artifact walk-throughs / Strategy |
 | G-02 | Buyer, willingness to pay, and procurement path | all | No pricing, revenue, or business-model conclusion. | Behavioral commitment tests / Founder + Strategy |
 | G-03 | Representative task-specific evaluation sets | all | Capability cannot be inferred from general benchmarks. | Build consented gold sets after authorization / Domain expert + Engineering |
 | G-04 | Error severity distributions and review burden | all | Human review may erase value or miss critical errors. | Blinded comparison with reject option / Governance |
