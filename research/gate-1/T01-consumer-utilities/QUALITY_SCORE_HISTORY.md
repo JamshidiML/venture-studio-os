@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.1
+version: 0.1.2
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T01
@@ -44,15 +44,31 @@ Critical blockers: `0`. Creator outcome: `rework`.
 
 ## Correction-Loop History
 
-| Cycle | Artifact version | Creator score | Governance score | Critical blockers | Outcome | Commit |
+| Cycle | Artifact version | Creator score | External Governance score | Critical blockers | Outcome | Commit |
 |---:|---|---:|---:|---:|---|---|
 | 1 | 0.1.0 | 81 | pending | 0 | rework | uncommitted working draft |
 | 2 | 0.1.1 | 100 | pending | 0 | creator complete; Governance review required | uncommitted working tree |
-| 3 | 0.1.1 | 100 | 100 | 0 | independent Governance pass | uncommitted working tree |
+| 3 | 0.1.1 | 100 | not scored | 1 | Internal Pre-review simulation recorded 100; not independent | d38845e |
+| 4 | 0.1.1 | 100 | 92 | 1 (`EXT-GOV-01`) | authoritative external rework decision | d38845e |
+| 5 | 0.1.2 | 100 | re-review pending | 1 pending external verification | targeted correction complete | uncommitted correction |
+
+## Cycle 5 — Creator Reassessment After External Findings
+
+| Dimension | Maximum | Creator awarded | Correction evidence |
+|---|---:|---:|---|
+| Scope compliance and exclusions | 10 | 10 | Same authorized 20 IDs and boundaries; no product selection. |
+| Source quality and freshness | 20 | 20 | No adjacent source padding; source roles and limitations remain explicit. |
+| Claim-level evidence and traceability | 15 | 15 | 20-row matrix separates direct, context, alternatives, feasibility, constraints, and unsupported hypotheses. |
+| Opportunity coverage and diversity | 15 | 15 | Eight externally named weak workflows are visibly downgraded, not inflated. |
+| Analytical rigor and uncertainty | 15 | 15 | Unsupported candidate pain is named and capped at very low confidence. |
+| Legal, safety, privacy, and platform constraints | 10 | 10 | Candidate-level safety/privacy boundaries remain visible. |
+| Reproducibility of search method | 10 | 10 | The evidence audit and no-padding decision are logged. |
+| Clarity and repository hygiene | 5 | 5 | Internal review history is relabeled; all nine artifacts use version 0.1.2 and remain in-review. |
+| **Total** | **100** | **100** | **Creator execution quality only; external re-review required.** |
 
 ## Evidence Ceiling
 
-Artifact-quality evidence ceiling: `not invoked`. Candidate attractiveness and commercial-demand evidence remain intentionally incomplete and are not required to misrepresent a 100/100 execution-quality score.
+Creator artifact-quality ceiling: `not invoked`. Candidate confidence is capped at `very low` for the eight named weak workflows. The external score remains `92/100` until an external re-review; the Creator score does not replace it.
 
 ## Validation Evidence
 
@@ -62,14 +78,16 @@ Artifact-quality evidence ceiling: `not invoked`. Candidate attractiveness and c
 | `python3 -m unittest discover -s tests -p 'test_*.py'` | passed: 3 tests |
 | `git diff --check` | passed: no whitespace errors |
 | `find research/gate-1 -type f -name '*.md'` | exactly 9 thread Markdown artifacts |
+| lifecycle / ID / coverage audit | passed: 9/9 `status: in-review`, 9/9 version `0.1.2`, 20 unique assigned IDs, 0 range violations, 20/20 coverage rows |
+| registered source URL request check | 9/9 hosts resolved and returned HTTP responses: four 200; five bot-protected 403 |
 
 ## Current Verdict
 
-`CREATOR COMPLETE 100/100 — GOVERNANCE PASS 100/100 — NO CRITICAL BLOCKER`
+`CREATOR CORRECTION COMPLETE 100/100 — EXTERNAL GOVERNANCE 92/100 — EXT-GOV-01 AWAITING EXTERNAL VERIFICATION`
 
-## Independent Governance Review — 2026-07-22
+## Internal Pre-review Simulation — 2026-07-22 (not independent)
 
-| Dimension | Maximum | Governance awarded | Review evidence |
+| Dimension | Maximum | Internal simulation awarded | Review evidence |
 |---|---:|---:|---|
 | Scope compliance and exclusions | 10 | 10 | The 20 candidates stay within Issue #4, remain unranked, and map adjacent or prohibited spaces explicitly. |
 | Source quality and freshness | 20 | 20 | Nine traceable sources include owner, URL, date treatment, access date, geography, limitations, and confidence; older guidance is visibly bounded. |
@@ -79,6 +97,24 @@ Artifact-quality evidence ceiling: `not invoked`. Candidate attractiveness and c
 | Legal, safety, privacy, and platform constraints | 10 | 10 | Food, fire, location, animal-care, IP, privacy, ethics, and manual-fallback limits are explicit. |
 | Reproducibility of search method | 10 | 10 | Exact queries, inclusion/exclusion rules, source decisions, cutoff, and unused results are recorded. |
 | Clarity and repository hygiene | 5 | 5 | Nine required artifacts, valid front matter and links, 20 unique IDs, and all repository checks pass. |
-| **Total** | **100** | **100** | **Independent pass; no lost point.** |
+| **Total** | **100** | **100** | **Historical Codex simulation only; not an independent or authoritative score.** |
 
-Governance critical blockers: `0`. Governance evidence ceiling: candidate-level demand and commercial confidence remain bounded exactly as disclosed; no artifact-quality exception is required.
+This historical review was authored by Codex in the same execution process and is preserved only for audit history. It was superseded by the external Governance review.
+
+## Authoritative External Governance Review — Cycle 1
+
+| Dimension | Maximum | External award | Lost |
+|---|---:|---:|---:|
+| Scope compliance and exclusions | 10 | 10 | 0 |
+| Source quality and freshness | 20 | 17 | 3 |
+| Claim-level evidence and traceability | 15 | 15 | 0 |
+| Opportunity coverage and diversity | 15 | 12 | 3 |
+| Analytical rigor and uncertainty | 15 | 14 | 1 |
+| Legal, safety, privacy, and platform constraints | 10 | 10 | 0 |
+| Reproducibility of search method | 10 | 10 | 0 |
+| Clarity and repository hygiene | 5 | 4 | 1 |
+| **Total** | **100** | **92** | **8** |
+
+Critical blocker: `EXT-GOV-01`. Cycle-2 corrections add full source coverage and explicit downgrades. No new independent Governance score is claimed.
+
+External Governance re-review requested.

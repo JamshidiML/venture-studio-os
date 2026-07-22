@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.1
+version: 0.1.2
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T01
@@ -30,6 +30,10 @@ gate: 1
 | 8 | `site:aphis.usda.gov pet ownership survey 2024 official routines` | T01-S08 | included narrowly; scope mismatch lowers confidence |
 | 9 | `site:consumer.ftc.gov warranties receipts returns cooling off rule 2025 consumer` | T01-S09 | boundary source; purchase-deadline concepts assigned to T03 |
 | 10 | `site:census.gov older adults living alone 2024 report 65` | no T01 source | excluded: aging/accessibility belongs to T02 |
+
+## External Governance Evidence Audit
+
+The Cycle-2 correction did not pad the register with adjacent sources. A candidate-by-candidate audit found no direct problem evidence in the existing register for possession location, borrowed-item return, reusable packing, plant care, pet handoff, idle-time queues, completion capture, or routine restart. Those candidates were downgraded to unsupported `very low` confidence hypotheses; T01-S08 remains contextual animal-keeping evidence and is not represented as pet-handoff pain.
 
 ## Search Coverage Check
 

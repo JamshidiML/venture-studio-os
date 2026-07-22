@@ -1,6 +1,6 @@
 ---
 status: in-review
-version: 0.1.1
+version: 0.1.2
 owner_role: Strategy Agent
 last_reviewed: 2026-07-22
 thread_id: T01
@@ -33,6 +33,8 @@ gate: 1
 
 The first draft combined current-source searches with boundary screening. The correction pass added publication and access dates, geographic scope, source limitations, candidate-level source IDs, claim types, confidence rationales, constraints, exclusions, and a reproducible query log. Sources were prioritized in this order: official statistics and agencies; commissioned primary surveys with disclosed samples; current public standards or guidance. Competitor popularity, app-store counts, and unverified reviews were not treated as problem or demand evidence.
 
+External Governance Correction Cycle 2 audited whether each source demonstrates the candidate's specific problem rather than merely a population, safety cadence, or adjacent category. No new source was added merely to increase source count. Eight weak candidates (`011`, `012`, `014`–`016`, `018`–`020`) remain visible only as `very low` confidence unsupported hypotheses; they may not be promoted without direct problem evidence.
+
 Qualification required: a recurring workflow inside Issue #4; at least one traceable problem-category source; a bounded affected segment; a non-deceptive and non-surveillance path; no critical API or proprietary-network dependency; and explicit uncertainty. Qualification does not mean commercial attractiveness or Gate 2 advancement.
 
 ## Evidence-Backed Problem Landscape
@@ -63,16 +65,16 @@ The full traceable index is in [OPPORTUNITY_INDEX.md](OPPORTUNITY_INDEX.md).
 | OPP-2026-008 | Clothing-care memory | People managing garment-specific care | Labels, notes | inference from T01-S01 | low | no fabric-safety guarantee |
 | OPP-2026-009 | Cleaning-zone rotation | Adults doing repeated housework | Paper rotation, generic tasks | inference from T01-S01 | medium | none identified |
 | OPP-2026-010 | Declutter micro-session queue | Adults breaking home organization into short sessions | Notes, timer | inference from T01-S01 | low | no clinical framing |
-| OPP-2026-011 | Personal possession-location register | People repeatedly misplacing infrequently used items | Memory, photos | inference from T01-S01 | low | sensitive-location privacy |
-| OPP-2026-012 | Borrowed-item return log | Individuals lending or borrowing household items | Chat message, memory | inference from T01-S01 | low | no social graph dependency |
+| OPP-2026-011 | Personal possession-location register | People repeatedly misplacing infrequently used items | Memory, photos | unsupported hypothesis; T01-S01 is context only | very low | sensitive-location privacy |
+| OPP-2026-012 | Borrowed-item return log | Individuals lending or borrowing household items | Chat message, memory | unsupported hypothesis; T01-S01 is context only | very low | no social graph dependency |
 | OPP-2026-013 | Errand batch queue | Adults grouping repeated local errands | Notes, calendar | inference from T01-S01 | medium | no location surveillance |
-| OPP-2026-014 | Reusable packing checklist | People repeating trips or activities | Static checklist | inference from T01-S01 | low | none identified |
-| OPP-2026-015 | Plant-care rotation | People caring for household plants | Tags, calendar | inference from T01-S01 | low | no horticultural guarantee |
-| OPP-2026-016 | Non-clinical pet-care handoff | Pet owners coordinating routine feeding/walk completion | Note, message | inference from T01-S01 | low | no veterinary advice |
+| OPP-2026-014 | Reusable packing checklist | People repeating trips or activities | Static checklist | unsupported hypothesis; no direct source | very low | none identified |
+| OPP-2026-015 | Plant-care rotation | People caring for household plants | Tags, calendar | unsupported hypothesis; no direct source | very low | no horticultural guarantee |
+| OPP-2026-016 | Non-clinical pet-care handoff | Pet owners coordinating routine feeding/walk completion | Note, message | unsupported hypothesis; T01-S08 does not measure pet handoffs | very low | no veterinary advice |
 | OPP-2026-017 | Seasonal home reset calendar | Renters/homeowners rotating seasonal tasks | Calendar, paper list | inference from T01-S05 | medium | jurisdiction/climate variation |
-| OPP-2026-018 | Waiting-time micro-task queue | Adults wanting useful tasks for short idle periods | General task list | inference from T01-S01 | low | no productivity/health claim |
-| OPP-2026-019 | “Done today” completion capture | Adults who need a low-friction record of repeated tasks | Notes, habit tracker | inference from T01-S01 | low | no mental-health claim |
-| OPP-2026-020 | Routine restart after interruption | Adults resuming household routines after travel or disruption | Rebuild list from memory | inference from T01-S01/S02 | low | no clinical or diagnostic framing |
+| OPP-2026-018 | Waiting-time micro-task queue | Adults wanting useful tasks for short idle periods | General task list | unsupported hypothesis; no direct source | very low | no productivity/health claim |
+| OPP-2026-019 | “Done today” completion capture | Adults who need a low-friction record of repeated tasks | Notes, habit tracker | unsupported hypothesis; no direct source | very low | no mental-health claim |
+| OPP-2026-020 | Routine restart after interruption | Adults resuming household routines after travel or disruption | Rebuild list from memory | unsupported hypothesis; cited sources are context only | very low | no clinical or diagnostic framing |
 
 ## Cross-Cutting Constraints
 
@@ -92,4 +94,4 @@ Overall confidence is `medium` for the existence and recurrence of household-wor
 
 ## Recommended Next Action
 
-Request independent Governance review of this version against `templates/THREAD_QUALITY_SCORECARD.md`. Keep Gate 1 open and do not score or rank the opportunities until Founder authorization for the next gate.
+External Governance re-review requested. Review the coverage matrix, explicit downgrades, source classification, constraints, exactly 20 IDs, and evidence ceiling. Keep Gate 1 open and do not score or rank the opportunities until Founder authorization for the next gate.
